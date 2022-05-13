@@ -1,0 +1,18 @@
+version=pmwiki-2.2.19 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0b12) Gecko/20100101 Firefox/4.0b12
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1278913736
+host=49.74.52.6
+name=Acfun2.GroupHeader
+passwdattr=@lock
+passwddelete=@lock
+passwdedit=@lock
+passwdupload=@lock
+rev=18
+targets=
+text=(:if equal "{*$BaseName}" "Acfun2.GroupHeader" :)(:nogroupfooter:)(:ifend:)
+time=1298976382
+author:1298976382=Admin

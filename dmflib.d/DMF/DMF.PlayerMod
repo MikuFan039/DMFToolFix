@@ -1,0 +1,14 @@
+version=pmwiki-2.2.27 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1310718640
+host=127.0.0.1
+name=DMF.PlayerMod
+rev=1
+targets=
+text=播放器修改内容%0a%0a!!Bilibili%0a/^http(s?):\/\/([^\.]*\.?)bilibili\.(us|tv)%0a'''TO'''%0a/^http(s?):\/\/(localhost|danmaku\.us).{0,}%0a%0a%0a6c 02 24 02 66 d2 0d a0 2c 9d 10 a0 %0a//6c 02 %0a_as3_getslot %3c2>%0a//24 02 %0a_as3_pushbyte 2%0a//66 d2 0d %0a_as3_getproperty {}%0a//a0 %0a_as3_add %0a%0a%0a//2c 9d 10%0a_as3_pushstring "bilibili.us"%0a//a0 %0a_as3_add %0a'''TO'''%0a//02 02 02 02  (NOP*4)
+time=1310718640
+author:1310718640=

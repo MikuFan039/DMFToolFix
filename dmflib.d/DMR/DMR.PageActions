@@ -1,0 +1,14 @@
+version=pmwiki-2.2.29 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1312386327
+host=127.0.0.1
+name=DMR.PageActions
+rev=2
+targets=DMR.PageActions
+text=* %25item rel=nofollow class=edit      accesskey='$[ak_edit]'%25      [[{*$FullName}?action=edit   | $[Edit] ]]%0a* %25item rel=nofollow class=diff      accesskey='$[ak_history]'%25   [[{*$FullName}?action=diff   | $[History] ]]%0a* %25item rel=nofollow class=diff      accesskey='$[ak_history]'%25   [[{*$FullName}?action=diff&nodiff=1   | $[History] (无diff) ]]%0a(:if enabled AuthPw:)%0a* %25item rel=nofollow class=logout    accesskey="$[ak_logout]"%25''  [-[[{*$FullName}?action=logout | $[Logout] ]]-]''%0a(:else:)%0a* %25item rel=nofollow class=login    accesskey="$[ak_login]"%25''  [-[[{*$FullName}?action=login | $[Login] ]]-]''%0a(:ifend:)%0a(:if auth admin:)%0a* %25item rel=nofollow%25 [[{*$FullName}?action=attr | 加密 ]]%0a* %25item rel=nofollow%25 [[{*$FullName}?action=source | 源码 ]]%0a* %25item rel=nofollow%25 [[{*$FullName}?action=delete | %25red%25 '''删除''' ]]%0a(:ifend:)
+time=1312518122
+author:1312518122=

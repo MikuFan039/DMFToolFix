@@ -1,0 +1,12 @@
+version=pmwiki-2.2.24 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/20100101 Firefox/4.0.1
+author=Admin
+charset=UTF-8
+csum=
+host=::1
+name=Site.EditForm
+rev=76
+targets=
+text=(:Summary:contains the edit page layout form:)%0a%0a!! $[Editing {*$FullName}] %25block class=wikiaction%25%0a(:div id='wikiedit':)%0a(:input e_form:)[[#top]](:e_guibuttons:)\\%0a(:input e_textarea:)\\%0a$[Summary]: (:input e_changesummary:)\\%0a$[Author]: (:input e_author:) (:input e_minorcheckbox:) $[This is a minor edit]\\%0a(:input e_savebutton:) (:input e_savedraftbutton:) (:input e_saveeditbutton:) (:input e_previewbutton:) (:input e_cancelbutton:)%0a(:input end:)%0a(:divend:)%0a(:messages:)%0a(:include $[{$SiteGroup}/EditQuickReference]:)%0a(:if2 e_preview:)%0a!! $[Preview {*$FullName}]%0a'''$[Page is unsaved]'''%0a(:e_preview:)%0a----%0a'''$[End of preview -- remember to save]'''\\%0a[[#top | $[Top] ]]%0a(:if2end:)%0a(:ifend:)
+time=1303979317
+author:1303979317=Admin

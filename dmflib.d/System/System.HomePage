@@ -1,0 +1,14 @@
+version=pmwiki-2.2.5 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1)
+author=
+charset=UTF-8
+csum=
+ctime=1249973591
+host=123.114.172.79
+name=System.HomePage
+passwdread=@lock
+rev=4
+targets=
+text=(:Title {$Group}.首页:)%0a%0a新建页面:%0a* 要修改标题的话,使用[=(:Title 标题:)=]就可以了%0a(:newpagebox:)%0a%0a目录%0a(:pagelist group={$Group} list=normal fmt=#title:)
+time=1256726521
+title=System.首页

@@ -1,0 +1,14 @@
+version=pmwiki-2.2.43 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+author=dm.mikufans@gmail.com
+cauthor=dm.mikufans@gmail.com
+charset=UTF-8
+csum=
+ctime=1350832751
+host=127.0.0.1
+name=Acfun4p.GroupHeader
+rev=2
+targets=
+text=(:html:)%0a%3cscript type="text/javascript" src="/javascripts/ac_kagami_core.js">%3c/script>%0a(:htmlend:)
+time=1350833224
+author:1350833224=dm.mikufans@gmail.com

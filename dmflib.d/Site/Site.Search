@@ -1,0 +1,12 @@
+version=pmwiki-2.2.5 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; CIBA; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MAXTHON 2.0)
+author=wikiadministration
+charset=UTF-8
+csum=
+host=222.131.101.138
+name=Site.Search
+rev=21
+targets=PmWiki.PageLists
+text=(:Summary:Search wiki:)%0a(:searchbox:)%0a%0a(:searchresults fmt=#title :)%0a%0a[[#searchinfostart]]%0aA search for more than one word will find pages that contain all of the words.%0aUse quotation marks to search for a phrase.  %0aAlso use quotes for text with punctuation or special characters.%0aSearches are case insensitive.%0a%0aTo limit your search to a single group, enter the group name followed by a slash at the beginning of the search string (e.g., "[=PmWiki/=]" or "{$SiteGroup}/").  %0aTo list all pages, enter a slash for the search.  %0a%0a!![-Search examples-]%0a %0a||border='0' cellspacing='0' width='100%25' cellpadding='0'%0a||!Enter         ||!To find pages containing ||%0a||apple pie      ||both 'apple' and 'pie' ||%0a||"apple pie"    ||the phrase 'apple pie' ||%0a||pmwiki/apple   ||'apple' in the [=PmWiki=] group of pages ||%0a||"pmwiki/apple" ||the phrase 'pmwiki/apple' in all groups of pages ||%0a||apple -pie     ||'apple', omitting those containing 'pie' ||%0a||food -"apple pie" ||'food', omitting those containing 'apple pie' ||%0a||apple "-pie"   ||the words 'apple' and '-pie' ||%0a||apple - pie    ||'apple', '-', and 'pie' ||%0a||"pie:"         ||the word 'pie' with a colon ||%0a||"pie=tasty"    ||the phrase 'pie=tasty' ||%0a||name=*crumble* ||page names containing 'crumble' ||%0a%0aSome ''special characters'' need to be enclosed in quotes, including the colon (:), equals sign (=), less than (&lt;), single quote (') and double quote(").%0a%0aFor ''advanced searches'', [[PmWiki/page list(s)]] parameters (count, name, group, fmt, link, list, order, and trail) can be entered together with the search string.  %0a-%3c''Wild card characters'': asterisk (*) represent zero or more characters and question mark (?) represent exactly one character.%0a[[#searchinfoend]]%0a
+time=1260530735
+author:1260530735=wikiadministration

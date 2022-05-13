@@ -1,0 +1,11 @@
+version=pmwiki-2.1.3 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon; .NET CLR 1.1.4322; Alexa Toolbar)
+author=
+csum=
+ctime=1143469435
+host=219.150.164.125
+name=PmWikiZhCn.CleanUrls
+rev=1
+targets=
+text=关于pmwiki如何改变路径的问题，我只找到了Apache server下的修改方法，哪位能告诉我在win2003 is下如何获得改变路径方法？用ISAPI_Rewrite 应该可以，但是不会写路径。
+time=1143469435

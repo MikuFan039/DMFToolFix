@@ -1,0 +1,14 @@
+version=pmwiki-2.2.43 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4
+author=dm.mikufans@gmail.com
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1321192467
+host=127.0.0.1
+name=Acfun4p.HomePage
+rev=9
+targets=
+text=(:include System.HomePageTmpl#begin#end:)%0a(:nogroupfooter:)
+time=1350832701
+author:1350832701=dm.mikufans@gmail.com

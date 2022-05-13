@@ -1,0 +1,15 @@
+version=pmwiki-2.2.34 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1265104166
+host=127.0.0.1
+name=Main.Talk
+passwdedit=@lock
+rev=13
+targets=
+text=(:if false:)%0a邮件发送失败.系统调试输出:%0aCUFPost is {$CUFPost}\\%0aCUFSent is {$CUFSent}\\%0aCUFForm is {$CUFForm}\\%0aCUFMess is {$CUFMess}%0a(:ifend:)%0a%0a(:if expr {$CUFPost} && !{$CUFSent}:)%0a!! %25red%25无信息可发送%25%25%0a>>center red%3c%3c%0a{$CUFMess}%0a>>%3c%3c%0a(:ifend:)%0a(:if expr {$CUFPost} && {$CUFSent}:)%0a!! %25green%25 邮件发送成功.%25%25%0a(:ifend:)%0a%0a(:if {$CUFForm}:)%0a%0a(:input form "{$PageUrl}":)%0a|| border=0 align=center cellspacing=5%0a|| 姓名(ID):||(:input text name=visitor value="{$PVisitor}" size=30:) ||%0a|| 邮箱地址:||(:input text name=replyto value="{$PReplyTo}" size=30:) ||%0a||邮件正文:\\%0a(:input textarea name=message rows=20 cols=50:) ||||%0a|| (:input submit value="确认提交":) ||||%0a(:input end:)%0a|| 如果您有任何问题或者建议，请填写以上表格并点发送按钮。\\%0a如果您希望得到邮件回复，请填写正确的邮件地址。\\%0a本站不记录任何电邮地址。也不发送任何垃圾邮件。\\\%0a\\%0a%25red%25 '''这是一个独立站点，不负责各个站点的弹幕权限申请 XD''' %25%25 ||%0a(:ifend:)%0a%0a
+time=1321639919
+author:1321639919=

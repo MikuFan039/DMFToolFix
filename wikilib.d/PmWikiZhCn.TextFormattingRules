@@ -1,0 +1,11 @@
+version=pmwiki-2.1.5 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MyIE2; .NET CLR 1.1.4322)
+author=
+csum=
+ctime=1146103068
+host=222.66.39.138
+name=PmWikiZhCn.TextFormattingRules
+rev=1
+targets=
+text=/usr/sbin %0aadduser%0achown%0aeditquota%0apkg_add%0apkg_create%0apkg_delete%0apkg_info%0aswapinfo%0atcpdump%0avipw%0a%0a%0a/sbin%0admesg%0afsck%0aifconfig%0aipfw%0amount%0aumount%0a%0a%0a普通用户%0a
+time=1146103068

@@ -1,0 +1,14 @@
+version=pmwiki-2.2.36 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19
+author=Admin
+cauthor=dm.mikufans@gmail.com
+charset=UTF-8
+csum=
+ctime=1332573990
+host=127.0.0.1
+name=System.UniPostPage
+rev=7
+targets=System.1000,System.VideoTmpl
+text=[[#begin]]%0a(:adl form #bottom target={*$Group}.{(thread {*$Group})}:)%0a||border=1 %0a||标题(*) ||(:input text name=xTitle:) (:input hidden name=xVerify value="fca654cb-60ac-4f9c-b751-16ef296227b2":)||%0a||来源连接 ||(:input text name=xSourceLink:) ||%0a||视频类型(*) ||(:input select name=xVideoType value=URL label="直接链接":)(:input select id=VTypeSelet name=xVideoType value=LOCAL label="DMF上传":) 弹幕分P (:input checkbox xVideoMuti value="true":) (部分视频类型不支持) ||%0a||视频ID / flv地址 (*) ||%25id=VStrInput%25(:input text name=xVideoStr:)%25%25 ||%0a||附加说明[[%3c%3c]]可以使用PmWiki标记 ||(:input textarea name=xComment:) ||%0a|| ||(:input submit value="提交":) ||%0a(:adl templatepage System.VideoTmpl:)%0a(:adl end:)%0a%0a(:html:)%0a%3cscript type="text/javascript" src="/dmf/getLocalUploads">%3c/script>%0a%3cscript type="text/javascript">%0a$("#VTypeSelet").change(function() {%0a	if ($("#VTypeSelet").val() == "LOCAL") {%0a		setContent();%0a	} else {%0a		$("#VStrInput").replaceWith('%3cdiv id="VStrInput">%3cinput name="xVideoStr" class="inputbox" type="text">%3c/div>');%0a	}%0a%0a});%0a%0a%0afunction setContent() {%0a	var content = '%3cdiv id="VStrInput">%3cselect name="xVideoStr" class="inputbox">';%0a	for(var FN in files){%0a		content += '%3coption value="'+files[FN]+'">'+FN+'%3c/option>';%0a	}%0a	content += '%3c/select>%3c/div>';%0a	$("#VStrInput").replaceWith(content);%0a}%0a%3c/script>%0a(:htmlend:)%0a[[#end]]
+time=1336654266
+author:1336654266=Admin

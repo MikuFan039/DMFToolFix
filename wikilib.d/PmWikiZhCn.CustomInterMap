@@ -1,0 +1,10 @@
+version=pmwiki-2.0.beta26
+newline=ÀŠ
+time=1110276589
+text=æœ¬é¡µæè¿°Wikiç®¡ç†å‘˜å¦‚ä½•æ·»åŠ InterMapé“¾æ¥ã€‚ÀŠÀŠ"scripts"ç›®å½•ä¸‹çš„"intermap.txt"æ–‡ä»¶æŒ‡å®šäº†PmWikiä½¿ç”¨çš„é»˜è®¤InterMapé“¾æ¥ã€‚æ–‡ä»¶ä¸­çš„æ¯è¡Œéƒ½æ˜¯ä»¥ä¸‹æ ¼å¼ï¼šÀŠ[=æ˜ å°„å‰ç¼€        http://url/=]ÀŠÀŠThe file ''intermap.txt'' in the ''scripts/'' directory specifies the default InterMap links that are distributed with PmWiki.  Each line of ''intermap.txt'' has the following format:ÀŠÀŠ    [=MapPrefix        http://www.somehost.com/partial/url/=]ÀŠÀŠFor example, @@intermap.txt@@ has the following entries:ÀŠ    [=ÀŠ    ISBN            http://www.amazon.com/exec/obidos/ASIN/ÀŠ    IMDB            http://www.imdb.com/find?q=ÀŠ    Meatball        http://www.usemod.com/cgi-bin/mb.pl?ÀŠ    PmWiki          http://www.pmichaud.com/wiki/PmWiki/ÀŠ    UseMod          http://www.usemod.com/cgi-bin/wiki.pl?ÀŠ    Wiki            http://c2.com/cgi/wiki?ÀŠ    Wikipedia       http://www.wikipedia.com/wiki/=]ÀŠÀŠTo create your own InterMap links, ''do not edit the ''intermap.txt'' file directly!''  You'll lose your changes when you do a PmWiki.[[Upgrade(s)]].  Instead, create a file called ''localmap.txt'' in the ''local/'' subdirectory containing your InterMap links in the format described above.  PmWiki will automatically read your links after loading the ''intermap.txt'' entries.ÀŠÀŠYou can also define InterMap entries where the text of the entry is substituted into the middle of the URL.  Just include '$1' in the URL where you want the substitution to take place.  For example:ÀŠ    [=ÀŠ    Jargon          http://www.catb.org/~esr/jargon/html/$1.htmlÀŠ    =]ÀŠwould cause [@Jargon:F/feature-creep@] to be converted to [@http://www.catb.org/~esr/jargon/html/F/feature-creep.html@]. ÀŠÀŠ%trail%<<|PmWiki.DocumentationIndex|>>
+targets=PmWikiZhCn.InterMap,PmWiki.PmWiki,PmWikiZhCn.Upgrades,PmWiki.DocumentationIndex
+author=
+name=PmWikiZhCn.CustomInterMap
+host=202.112.3.143
+agent=Mozilla/5.0 (Windows; U; Windows NT 5.0; zh-CN; rv:1.7.5) Gecko/20041124 Firefox/1.0 (ax)
+rev=1

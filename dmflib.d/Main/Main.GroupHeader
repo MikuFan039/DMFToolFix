@@ -1,0 +1,14 @@
+version=pmwiki-2.2.17 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1277800024
+host=114.243.78.124
+name=Main.GroupHeader
+rev=1
+targets=
+text=%25define=prerequisite apply=list bgcolor=#efefef border='5px solid black' padding-left=30px margin=0%25%0a%25define=recipeinfo color=black background-color=#f7f7f7 border='1px solid #cccccc' padding=4px%25%0a%25define=box block bgcolor=#f9f9fc border='1px solid #666666' margin=10px padding=5px%25%0a%25define=obsolete background-color=#ffcccc border='1px solid #ffcccc' padding=4px%25%0a%25define=audience class='frame rfloat' font-size:smaller bgcolor=#ffffcc clear:right%25%0a(:if ! equal "{*$:Audience} "" :)(:div style="clear:right;":)%25audience%25{*$:Audience}%25%25%0a(:divend:)(:ifend:)
+time=1277800024
+author:1277800024=Admin

@@ -1,0 +1,15 @@
+version=pmwiki-2.2.24 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/20100101 Firefox/4.0
+author=KPX
+cauthor=KPX
+charset=UTF-8
+csum=
+ctime=1300462275
+host=65.49.2.179
+name=SiteAdmin.Blocklist-MoinMaster
+passwdread=@lock
+rev=4
+targets=
+text=[@%0a## ===========================================================================================%0a## Please keep this comment at the end. Please note:%0a## MoinMoin >=1.6 has TextCHAs for spam prevention and they are currently very effective (no%0a## spam any more since switching to 1.6). So if you still suffer from spam, consider updating.%0a## ===========================================================================================%0a@]
+time=1300637236
+author:1300637236=KPX

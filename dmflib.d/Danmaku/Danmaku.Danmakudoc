@@ -1,0 +1,14 @@
+version=pmwiki-2.2.58 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/20100101 Firefox/10.0
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1652098220
+host=127.0.0.1
+name=Danmaku.Danmakudoc
+rev=11
+targets=
+text=[[http://localhost/Danmaku/CommonDanmaku|普权弹幕教程]]　　　　　　[[http://danmaku.site:90/documents/CommonDdamaku.txt|文档下载（【职人弹幕入门篇】人人都是字幕君.docx）]]%0a[[http://localhost/Danmaku/ScriptDanmaku|代码弹幕初阶入门教程]]　　[[http://danmaku.site:90/documents/ScriptDanmaku.docx|文档下载（【人人都是字幕君 代码弹幕初阶入门教程】.docx）]]%0a[[http://danmaku.site:90/html/Wiki/pages/Category_Script.html|脚本弹幕语言参考]]　　　　[[http://danmaku.site:90/documents/ScriptDanmaku.pdf|文档下载（Bilibili播放器特殊弹幕语言.pdf）]]%0a　　　　　　　　　　　　[[http://danmaku.site:90/documents/ScriptDanmaku.zip|资料下载（bilibili播放器特殊弹幕语言_嗶哩嗶哩百科.zip）]]%0a%0a[[http://danmaku.site:90/html/biliscript-syndicate/index.html|弹幕艺术联合文档]]　　　　[[http://danmaku.site:90/documents/biliscript-syndicate.zip|资料下载（弹幕艺术联合文档）]]
+time=1652185889
+author:1652185889=Admin

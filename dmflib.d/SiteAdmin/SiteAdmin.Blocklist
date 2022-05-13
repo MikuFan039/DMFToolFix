@@ -1,0 +1,13 @@
+version=pmwiki-2.2.81 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36 Edg/101.0.1210.32
+author=Admin
+charset=UTF-8
+csum=
+ctime=1261567519
+host=127.0.0.1
+name=SiteAdmin.Blocklist
+rev=7
+targets=PmWiki.Blocklist,PmWiki.PmWikiUsers,PmWiki.PageHistory,PmWiki.SuccessStories,PmWiki.MailingLists
+text=(:Summary: PmWiki [[PmWiki/blocklist]] of spam IP addresses and phrases:)%0aThis page contains a list of [[#ipaddresses | IP addresses]] and [[#words | words]] that are %0a[[PmWiki/Blocklist|blocked]] from posting to this site, and many other [[PmWiki/PmWikiUsers | PmWiki websites]].%0aYou can benefit from this blocklist by [[PmWiki:Blocklist#automaticblocklists | automatically]] downloading it regularly.%0a%0aThe IP address of an author of a page (a lookup is needed when the %0aspammer has entered an Author name for its post) is revealed when the %0amouse cursor rests (via "mouseover") on the author name in the [[PmWiki/PageHistory | history]] page.%0a%0a>>frame font-size:small%3c%3c%0aWhat to do if your IP address is on this list?%0a-> Chances are that if you are reading this you know what to do.%0a-> There is a possibility that your IP address block has been added to this list because of %25newwin%25[[Wiki:WikiSpam|spam]] or defacement from an address within your IP address range.  Someone has probably defaced the PmWiki site or other [[PmWiki/SuccessStories|PmWikis]]. %0a-> If your IP address or address block (ending in ".*") has been posting without your knowledge then you should immediately ensure your %25newwin%25[[(Wikipedia:)firewall]], [[(Wikipedia:)anti-virus software]], and [[(Wikipedia:)anti-spyware software]] is up to date and run a full scan on your computer. Then, if you're certain that you or your computer are not the culprits, request via our user [[PmWiki/mailing list(s)]] that another member remove your IP or IP block from the list.  %0a-> If you are one of the people spamming wikis, you might like to reflect on %25newwin%25[[http://pcworld.com/article/id,132320-pg,1/article.html|wiki etiquette]], [[Wikipedia:Wiki_etiquette | how to work with others]], and reconsider wasting our, and your, time.%0a>>%3c%3c%0a[[#ipaddresses]]%0a>>pre%3c%3c%0a  block:%0a[[#words]]%0a  block:%0a[[#unblock]]%0a  unblock:%0a%0a  # fix broken regex from moinmaster list - was blocking http://www.outdoorplace.org/shells/
+time=1651383221
+author:1651383221=Admin

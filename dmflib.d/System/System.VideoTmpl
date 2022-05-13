@@ -1,0 +1,15 @@
+version=pmwiki-2.2.24 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/20100101 Firefox/4.0.1
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1278935609
+host=::1
+name=System.VideoTmpl
+rev=5
+targets=
+text=(:VideoStr:{xVideoStr}:)%0a(:title {xTitle} :)%0a(:sourcelink:{xSourceLink}:)%0a(:VideoType:{xVideoType}:)%0a(:IsMuti:{xVideoMuti}:)%0a(:if false:)%0a[[#comment]]%0a{xComment}%0a[[#commentend]]%0a[[#partinfo]]%0a[[#partend]]%0a(:ifend:)
+time=1304187943
+title={xTitle} 
+author:1304187943=Admin

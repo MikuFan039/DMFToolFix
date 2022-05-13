@@ -1,0 +1,15 @@
+version=pmwiki-2.2.45 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36
+author=Admin
+cauthor=dm.mikufans@gmail.com
+charset=UTF-8
+csum=
+ctime=1285224823
+host=127.0.0.1
+name=Acfun2.GroupFooter
+passwdedit=@lock
+rev=75
+targets=
+text=(:include System.VideoFooter self=1:)%0a
+time=1369465008
+author:1369465008=Admin

@@ -1,0 +1,14 @@
+version=pmwiki-2.2.17 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+author=KPX
+charset=UTF-8
+csum=
+ctime=1279710561
+host=114.243.80.210
+name=SiteAdmin.ApprovedUrls
+passwdedit=@lock
+rev=19
+targets=
+text=http://dm.mikufans.cn%0ahttp://www.2dland.cn%0ahttp://blog.9acfun.cn%0ahttp://bilibili.us%0ahttp://code.google.com%0ahttp://acfunwiki.org%0ahttp://124.228.254.234%0ahttp://www.acfun.cn%0ahttp://pl.bilibili.us%0ahttp://d.bilibili.us%0a  http://php.net%0a  http://chongqed.org%0a  http://moinmaster.wikiwikiweb.de%0a  http://www.nicovideo.jp%0a  http://acfun.cn%0a  http://www.you-are-not-alone.ws%0a  https://ssl%0a  http://www%0a
+time=1282727502
+author:1282727502=KPX

@@ -1,0 +1,14 @@
+version=pmwiki-2.2.27 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0
+author=KPX
+cauthor=KPX
+charset=UTF-8
+csum=
+ctime=1310999473
+host=127.0.0.1
+name=DMF.APIXMLTool
+rev=1
+targets=
+text=!! Validate%0a!!! 作用%0a->验证XML%0a%0a!!! 支持格式%0a->text/HTML%0a%0a!!! HTTP请求方式%0a->GET%0a%0a!!! 权限要求%0a->对和对应动态池页面( DMR/{VID} )页面有'read'权限%0a%0a!!! 请求串%0a>>recipeinfo%3c%3c%0a||&nbsp;&nbsp;GET ||dmid ||弹幕ID ||%0a||&nbsp;&nbsp;GET ||group ||弹幕池分组(Bilibili2/Acfun2)大小写敏感 ||%0a>>%3c%3c%0a%0a!!!返回结果 (示例)%0aAPI/XMLTool消息页面(略)%0a%0a!! XMLLoad%0a!!! 作用%0a->输出XML,如果对对应动态页有read权限则加载动态池XML,否则只加载静态池。%0a%0a!!! 支持格式%0a->test/XML%0a%0a!!! HTTP请求方式%0a->GET%0a%0a!!! 权限要求%0a-> (可选) 对动态池有'read'权限.%0a%0a!!! 请求串%0a>>recipeinfo%3c%3c%0a||&nbsp;&nbsp;GET ||dmid ||弹幕ID ||%0a||&nbsp;&nbsp;GET ||group ||弹幕池分组(Bilibili2/Acfun2)大小写敏感 ||%0a||&nbsp;&nbsp;GET ||cmd(可选) ||模式，如果cmd=="download"则以附件方式下载XML ||%0a>>%3c%3c%0a%0a!!!返回结果 (示例)%0a略%0a%0a!! PoolConv%0a!!! 作用%0a->取得本地视频列表，返回javascript:JSON%0a%0a!!! 支持格式%0a->javascript:json%0a%0a!!! HTTP请求方式%0a->GET%0a%0a!!! 权限要求%0a->对API/Pages页面有'read'权限%0a%0a!!! 请求串%0a->无%0a%0a!!!返回结果 (示例)%0a%0a%0a!! PoolClear%0a!!! 作用%0a->取得本地视频列表，返回javascript:JSON%0a%0a!!! 支持格式%0a->javascript:json%0a%0a!!! HTTP请求方式%0a->GET%0a%0a!!! 权限要求%0a->对API/Pages页面有'read'权限%0a%0a!!! 请求串%0a->无%0a%0a!!!返回结果 (示例)
+time=1310999473
+author:1310999473=KPX

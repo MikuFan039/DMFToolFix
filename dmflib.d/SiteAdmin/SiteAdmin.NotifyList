@@ -1,0 +1,14 @@
+version=pmwiki-2.2.5 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) ; CIBA; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MAXTHON 2.0)
+author=KPX
+cauthor=KPX
+charset=UTF-8
+csum=
+ctime=1265102631
+host=123.114.175.200
+name=SiteAdmin.NotifyList
+rev=1
+targets=
+text=notify=dm.mikufans@gmail.com
+time=1265102631
+author:1265102631=KPX

@@ -1,0 +1,14 @@
+version=pmwiki-2.2.18 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 ( .NET CLR 3.5.30729; .NET4.0E)
+author=aUser
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1285650197
+host=221.226.174.5
+name=Queue.HomePage
+rev=3
+targets=
+text=(:pagelist group={$Group} name=-GroupHeader,-GroupFooter,-RecipeList,-HomePageFull,-RecentChanges,-HomePage list=normal fmt=#title order=-name:)
+time=1285657430
+author:1285657430=aUser

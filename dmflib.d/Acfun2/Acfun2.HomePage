@@ -1,0 +1,14 @@
+version=pmwiki-2.2.36 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1278915478
+host=127.0.0.1
+name=Acfun2.HomePage
+rev=28
+targets=
+text=(:include System.HomePageTmpl#begin#end PostPageName=System.AcFastPostNew:)%0a(:nogroupfooter:)
+time=1332573132
+author:1332573132=

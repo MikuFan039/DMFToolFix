@@ -1,0 +1,11 @@
+version=pmwiki-2.2.0-beta42 ordered=1 urlencoded=1
+agent=Opera/9.10 (Windows NT 5.1; U; zh-cn)
+author=
+csum=
+ctime=1175915158
+host=222.248.69.252
+name=PmWikiZhCn.WikiStyles
+rev=1
+targets=PmWikiZhCn.WikiStyles
+text=[[WikiStyles]] 允许 %25red%25 红色%0a%25blue%25 蓝色 %25green%25 绿色%0a%25color=#ff7f00%25 特定颜色 %25%25等不同颜色.
+time=1175915158

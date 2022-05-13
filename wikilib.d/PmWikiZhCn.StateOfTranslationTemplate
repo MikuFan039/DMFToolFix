@@ -1,0 +1,12 @@
+version=pmwiki-2.2.0-beta68 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; TheWorld)
+author=世界语Esperanto
+charset=UTF-8
+csum=
+ctime=1191983752
+host=61.138.234.66
+name=PmWikiZhCn.StateOfTranslationTemplate
+rev=14
+targets=PmWikiZhCn.请问怎么把左侧边栏改为中文的
+text=[test|测试一下吧]%0a%0aTranslation for PmWiki Installation guide.  [[http://www.pmwiki.org/wiki/PmWiki/Installation]] %0a%0a[PmWiki Installation|PmWiki安装指南]%0a[This page explains how to download and install PmWiki 2.1 and 2.2. Here's a list of related pages |本页面说明了如何下载与安装PmWiki2.1和PmWiki2.2，以下是相关页面链接]%0a%0a(:pagelist group=PmwikiZhcn* :)%0a[[请问怎么把左侧边栏改为中文的?并且让它指向原来的页面.]]%0a%0a请问，怎么设置编辑密码呀？我的pmwiki上，总有人发垃圾广告。
+time=1229872920

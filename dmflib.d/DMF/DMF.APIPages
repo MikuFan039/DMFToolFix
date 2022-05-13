@@ -1,0 +1,14 @@
+version=pmwiki-2.2.27 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1310996009
+host=127.0.0.1
+name=DMF.APIPages
+rev=9
+targets=Category.API,Category.开发,Category.文件列表,Category.本地视频,Category.编程,Category.视频列表
+text=!! getLocalUploads%0a!!! 作用%0a->取得本地视频列表，返回javascript:JSON%0a%0a!!! 支持格式%0a->javascript:json%0a%0a!!! HTTP请求方式%0a->GET%0a%0a!!! 权限要求%0a->对API/Pages页面有'read'权限%0a%0a!!! 请求串%0a->无%0a%0a!!!返回结果 (示例)%0a>>recipeinfo%3c%3c%0a->var files={"Black.mp4":"http:\/\/localhost\/videos\/Black.mp4","CGray.mp4":"http:\/\/localhost\/videos\/Gray.mp4","White.mp4":"http:\/\/localhost\/videos\/White.mp4"};%0a>>%3c%3c%0a%0a(:if false:)%0a[[#tagInfo]] [[! A P I]] | [[! 开发]] | [[! 文件列表]] | [[! 本地视频]] | [[! 编程]] | [[! 视频列表]][[#tagEnd]]%0a(:ifend:)
+time=1310997318
+author:1310997318=Admin

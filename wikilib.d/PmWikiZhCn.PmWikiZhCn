@@ -1,0 +1,11 @@
+version=pmwiki-2.2.0-beta65 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)
+author=starlink
+charset=UTF-8
+csum=
+host=218.7.43.201
+name=PmWikiZhCn.PmWikiZhCn
+rev=301
+targets=PmWiki.WikiWikiWeb,Localization.Localization,PmWikiZhCn.StateOfTranslationTemplate,PmWikiZhCn.中文
+text=(:Language:Chinese:)%0a(:Summary:{$:Language}:)%0aPmWiki 是 Patrick Michaud 用 PHP 程式语言写成的共笔系统（[[PmWiki/WikiWikiWeb]]），PmWiki 的主要目标是希望设计一套网页工具，让网站容易集合多人协作，而维护也简单。%0a%0a本站运行的版本是 {$Version}。这套系统以 GNU 通用公共许可证 (GPL) 发布，并可由 http://pmichaud.com/pub/pmwiki 下载。说明文件说明可以在页面左方的索引找到。%0a%0aPmWiki 是 Patrick R. Michaud (http://pmichaud.com) 的注册商标。%0a%0a'''帮忙翻译'''︰%0a->[[Localization/Localization |翻译说明]]\\%0a[[StateOfTranslationTemplate |翻译进度]]%0a----%0a请问：谁知道如何完成中文命名的页面名称？-oc-2005 年 09 月 23 日，03:42 上午\\%0a　　%25green%25完成%25%25是什麽意思？是指%25green%25建立中文名称页面%25%25吗？-Ren- 2005 年 10 月 2 日，02:10 下午%0a-->就是用中文命名的[=[[WikiWord]]=]。不过刚刚在[[简体页面->http://pmwiki.org/wiki/PmWikiZhCn/PmWikiZhCn]]那里看到一点说明了，目前[=[[中文PageName]]=]只能在Linux系统上使用，Windows系统还不支援。-oc-2005 年 10 月 3 日，12:42 上午%0a%0a一般我是这样命名的[=[[site|页面]]=]这样就能显示中文，但实际链接了英文，%0asingmj@163.com留%0a[[中文]]
+time=1206622908

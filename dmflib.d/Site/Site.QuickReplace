@@ -1,0 +1,14 @@
+version=pmwiki-2.2.34 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/20100101 Firefox/7.0.1
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1259588111
+host=::1
+name=Site.QuickReplace
+rev=14
+targets=
+text=[@%0a'220.170.79.48' => 'www.acfun.cn'%0a'220.170.79.105' => 'www.acfun.cn'%0a'220.170.79.109' => 'www.acfun.cn'%0a'124.228.254.234' => 'www.acfun.cn'%0a'124.228.254.229' => 'www.acfun.cn'%0a'dm.mikufans.cn' => 'danmaku.us'%0a'www.bilibili.us' => 'bilibili.us'%0a'ct.bilibili.us' => 'www.bilibili.us'%0a'bilibili.us' => 'www.bilibili.us'%0a@]
+time=1319127964
+author:1319127964=

@@ -1,0 +1,17 @@
+version=pmwiki-2.2.36 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.83 Safari/535.11
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1284730118
+host=127.0.0.1
+name=Bilibili3.HomePage
+passwddelete=@lock
+passwdedit=@lock
+passwdupload=@lock
+rev=26
+targets=
+text=(:include System.HomePageTmpl#begin#end PostPageName=System.BiliFastPostNew:)%0a(:nogroupfooter:)
+time=1332573171
+author:1332573171=

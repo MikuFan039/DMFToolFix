@@ -1,0 +1,14 @@
+version=pmwiki-2.2.58 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/20100101 Firefox/10.0
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1306598847
+host=127.0.0.1
+name=DMF.FolderStruct
+rev=7
+targets=
+text=[@%0aDMF_LOCAL\HTML%0a├─cookbook%0a│  ├─dmf_exp         //DMF核心%0a│  │  ├─config%0a│  │  ├─controller%0a│  │  ├─core%0a│  │  ├─helper%0a│  │  ├─inc%0a│  │  ├─static%0a│  │  └─view%0a│  └─openid%0a├─dmflib.d           //DMF页面库%0a│  ├─Acfun2%0a│  ├─Acfun4p%0a│  ├─API%0a│  ├─Bilibili2%0a│  ├─Bilibili3%0a│  ├─Category%0a│  ├─Danmaku%0a│  ├─DMF%0a│  ├─DMR%0a│  ├─Main%0a│  ├─PmWiki%0a│  ├─PmWikiZhCn%0a│  ├─Queue%0a│  ├─Site%0a│  ├─SiteAdmin%0a│  └─System%0a├─documents          //弹幕文档（文件）%0a├─downloads          //相关软件（本地版没有）%0a├─html               //弹幕文档%0a│  ├─biliscript-syndicate%0a│  │  ├─assets%0a│  │  │  └─themes%0a│  │  │      └─twitter%0a│  │  │          ├─bootstrap%0a│  │  │          │  ├─css%0a│  │  │          │  └─img%0a│  │  │          └─css%0a│  │  ├─news%0a│  │  │  ├─2012%0a│  │  │  │  └─12%0a│  │  │  │      └─29%0a│  │  │  ├─2013%0a│  │  │  │  ├─02%0a│  │  │  │  │  ├─07%0a│  │  │  │  │  ├─12%0a│  │  │  │  │  ├─13%0a│  │  │  │  │  ├─14%0a│  │  │  │  │  ├─15%0a│  │  │  │  │  ├─23%0a│  │  │  │  │  └─26%0a│  │  │  │  ├─03%0a│  │  │  │  │  └─18%0a│  │  │  │  ├─05%0a│  │  │  │  │  └─10%0a│  │  │  │  ├─09%0a│  │  │  │  │  └─22%0a│  │  │  │  └─11%0a│  │  │  │      └─21%0a│  │  │  ├─2014%0a│  │  │  │  └─02%0a│  │  │  │      └─22%0a│  │  │  └─2015%0a│  │  │      └─10%0a│  │  │          └─30%0a│  │  └─res%0a│  │      ├─biliscript-toolkit%0a│  │      ├─DanmakuHelper%0a│  │      ├─danmu-couple%0a│  │      ├─kororo-making-of%0a│  │      ├─rnr-making-of%0a│  │      ├─scratchpad-project-timeline%0a│  │      └─tools%0a│  └─Wiki%0a│      ├─images%0a│      │  └─doc%0a│      ├─javascripts%0a│      ├─pages%0a│      └─stylesheets%0a├─images             //头像及DMF的图片%0a│  ├─background     //背景壁纸%0a│  └─face           //头像%0a├─javascripts%0a├─local%0a├─pub                //界面%0a│  ├─css%0a│  ├─guiedit%0a│  ├─skins%0a│  │  ├─pmwiki%0a│  │  ├─pmwikiGPT%0a│  │  └─print%0a│  └─swz             //flex类库%0a│      ├─flex%0a│      │  └─4.1.0.16076%0a│      └─tlf%0a│          └─1.1.0.604%0a├─RSL                //flex类库%0a├─scripts%0a├─static             //静态数据，缓存数据存放处%0a│  ├─playerLibrary   //代码弹幕类库%0a│  ├─players         //播放器目录%0a│  │  ├─Acfun2%0a│  │  ├─Acfun4p%0a│  │  ├─Bilibili2%0a│  │  └─Bilibili3%0a│  └─soundlib        //代码弹幕声音事件%0a├─uploads            //上传附件目录，静态池存放处%0a│  ├─Acfun2%0a│  ├─Acfun4p%0a│  ├─Bilibili2%0a│  └─Bilibili3%0a├─videos              //视频存放处%0a├─wiki.d             //DMF页面库%0a│  ├─Acfun2%0a│  ├─Acfun4p%0a│  ├─Bilibili2%0a│  ├─Bilibili3%0a│  └─SiteAdmin%0a└─wikilib.d          //PmWiki页面库%0a@]
+time=1652186344
+author:1652186344=Admin

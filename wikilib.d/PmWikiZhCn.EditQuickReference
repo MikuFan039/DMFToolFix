@@ -1,0 +1,12 @@
+version=pmwiki-2.2.0-beta63 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; InfoPath.1)
+author=
+charset=UTF-8
+csum=
+ctime=1144125697
+host=218.80.197.188
+name=PmWikiZhCn.EditQuickReference
+rev=4
+targets=PmWiki.BasicEditing,PmWiki.TextFormattingRules,PmWiki.DocumentationIndex,PmWiki.Tables,PmWiki.TableDirectives
+text=(:table class='quickref' width='100%25' cellspacing='0' cellpadding='0' style='font-size:12px; font-family:Arial; padding:2px; border:5px solid #cccccc;' bgcolor=#f9f9f9 :)%0a(:cellnr:)%0a%25target=_blank%25 [[PmWiki/Basic Editing | 基本编辑功能]] - [[PmWiki/Text Formatting Rules | 文本格式化语法]] - [[PmWiki/Documentation Index | 文档索引]]%0a(:cell align=right:)%0a%25target=_blank%25 '''表格''' [[PmWiki/Tables|简单]] - [[PmWiki/TableDirectives|高级）]]%0a(:cellnr:)%0a-%3c'''段落：''' 插入一个空行，表示开启新的段落；%0a(:cell align=right:)%0a'''强制换行：''' '''[=\\=]''' 或 '''[=[[%3c%3c]]=]'''%0a(:cellnr:)%0a->'''[=->=]''' 文本缩进， '''[=-%3c=]''' 文本悬挂 %0a(:cell align=right:)%0a'''连接下一行''' '''\'''%0a(:cellnr colspan='2':)%0a-%3c'''列表：''' '''*''' 表示无序列表, '''#''' 表示有序列表, ''':'''term''':''' 定义以特殊符号作为标志的列表项%0a-%3c'''强调：''' '''[=''=]'''斜体'''[=''=]''', '''[='''=]'''粗体'''[='''=]''', '''[='''''=]'''粗斜体'''[='''''=]''', '''[=@@=]'''打印机字体'''[=@@=]''' @@(等宽字体)@@%0a-%3c'''链接：''' '''[=[[=]'''被链接页'''[=]]=]''', '''[=[[=]'''[=http://www.example.com=]'''[=]]=]''', '''[=[[=]'''被链接页 '''[=|=]''' 链接描述字符'''[=]]=]''', '''[=[[#=]'''锚点'''[=]]=]'''%0a-%3c'''页面组：''' [=[[Group/Page]] 只显示页面名, [[Group.Page]] 显示为 组名.页面名, [[Group(.Page)]] 显示组名=]%0a(:cellnr:)%0a-%3c'''分割符：''' '''!!''', '''!!!''' 表示标题, '''[=----=]''' 表示分隔线%0a(:cell align=right:)%0a'''禁用格式解析''' '''[=[==]'''...'''[==]=]'''%0a(:cellnr:)%0a-%3c'''其他：''' '''[=[+=]'''大字体'''[=+]=]''', '''[=[++=]'''更大字体'''[=++]=]''', '''[=[-=]'''小字体'''[=-]=]''', '''[=[--=]'''更小字体'''[=--]=]''', '''[='^=]'''上脚标'''[=^'=]''', '''[='_=]'''下脚标'''[=_'=]''', '''[={+=]'''插入的文字'''[=+}=]''', '''[={-=]'''删除的文字'''[=-}=]'''%0a(:cell align=right:)%0a'''对成段落文字禁用格式解析''' '''[=[@=]'''...'''[=@]=]'''%0a(:tableend:)
+time=1188372344

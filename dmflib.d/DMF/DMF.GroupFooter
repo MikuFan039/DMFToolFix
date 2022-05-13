@@ -1,0 +1,14 @@
+version=pmwiki-2.2.27 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0
+author=
+cauthor=
+charset=UTF-8
+csum=
+ctime=1310995319
+host=127.0.0.1
+name=DMF.GroupFooter
+rev=8
+targets=
+text=[[%3c%3c]][[%3c%3c]]%0a[[%3c%3c]][[%3c%3c]]%0a>>recipeinfo%3c%3c%0a(:if2 auth edit:)%0a(:input form action={*$PageUrl}:)(:input hidden action xestagpages:)%0aTags:	(:includeTag:)&nbsp;&nbsp;(:input text "Tags" size="6":)(:input submit value="追加Tag":)%0a(:input end:)%0a(:else2:)%0aTags:	(:includeTag:)&nbsp;&nbsp;%0a(:if2end:)%0a>>%3c%3c
+time=1310995803
+author:1310995803=

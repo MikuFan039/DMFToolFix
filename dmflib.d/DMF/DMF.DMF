@@ -1,0 +1,14 @@
+version=pmwiki-2.2.26 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1306595768
+host=127.0.0.1
+name=DMF.DMF
+rev=2
+targets=PmWiki.PmWiki
+text=DMF是一套基于[[PmWiki]]的弹幕创作与保存系统。%0a%0a%0a本站运行于DMF : {$DMFVersion}  [[PmWiki]]: {$Version}.
+time=1306595902
+author:1306595902=Admin

@@ -1,0 +1,9 @@
+version=pmwiki-2.0.10 ordered=1 urlencoded=1
+agent=Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Maxthon)
+author=
+host=159.226.10.17
+name=PmWikiZhCn.WikiHelp
+rev=4
+targets=PmWikiZhCn.SideBar
+text=1.有提供中文版的下载吗？%0a%0a2.为何无相关修改成中文的资料%0a%0a3.为何我的SideBar无法汉化呢？
+time=1128938583

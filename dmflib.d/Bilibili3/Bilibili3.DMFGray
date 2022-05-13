@@ -1,0 +1,14 @@
+version=pmwiki-2.2.58 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+author=Admin
+cauthor=Admin
+charset=UTF-8
+csum=
+ctime=1369999961
+host=127.0.0.1
+name=Bilibili3.DMFGray
+rev=3
+targets=
+text=%0a(:VideoStr:/videos/Gray.mp4:)%0a(:title 弹幕测试_灰屏:)%0a(:sourcelink:gray:)%0a(:VideoType:LOCAL:)%0a(:IsMuti::)%0a(:if false:)%0a[[#comment]]%0a%0a[[#commentend]]%0a[[#partinfo]]%0a[[#partend]]%0a(:ifend:)
+time=1620798322
+title=弹幕测试_灰屏
