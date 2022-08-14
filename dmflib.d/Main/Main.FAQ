@@ -1,5 +1,5 @@
 version=pmwiki-2.2.58 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.50
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.71
 author=Admin
 cauthor=Admin
 charset=UTF-8
@@ -7,8 +7,8 @@ csum=
 ctime=1650864796
 host=127.0.0.1
 name=Main.FAQ
-rev=9
+rev=12
 targets=
-text=关于本站：%0a本站为一个野生的神弹幕保存站，原站为KPX大大的danmaku.us，目前在由一群B站的弹幕爱好者维护...%0a“DMF”取自最初的域名dm.mikufans.cn，没有其他的含义。%0a%0a----%0a%0a问：我的页面不显示播放器如何解决？%0a答：有可能是你的浏览器不支持Flash Player或者你没有安装Flash Player。%0a解决方法：请使用如IE，360/2345或旧版本的Edge/Chrome/Firefox等支持Flash Player的浏览器并确保你的计算机上已安装Flash Player。%0a本站提供[[http://danmaku.site:90/downloads/Firefox Setup 10.0.exe|浏览器]]及[[http://danmaku.site:90/downloads/FlashPlayer11.zip|Flash Player]]的下载。%0a%0a----%0a%0a问：我的页面播放器不载入视频或弹幕，如何解决？%0a答：请多刷新几次页面，如果仍无法载入可能是网站本身或者视频源的问题，请检查你的视频文件或汇报给网站管理员。%0a%0a----%0a%0a问：我有弹幕文件，如何在本站投稿？%0a答：暂不开放游客投稿，可以加群 729118890 分享弹幕文件，管理员会向网站投稿。%0a%0a----%0a%0a问：如何用本站播放本地的视频？%0a答：请下载[[http://danmaku.site:90/downloads/DMF_Local.zip|本地版的本站]],并按照使用说明正确使用。
-time=1650881573
-author:1650881573=Admin
+text=关于本站：%0a本站为一个野生的神弹幕保存站，原站为KPX大大的danmaku.us，目前在由一群B站的弹幕爱好者维护...%0a“DMF”取自最初的域名[dm.mikufans.cn]，没有其他的含义。%0a另附：本站的GitHub仓库：[[https://github.com/danmaku-us|danmaku-us]] [[https://github.com/MikuFan039/DMFNew|DMFNew]]%0a%0a----%0a%0a问：我的页面不显示播放器如何解决？%0a答：有可能是你的浏览器不支持Flash Player或者你没有安装Flash Player。%0a解决方法：请使用如IE，360{-/2345流氓头子-}或版本号为86及以下的Edge/Chrome/Firefox等支持Flash Player的浏览器并确保你的计算机上已安装Flash Player。%0a本站提供[[http://danmaku.site:90/downloads/Firefox Setup 10.0.exe|浏览器]]及[[http://danmaku.site:90/downloads/flashplayer11_7r700_202_win.exe|Flash Player]]的下载。%0a%0a----%0a%0a问：我的页面播放器不载入视频或弹幕，如何解决？%0a答：答：请等几秒钟到一分钟，等待视频下载完毕，仍无法载入请尝试刷新操作，如果还是无法载入可能是视频源的问题，请检查你的视频文件。%0a%0a----%0a%0a问：如何屏蔽无关弹幕？%0a答：找到播放器“屏蔽和过滤”或“屏蔽设定”栏，勾掉“允许弹幕池”中的“普通弹幕”即可。%0a%0a----%0a%0a问：如何用本站播放本地的视频？%0a答：请下载[[http://danmaku.site:90/downloads/DMF_Local.zip|本地版的本站]],并按照使用说明正确使用。%0a%0a----%0a%0a问：2013-11月版Bilibili播放器乱码及异常卡顿怎么解决？%0a答：请尝试安装[[http://danmaku.site:90/downloads/flashplayer11_7r700_202_win.exe|旧版本Flash Player]]。
+time=1659114846
+author:1659114846=Admin

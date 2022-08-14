@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML; 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>GBook - README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* Style sheet and XHTML code
+Author: Mauricio Samy Silva http://www.maujor.com/ A Web Standard evangelist site
+City: Rio de Janeiro - Brazil
+Contact: maujorcss[at]maujor[dot]com
+Date: 2006-05-11
+*/
+body {
+        margin:5px 0;
+        padding:0;
+        background:#eee;
+        color: black;
+        font : 68.8%/1.5 Verdana, Geneva, Arial, Helvetica, sans-serif;
+        text-align:center;
+        }
+#wrapper {
+        width:700px;
+        background:#fff;
+        margin:0 auto;
+        text-align:left;
+        border:1px solid #ccc;
+        padding:10px 20px;
+        }
+h1 {
+        font-size:1.5em;
+        }
+h2 {
+        font-size:1.2em;
+        border-top:1px solid #999;
+        padding-top:1.8em;
+        }
+h3 {
+        font-size:1.0em;
+        }
+span.dest { color:#f00;}
+span.tip { color:#008000; font-weight:bold;}
+p {
+        color : black;
+        font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-size: 1.0em;
+        }
+address {
+        font-weight:bold;
+        font-style:normal;
+        }
+ul.nobullets {
+        margin:0 0 1.0em;
+        padding:0;
+        list-style:none;
+        }
+ol li {margin-bottom:1.0em;}
+samp, code {
+        font-size:1.3em;
+        font-weight:bold;
+        }
+a:hover {
+        color : red;
+        background:#ccc;
+        text-decoration : none;
+        }
+table#installation {
+        border-collapse:collapse;
+        margin: 5px 15px 10px -25px;
+        border: 2px solid #999;
+        }
+table#installation thead {
+        text-align:center;
+        text-transform:uppercase;
+        }
+table#installation tr td, table#installation tr th {
+        padding: 2px 5px;
+        border: 1px solid #ccc;
+        }
+table#installation tr th {
+        border-bottom-width:2px;
+        border-bottom-color:#999;
+        }
+
+table#installation tr td var {
+        font-weight:bold;
+        font-style:normal;
+        }
+table#installation tr.odd {
+        background: #fafafa;
+        }
+pre {
+        color: black;
+        font-size: 1.3em;
+        }
+
+div.error
+{
+        border: 1px solid #cd0a0a;
+        background: #fef1ec;
+        color: #cd0a0a;
+        padding-left:10px;
+        padding-right:5px;
+}
+
+div.success
+{
+        border: 1px solid #18760f;
+        background: #e9ffdb;
+        color: #363636;
+        padding-left:10px;
+        padding-right:5px;
+}
+
+div.notice
+{
+        border: 1px solid #fcefa1;
+        background: #fff9de;
+        color: #363636;
+        padding-left:10px;
+        padding-right:5px;
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="main">
+<h1><span class="dest">GBook</span> - PHP Guestbook</h1>
+
+<ul class="nobullets">
+<li>Version: 1.9.0 from 29th January 2022</li>
+<li>Author: Klemen Stirn</li>
+<li><a href="https://www.phpjunkyard.com" target="_blank">Free PHP Scripts</a></li>
+<li><a href="https://www.phpjunkyard.com/php-guestbook-script.php" target="_blank">PHP Guestbook</a></li>
+</ul>
+
+<h2>INDEX</h2>
+
+<ul class="nobullets">
+    <li><a href="#copy">Copyright and License Notice</a></li>
+    <li><a href="#install"><b>Install GBook</b></a></li>
+    <li><a href="#upgrade">Upgrading from old versions</a></li>
+    <li><a href="#help">Help &amp; Support</a></li>
+    <li><b>Customizing GBook</b>
+    <ul>
+        <li><a href="#header">Customize header and footer</a></li>
+        <li><a href="#customize">Templates (customize the look and feel)</a></li>
+        <li><a href="#translate">Translate GBook to your language</a></li>
+    </ul>
+    </li>
+    <li><a href="#changelog">Changelog</a></li>
+</ul>
+
+
+<h2 id="license">Copyright and License Notice</h2>
+
+<p>&copy; Copyright 2022 by Klemen Stirn. All rights reserved.</p>
+
+<p>License Agreement summary:</p>
+
+<ul>
+        <li>this software is provided &quot;as is&quot;, without any warranties</li>
+    <li>it may be used free of charge as long as all copyright notices and all &quot;Powered by&quot; credits remain intact</li>
+    <li>to remove the &quot;Powered by&quot; credits, a license fee must be paid</li>
+    <li>redistributing, selling or using this software, in part or full, to create other products, is expressly forbidden</li>
+</ul>
+
+<p>The latest full version of the software License Agreement is available at <a href="https://www.phpjunkyard.com/buy.php?script=linkman">PHPJunkyard License Agreement</a></p>
+
+<p>&nbsp;</p>
+
+
+<h2 id="install">&raquo; Install GBook</h2>
+
+<div class="error">
+<p style="font-weight:bold">Please take 5 minutes to read the installation instructions carefully and completely! This will ensure a proper and easy installation.</p>
+</div>
+
+<p>&nbsp;</p>
+
+<ol>
+
+<li>Open file <b>settings.php</b> in a powerful plain text editor, such as the free <a href="https://notepad-plus-plus.org/">Notepad++</a>.<br />&nbsp;</li>
+
+<li>Customize the settings to fit your needs. All settings are in this format:
+<pre>$settings['DO NOT CHANGE THIS'] = '<span style="color:green">CHANGE THIS</span>';</pre>
+For example, to change the administration password to <span class="dest">myPassword</span>, modify line:
+<pre>$settings['apass'] = '<span class="dest">admin</span>';</pre>
+To this:
+<pre>$settings['apass'] = '<span class="dest">myPassword</span>';</pre>
+
+Don't be discouraged by the number of available options, you only need to modify a handful to get started:<br />&nbsp;<br />
+
+<table id="installation" summary="This is a simple two columns table - the first column names a variable and in second one has a descripton and the settings for the varible">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description/Setup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['apass']</var></td>
+<td>This will be your administration password. Change it!</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['website_title']</var></td>
+<td>A short title of your website like &quot;My lovely Website&quot;</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['website_url']</var></td>
+<td>URL address of your website (not your guestbook).</td>
+</tr>
+<tr>
+<td valign="top"><var>$settings['gbook_title']</var></td>
+<td>Title of your guestbook, for example &quot;My Guestbook&quot;
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+&nbsp;
+<div class="success">
+<p><strong>Tip:</strong> you can skip all other settings for now and continue with the next step below this table.</p>
+</div>
+&nbsp;
+</td>
+</tr>
+
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['admin_email']</var></td>
+<td>Your email address.</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['gbook_url']</var></td>
+<td>URL of the <b>gbook.php</b> file on your server. Example:<br />
+http://example.com/guestbook/gbook.php</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap" valign="top"><var>$settings['spam_question']</var></td>
+<td>A simple question that people will have to answer correctly in order to submit your guestbook (helps combat SPAM).<br /><br />
+A good question should be unique and have a simple answer everyone understands. For example: <br />
+<b>Type access code ABCDE here:</b><br />
+<b>Are you a human (yes or no)?</b><br />
+<b>Is Mars a planet (yes or no)?</b><br />
+<b>Is water a liquid at 300° Celsius?</b><br /><br />
+Set to <b>0</b> to disable the anti-SPAM question.
+</td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['spam_answer']</var></td>
+<td>The correct answer to your anti-SPAM question.<br /><br />Example SPAM question setup:
+<pre>$settings['spam_question'] = 'Are you a human (yes or no)?';
+$settings['spam_answer'] = 'yes';</pre>
+</td>
+</tr>
+
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['notify']</var></td>
+<td>If set to <b>1</b> you will receive an email notification at your admin email address every time a new entry is added to your guestbook. Set
+to <b>0</b> if you don't want to be notified.</td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['notify_visitor']</var></td>
+<td>If set to <b>1</b> visitors will receive an email notification when you reply to their post (only if they entered their email address when signing the Guestbook).
+Set to <b>0</b> to disable sending notifications.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap" valign="top"><var>$settings['man_approval']</var></td>
+<td>Set to <b>1</b> to manually approve all new posts before they appear in the Guestbook. When someone submits a new Guestbook entry
+you will receive an email notification with a link to approve or reject the post. If approved, the post
+will appear in the Guestbook, otherwise it will be deleted. Set to <b>0</b> to disable manual approval.</td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['template']</var></td>
+<td>Name of the template you are using. It must match the name of the folder with all required template files inside the <b>templates</b>
+folder (or your GBook will not work at all!). More information about templates and customizing them can be found further down the page.<br /><br />
+<b>Leave this set to 'default' at first to make sure your GBook works normally!</b><br /><br />
+<span class="dest">Note: </span><br />On most server folder names (and thus template names) are CaSe SeNSiTiVe!
+Settings 'default' and 'Default' will not work the same!</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['logfile']</var></td>
+<td>Name of the file where posts will be stored. I <b>strongly</b> recommend that
+you rename this file from the default name <b>entries.txt</b> to some hard-to-guess
+name, for example <b>g3isht39a.txt</b></td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['use_url']</var></td>
+<td>As of version 1.4 you can easily enable/disable the &quot;Your Web site:&quot;
+field of the GBook. Set to 1 to enable people posting their Web site URL and 0 to
+disable. This option has been added to further minimize the odds of people posting
+your guestbook just to advertise their Web site. The Your Web site field is DISABLED
+by default since version 1.4</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['url_blank']</var></td>
+<td>If set to 1 if you want all URLs to be opened in a new window (target=&quot;_blank&quot;).
+GBook will still validate as XHTML Transitional but not as Strict. Set to 0
+to disable.</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['use_private']</var></td>
+<td>If set to 1 your visitors will have an option to make their post PRIVATE (not
+publicly displayed and readable only with admin password). Set to 0 to disable
+private posts.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap" valign="top"><var>$settings['hide_email']</var></td>
+<td>Setting to 1 will hide email addresses from public and require admin password
+to view them. Set to 0 to disable.<br /><br />
+RECOMMENDED SETTING: <var>$settings['hide_email']=1</var>;
+<br /><br />
+<b>NOTE:</b><br />
+If you wish to hide email addresses I also recommend that you change $settings['logfile']
+from the default &quot;entries.txt&quot; to some other hard to guess name, like &quot;g3isht39a.txt&quot;
+</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['smileys']</var></td>
+<td>If set to <b>1</b> text like :), ;) etc will be replaced by smileys (image icons).
+Individual visitors will still be able to disable smileys for their entry. If you don't
+want to allow smileys set to <b>0</b>.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap" valign="top"><var>$settings['max_smileys']</var></td>
+<td>Limit the number of smileys (emoticons) that can be used per post. Set to <b>0</b> for unlimited smileys.</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['filter']</var></td>
+<td>If set to <b>1</b> all new posts will be filtered for bad words and replaced
+by * * *.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['filter_lang']</var></td>
+<td>The language of bad words file. For now only English language is supported
+so you can only use "en" (CaSe SeNSiTiVe). Please read section &quot;Adding / Translating bad words list&quot; further down for
+info on how to add/translate bad words.</td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['autosubmit']</var></td>
+<td>Setting this to <b>1</b> or <b>2</b> will require entering a &quot;security number&quot; in order to successfully
+submit a new entry to the guestbook. I have added this to prevent SPAMing the guestbook.
+Set to 0 if you want to disable the security number check.<br /><br />
+<b>Setting to 1</b> will display the security number in a generated <b>image</b>. For this to work
+your server must have GD library installed. You can test if your server supports all the required
+functions by uploading the <b>gd_test.php</b> file to your server and open it in your browser.
+If you get a red image with text WORKS your server shouldn't have problems with it. If you get an error
+when opening gd_test.php try using the text version as explained below or ask your hosting company to install the GD library for PHP.<br /><br />
+<b>Setting to 2</b> will display the security number in <b>text format</b>. While this is
+not as effective as an image it will still block the majority of known spam robots.<br /><br />
+RECOMMENDED SETTING: <var>$settings['autosubmit']=1</var>;<br />
+OR if the above doesn't work try<br />
+RECOMMENDED SETTING: <var>$settings['autosubmit']=2</var>;</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap" valign="top"><var>$settings['filter_sum']</var></td>
+<td>This variable is used in the preventing automated
+submissions and is just a little trick that should make it all even more reliable. The idea is to set this
+to some random sequence of chars and numbers, for example <b>dhjx72js</b>. It doesn't really matter how long it is,
+but you should use only chars (a-zA-Z) and digits (0-9). Don't leave the default value
+(as it would loose the whole point), set it to something of your own. Examples would be
+g3oyf98, p9ak85i, h398dgf and similar. Again, DO NOT USE these examples, just type some chars of your own!<br /><br />
+<b>This is one of the most important anti-SPAM setting so don't forget to set it!</b></td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['junkmark_use']</var></td>
+<td>JunkMark<sup>TM</sup> is a filter, designed to catch spammers who actually visit your guestbook and get past
+the security number check. Setting this variable to 1 will enable
+JunkMark<sup>TM</sup>, setting it to 0 will disable it. JunkMark<sup>TM</sup> calculates
+probability of a message being SPAM and gives it a score between
+0 (not SPAM) and 100 (SPAM). The higher the score the more likely the message is
+SPAM<br /><br />
+RECOMMENDED SETTING: <var>$settings['junkmark_use']=1</var>;</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['junkmark_limit']</var></td>
+<td>Set to the score after which messages are rejected as SPAM. Messages which are given
+a JunkMark<sup>TM</sup> score same or higher to this limit will not be
+added to the guestbook. Possible values are between 0 and 100. I don't recommend
+setting it below 50! The optimal value is around 60 to 70.<br /><br />
+RECOMMENDED SETTING: <var>$settings['junkmark_limit']=61</var>;</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['junkmark_ban100']</var></td>
+<td>If set to <b>1</b> Gbook will automatically ban IP if the JunkMark score is
+100 (meaning 100% SPAM). Set to <b>0</b> to disable automatic banning.<br /><br />
+RECOMMENDED SETTING: <var>$settings['junkmark_ban100']=1</var>;</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['ignore_proxies']</var></td>
+<td>Setting to 1 will ignore proxy servers from calculation of JunkMark score. Set to 0 to disable.<br /><br />
+RECOMMENDED SETTING: <var>$settings['ignore_proxies']=0</var>;
+</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['show_nospam']</var></td>
+<td>If set to 1 a small banner promoting &quot;NO GUESTBOOK SPAM&quot; with
+a link to my <a href="https://www.phpjunkyard.com/tutorials/guestbook-spam.php"
+target="_blank">Guestbook SPAM</a> article will be placed at the bottom
+of your guestbook. Not required, but very welcome and you help notifying people
+about the guestbook SPAM problem and how to avoid it. Set to 0 to disable the banner.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['one_per_session']</var></td>
+<td>If set to 1 each person will be able to make
+only one post per browser session. As of version 1.33 you can officially disable this by setting this
+variable to 0.<br /><br />
+RECOMMENDED SETTING: <var>$settings['one_per_session']=1</var>;</td>
+</tr>
+<tr>
+<td nowrap="nowrap" valign="top"><var>$settings['max_comlen']</var></td>
+<td>The maximum leght (number of chars) of comments people can post. Set to <b>0</b> for unlimited length.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['max_word']</var></td>
+<td>The maximum length of each line of comments.
+This is to prevent long &quot;words&quot; like ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+from stretching your guestbook.</td>
+</tr>
+<tr>
+<td nowrap="nowrap"><var>$settings['language']</var></td>
+<td>Name of the language file (file with the translated text). More information about
+translating GBook is further down in the readme file.</td>
+</tr>
+<tr class="odd">
+<td nowrap="nowrap"><var>$settings['debug']</var></td>
+<td>Set to <b>1</b> to turn debug mode (PHP error reporting) ON. Keep it at <b>0</b> for normal operation.</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+</li>
+<li>
+<p>Save and close the settings.php file.<br /><br />
+The file needs to be saved in UTF-8 encoding without BOM. If you are using Notepad++ (recommended), go to top menu and select Encoding > Convert to UTF-8 (option without BOM)</p>
+</li>
+<li><p>Connect with FTP to the <i>public folder</i> of your server where the rest of your Web site is.</p>
+<p><span class="tip">TIP:</span> The public folder is usually called &quot;<b>public_html</b>&quot;, &quot;www&quot;, &quot;site&quot; or &quot;htdocs&quot;.</p>
+<p><span class="tip">TIP:</span> Learn how to FTP files, read my simple <a href="https://www.phpjunkyard.com/tutorials/ftp-chmod-tutorial.php">FTP and CHMOD tutorial</a>.</p>
+</li>
+
+<li><p>Create a new folder where you will install GBook. Name it anything you like, for example &quot;gbook&quot; or &quot;guestbook&quot;.<br />
+Example: /public_html/gbook<br />
+Corresponding URL: http://example.com/gbook</p></li>
+
+<li><p>Upload all GBook files to your server. PHP files must be transferred in ASCII mode and images in BINARY mode.</p>
+<p><span class="tip">TIP:</span> Most FTP clients will select the proper transfer mode automatically so you needn't worry about this.</p></li>
+
+<li><p>Open your guestbook in the browser and test it:<br />
+http://www.example.com/gbook/gbook.php</p></li>
+
+<li><p style="font-weight:bold"><span class="dest">If you run into errors or have a questions, see the <a href="#help">Help &amp; Support</a> section below.</span></p></li>
+
+<li><p>Support GBook development by <a href="https://www.phpjunkyard.com/buy.php?script=gbook">purchasing a license</a>.</p></li>
+
+<li><p>Good luck using GBook!<br />&nbsp;</p></li>
+
+</ol>
+
+<h2 id="upgrade">&raquo; Upgrading from old versions</h2>
+
+<div class="error">
+<p style="font-weight:bold">Please take 5 minutes to read the upgrade instructions carefully and completely! This will ensure a proper and easy upgrade.</p>
+</div>
+
+<p style="font-weight:bold">Upgrade steps from previous GBook versions:</p>
+
+<ol>
+  <li><p><span class="dest" style="font-weight:bold">BACKUP YOUR EXISTING GBOOK FILES</span><br />... or don't blame me if something goes wrong.</p></li>
+  <li>Edit the new settings.php file.</li>
+  <li>Upload all GBook files to your server <b>except:</b><br />- entries.txt<br />- header.txt<br />- footer.txt</li>
+  <li><span class="dest">If your existing guestbook entries or files use any non-English characters (like ä, é, š, č, й, 戰  etc...), you will need to convert them to UTF-8:</span>
+  <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=39">Convert file to UTF-8</a><br /><br />
+  Files that need to be converted in order to work with the latest version are:<br />
+  - entries.txt<br />
+  - language.inc.php (if translated/modified)<br />
+  - any custom non-English badwords file<br />
+  - any custom template file that contains non-English characters<br /><br />
+  You only need to convert files that use non-English characters.
+  </li>
+  <li>Test everything. All your current posts should stay intact.</li>
+  <li><p>Support GBook development by <a href="https://www.phpjunkyard.com/buy.php?script=gbook">purchasing a license</a>.</p></li>
+  <li><p>Good luck using GBook!<br />&nbsp;</p></li>
+</ol>
+
+<h2 id="help">&raquo; Troubleshooting</h2>
+
+<h3>1. What is CHMOD and FTP?</h3>
+
+<p>See my <a href="https://www.phpjunkyard.com/ftp-chmod-tutorial.php" target="_blank">
+FTP and CHMOD tutorial</a> that will help you transfer files and set correct CHMOD settings.<br />&nbsp;</p>
+
+<h3>2. <span class="dest">Error:</span> Can't open entries file for writing. Please CHMOD entries file to 666 (rw-rw-rw-)!</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=21">Error: Can't open entries file for writing.</a><br />&nbsp;</p>
+
+<h3>3. The security number image is blank</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=24">The anti-SPAM image (captcha) doesn't show</a><br />&nbsp;</p>
+
+<h3>4. I installed GBook but I still get many SPAM messages?</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=20">My guestbook is full of SPAM</a><br />&nbsp;</p>
+
+<h3>5. Where is the administrator panel.</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=25">Where is the admin panel?</a><br />&nbsp;</p>
+
+<h3>6. How do I ban an IP address?</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=45">How do I ban an IP address?</a><br />&nbsp;</p>
+
+<h3>7. How do I remove an IP address from ban?</h3>
+
+<p>See this article: <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php?article=46">How do I remove an IP address from ban?</a><br />&nbsp;</p>
+
+<h3>8. I am still having problems!</h3>
+
+<ol>
+<li><p>Browse our <a href="https://www.phpjunkyard.com/support/kb/knowledgebase.php">Knowledgebase</a>.</p></li>
+<li><p>Search the <a href="http://developers.phpjunkyard.com">Support forum</a>.<br />&nbsp;</p></li>
+</ol>
+
+<p>&nbsp;</p>
+
+
+<h2 id="header">&raquo; Customize header and footer</h2>
+
+<p>To quickly and easily modify the header and footer of your guestbook you can edit header.txt and footer.txt files. Simply paste the HTML code you want to appear
+before GBook (just after &lt;body&gt; tag) in the header.txt and code that should appear after GBook (just before &lt;/body&gt;) in the footer.txt file. Use only valid (X)HTML code without
+any &lt;head&gt; or &lt;body&gt; tags.</p>
+<p>You will have to use <b>full image URLs</b> in the code. For example instead of &lt;img src="images/image.jpg" ... &gt; use &lt;img src="http://www.example.com/images/image.jpg" ... &gt;!
+Same goes for any Javascripts or CSS files if you are calling them from within the header or footer.</p>
+
+<h2 id="customize">&raquo; Templates (customize the look and feel)</h2>
+
+<p>As of version 1.7 GBook support templates that will allow full control over GBook look and feel, easy switching between templates and sharing custom templates with other users.</p>
+
+<p><span class="dest">Important:</span> before modifying templates make sure your GBook works 100% correctly with the default template!</p>
+
+<p>Templates are located inside the <b>templates</b> folder. Each template is located within a separate folder, for example template <i>default</i>
+is located inside <i>templates/<b>default</b></i> folder.</p>
+
+<p>Template files have *.php extensions, you can open the files in any plain text editor. They contain valid XHTML code along with
+some PHP code (for printing variables). Feel free to modify the HTML code, but do not modify any PHP code (starts with <b>&lt;?php</b> and ends with <b>?&gt;</b>)
+unless you are familiar with PHP as this code is used to insert text and data into the templates.</p>
+
+<p><span class="dest">Note:</span> on many servers template names are CaSe SeNSiTiVe!</p>
+
+<h3>--&raquo; Template folder format and contents</h3>
+
+<p>These are the files and folders included in the 'default' template:</p>
+
+<pre>
+/default  (folder with template)
+    |- /images  (folder with images used)
+    |      |- /emoticons  (folder with smileys used)
+    |
+    |- admin_reply.php
+    |- admin_tasks.php
+    |- comments.php
+    |- emoticons.php
+    |- emoticons_popup.php
+    |- error.php
+    |- no_comments.php
+    |- overall_footer.php
+    |- overall_header.php
+    |- sign_form.php
+    |- style.css
+</pre>
+
+<p>&nbsp;</p>
+
+<ol>
+<li>Description on files and folders:<br /><br />
+<table id="installation" summary="This is a simple two columns table - the first column names a variable and in second one has a descripton and the settings for the varible">
+<thead>
+<tr>
+<th>File/Folder</th>
+<th>Description/Details</th>
+</tr>
+</thead>
+<tbody>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>default</var></td>
+   <td>This is the folder that contains all template files. This is also the template name because the name of this folder
+   is used in the $settings['template'] variable in the settings.php file. If you want to create template named
+   &quot;Very Dark&quot; you could name the folder for example <i>very_black</i>.</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>images</var></td>
+   <td>Folder with all the images used in the template (and thus GBook).</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>emoticons</var></td>
+   <td>Folder inside the <i>images</i> directory that contains all the emoticons (smileys) used by this template (and thus GBook).</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>admin_reply.php</var></td>
+   <td>Contains the form that GBook owner (administrator) uses to reply to guestbook entries</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>admin_tasks.php</var></td>
+   <td>Contains the form that GBook owner uses for tasks like viewing IP address, deleting posts and viewing email addresses.</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>comments.php</var></td>
+   <td>Contains the code for the box that is used to display comments (guestbook entries).</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>emoticons.php</var></td>
+   <td>Contains a list of emoticons (smileys) used by the template. You can add more smileys to the guestbook (template) like this:<br /><br />
+   Step 1: upload the new smiley image to the <i>images/emoticons</i> folder.<br /><br />
+   Step 2: add this code to the emoticons.php file:
+   <pre>&quot;:!code:&quot; => &quot;image.gif&quot;,</pre>
+   <b>:!code:</b> will be the text inserted and later replaced with the <b>image.gif</b>.
+   For example if you want to upload smiley image <b>love.gif</b> you would add something like this to the emoticons.php file:
+   <pre>&quot;:!love:&quot; => &quot;love.gif&quot;,</pre></td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>emoticons_popup.php</var></td>
+   <td>Pop-up window that lists all available emoticons (those set in the emoticons.php file)
+   when you click the &quot;More...&quot; link next to sample emoticons in the Sign Guestbook form.</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>error.php</var></td>
+   <td>Page that shows when an error occurs.</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>no_comments.php</var></td>
+   <td>Page that shows when the guestbook is empty (no entries have been submitted yet).</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>overall_footer.php</var></td>
+   <td>Bottom (footer) code that appears in all GBook pages except emoticons_popup.php.</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>overall_header.php</var></td>
+   <td>Top (header) code that appears in all GBook pages except emoticons_popup.php.</td>
+   </tr>
+
+   <tr class="odd">
+   <td nowrap="nowrap"><var>sign_form.php</var></td>
+   <td>Form used for signing the guestbook.</td>
+   </tr>
+
+   <tr>
+   <td nowrap="nowrap"><var>style.css</var></td>
+   <td>Contains all the CSS code used by the template. All the classes and IDs have a <b>gbook_</b> prefix.<br /><br />
+   The code inside is CSS (Cascading Style Sheets); you can learn CSS <a href="http://www.w3schools.com/css/default.asp" target="_blank" rel="nofollow">here</a> (it's quite simple and you can easily edit all colors with it).</td>
+   </tr>
+
+   </tbody>
+</table>
+</li>
+</ol>
+
+<p>&nbsp;</p>
+
+<h3>--&raquo; Create a new template</h3>
+
+<p>A few tips for creating a new template.</p>
+
+<ol>
+<li>Before modifying template make sure your GBook works 100% correctly with the default template!</li>
+
+<li>Choose a name for your new template, for example <b>Dark Knight</b>. Create a new directory inside the templates
+folder that will contain all the files for the new template. Name it to something like <b>dark_knight</b>. I
+recommend using only lowercase letters (a-z), digits (0-9) and underscores (_).</li>
+
+<li>Copy all the files from the default template to your new folder.</li>
+
+<li>Set the $settings['template'] to the name of your new template, for example:<br />
+$settings['template'] = 'dark_knight';</li>
+
+<li>Make small changes to the template files and test them to make sure GBook is still working as expected.</li>
+
+<li>It is best to start with files style.css, overall_header.php, overall_footer.php and comments.php</li>
+
+<li>If GBook became empty after modifying the template it is probably an error in the code. You should get more information about PHP errors (such as the exact file and line where the error occurred)
+by deleting this code from the settings.php file:
+<pre>ini_set('display_errors', 0);
+ini_set('log_errors', 1);</pre>
+Once GBook is working normally you should paste the code back into the settings.php file!</li>
+</ol>
+
+<p>&nbsp;</p>
+
+
+<h2 id="translate">&raquo; Translating GBook to your language</h2>
+
+<p>To translate GBook to your language follow these steps:</p>
+
+<ol>
+<li>Locate file <b>language.inc.php</b> and open it in a plain text editor like Notepad or Wordpad.</li>
+<li>Save the file as <b>yourlanguage.inc.php</b> (deutsch.inc.php, francais.inc.php, ...).</li>
+<li>Edit the language file header (first lines that start with *) with your information. Please follow the provided format.</li>
+<li>Translate all lines containing language. You may translate <b>only the right side of each line</b>, for example:<br /><br />
+$t['DO_NOT_CHANGE_THIS']='TRANSLATE WORDS HERE';<br /><br />
+<p><span class="dest">When translating make sure to:</span></p>
+<ul>
+<li>keep the line format: single quotes (') around each phrase and lines must end with a semi-colon (;)</li>
+<li>if you use single quotes in the words escape them with a backslash (\). WRONG: can't CORRECT: can\'t</li>
+<li>do not change these codes as they are used by GBook: %s %d</li>
+</ul>
+<br />
+</li>
+<li>Save the file and upload it to your server.</li>
+<li>Edit the <b>$settings['language']</b> setting in your settings.php and upload the modified file to your server.</li>
+<li>Test GBook with your language and make sure it works ok.</li>
+<li>If possible you should also translate this readme.htm file (please name it <b>readme-yourlanguage.htm</b>, for example readme-fr.htm, readme-de.htm, ...).</li>
+</ol>
+
+<p><span class="dest">If you translate GBook to your language please post it to the PHPJunkyard forum for others to download.</span></p>
+
+<h2 id="badwords">&raquo; Adding / Translating bad words list</h2>
+
+<p>To add new bad words open the en.php file (located in <i>badwords</i> folder) in your favorite <b>PLAIN TEXT</b> editor (like Notepad or Wordpad on Windows systems, DO NOT use MS Word or similar editor), find the comment saying INSERT NEW BAD WORDS BELOW THIS LINE and add new bad words in this format:<br />
+  <br />
+&quot;BADWORD&quot; =&gt; &quot;REPLACEMENT&quot;,<br />
+  <br />
+  For example if "asfhkjhfasf" is a bad word you would add this line to the file:<br />
+  <br />
+&quot;SomeNastyWord&quot; =&gt; &quot;* * *&quot;,<br />
+  <br />
+  Don't forget to add a comma ( , ) after the line!</p>
+<p>If you are translating the bad words file I suggest you leave the English words and add new ones in your language as explained above. Then save the file as two letter country code php file. For example, if you are translating the file in French, you should save the file as <b>fr.php</b> (CaSe SeNSiTiVe!). Upload fr.php to your &quot;badwords&quot; folder, go to settings.php again and set <b>$settings['filter_lang']</b> to <b>&quot;fr&quot;</b> (file name without .php).</p>
+<p>Now test the GBook again. If you get an Error or Warning when you try to post a new message this means something is wrong with your language file. It either can't be found (check the name of the file, on most servers names are CaSe SeNsiTiVe!) or something is wrong with PHP syntax in it (make sure all the words are added in<br />
+  <b>&quot;BADWORD&quot; =&gt; &quot;REPLACEMENT&quot;,</b> syntax).</p>
+<p><b>Please send me the translated file</b>. If you translate the bad words file to your language please send it to info AT phpjunkyard DOT com (or contact me through PHPJunkard.com contact form) and I will make it available to others for download. You may include your name, Web site URL and email address and I will give you proper credit (translated by John Doe. Visit www.yourwebsite.com).</p>
+
+<h2 id="other">&raquo; Powered by credits removal</h2>
+
+To remove the &quot;Powered by&quot; credit links from the bottom of your guestbook, purchase a
+<a href="https://www.phpjunkyard.com/buy.php?script=gbook">Guestbook License</a>
+
+<h2>&raquo; Stay updated!</h2>
+
+<p>Join my FREE newsletter and you will be notified about new scripts, new versions of the existing scripts
+and other important news from PHPJunkYard.<br />
+<a href="https://www.phpjunkyard.com/newsletter.php">Click here for more info</a></p>
+
+
+<h2>&raquo; Get more useful FREE scripts!</h2>
+
+<p>Looking for more <a href="https://www.phpjunkyard.com" target="_blank">PHP scripts</a>? Here is a list of PHPJunkyard FREE scripts:</p>
+
+<ul>
+<li><a href="https://www.hesk.com" target="_blank">Help Desk Software</a></li>
+<li><a href="https://www.phpjunkyard.com/php-click-counter.php" target="_blank">Click and download counter</a></li>
+<li><a href="https://www.phpjunkyard.com/php-link-manager.php" target="_blank">Reciprocal links manager</a></li>
+<li><a href="https://www.phpjunkyard.com/php-guestbook-script.php" target="_blank">Guestbook</a> (this script)</li>
+<li><a href="https://www.phpjunkyard.com/php-text-hit-counter.php" target="_blank">Text hit counter</a></li>
+<li><a href="https://www.phpjunkyard.com/php-graphical-hit-counter.php" target="_blank">Graphical hit counter</a></li>
+<li><a href="https://www.phpjunkyard.com/random-image.php" target="_blank">Random image</a></li>
+<li><a href="https://www.phpjunkyard.com/random-text.php" target="_blank">Random text</a></li>
+</ul>
+
+<h2 id="changelog">GBOOK CHANGELOG</h2>
+
+<p><b>Changes in 1.9.0</b><br />
+- GBook is now compatible with PHP 8<br />
+- break too long words<br />
+</p>
+
+<p><b>Changes in 1.8.3</b><br />
+- improvements to SPAM filter<br />
+- fixed missing footer include<br />
+</p>
+
+<p><b>Changes in 1.8.2</b><br />
+- force UTF-8 content type header on PHP 5.6+ servers with a different default encoding
+</p>
+
+<p><b>Changes in 1.8.1</b><br />
+- fixed anti-SPAM function bug<br />
+</p>
+
+<p><b>Changes in 1.8.0</b><br />
+- changed encoding to UTF-8<br />
+- GBook is now compatible with PHP 7<br />
+- fixed several depreciated code errors<br />
+- fixed special chars not working on some PHP 5.4+ servers<br />
+- fixed bug with customer name in email notifications
+</p>
+
+<p><b>Changes in 1.7.2</b><br />
+- fixed missing language tag for &quot;Submit my comments&quot;<br />
+</p>
+
+<p><b>Changes in 1.7.1</b><br />
+- fixed false virus alerts in some antivirus software<br />
+- fixed disabling smileys<br />
+- remove tabs from input<br />
+- IPv6 is now always accepted<br />
+</p>
+
+<p><b>Changes in 1.7</b><br />
+- New user interface (new tableless design, new style.css file, images have alt and title tags, valid XHTML)<br />
+- All HTML code has been moved to templates (easier to modify, share templates, add new emoticons, ...)<br />
+- Improved JunkMark anti-SPAM filter<br />
+- New anti-SPAM feature: a customized anti-SPAM logical question<br />
+- Improved Captcha anti-SPAM image<br />
+- You can now manually approve new posts<br />
+- You can limit length of Comments<br />
+- You can limit the number of Emoticons (Smileys) per post<br />
+- Customers can receive an email notification when administrator replies to their post<br />
+- Removed go.php file (didn't really serve it's initial purpose)<br />
+</p>
+
+<p><b>Changes in 1.6</b><br />
+- added an option to hide email addresses (enabled by default)<br />
+- added an option to open links in a new window (if enabled code will validate as XHTML Transitional but not Strict)<br />
+- added an option to exclude proxies from JunkMark<sup>tm</sup> calculation<br />
+- IPv6 addresses can now be accepted<br />
+- all text used is now in a separate file for easier translating<br />
+- some changes to the interface and style file<br />
+- fixed wordwrap of HTML entities</p>
+
+<p><b>Changes in 1.5</b><br />
+- Gbook is now XHTML 1.0 valid (set to Transitional, but validates also as Strict)<br />
+- added IP address banning<br />
+- added fixes for two most common problems with sessions<br />
+- improved anti-SPAM features<br />
+- multiple empty lines will now be reduced to only one empty line<br />
+- fixed display of special language characters</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center">&copy; Copyright <a href="https://www.phpjunkyard.com">PHP Scripts from PHPJunkyard</a>. All rights reserved.</p>
+
+</div>
+</div>
+</body>
+</html>

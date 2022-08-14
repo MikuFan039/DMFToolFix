@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title>ITween - 嗶哩嗶哩百科</title>
+	<meta name="generator" content="MediaWiki 1.17.0" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="search" type="application/opensearchdescription+xml"
+		href="http://docs.bilibili.tv/opensearch_desc.php" title="嗶哩嗶哩百科 (zh-cn)" />
+	<link rel="EditURI" type="application/rsd+xml" href="http://wikipage.bilibili.tv/api.php?action=rsd" />
+	<link rel="alternate" type="application/atom+xml" title="嗶哩嗶哩百科的Atom订阅"
+		href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+	<link rel="stylesheet"
+		href="../stylesheets/mediawiki.legacy.commonPrint.css" />
+	<meta name="ResourceLoaderDynamicStyles" content="" />
+	<link rel="stylesheet"
+		href="../stylesheets/site.css" />
+
+	<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]-->
+</head>
+
+<body class="mediawiki ltr ns-0 ns-subject page-ITween skin-vector">
+	<div id="mw-page-base" class="noprint"></div>
+	<div id="mw-head-base" class="noprint"></div>
+	<!-- content -->
+	<div id="content">
+		<a id="top"></a>
+		<div id="mw-js-message" style="display:none;"></div>
+		<!-- firstHeading -->
+		<h1 id="firstHeading" class="firstHeading">ITween</h1>
+		<!-- /firstHeading -->
+		<!-- bodyContent -->
+		<div id="bodyContent">
+			<!-- tagline -->
+			<div id="siteSub">出自嗶哩嗶哩百科</div>
+			<!-- /tagline -->
+			<!-- subtitle -->
+			<div id="contentSub"></div>
+			<!-- /subtitle -->
+			<!-- jumpto -->
+			<div id="jump-to-nav">
+				跳转到： <a href="#mw-head">导航</a>,
+				<a href="#p-search">搜索</a>
+			</div>
+			<!-- /jumpto -->
+			<!-- bodytext -->
+			<table id="toc" class="toc">
+				<tr>
+					<td>
+						<div id="toctitle">
+							<h2>目录</h2>
+						</div>
+						<ul>
+							<li class="toclevel-1 tocsection-1"><a href="#play"><span class="tocnumber">1</span> <span
+										class="toctext">play</span></a></li>
+							<li class="toclevel-1 tocsection-2"><a href="#gotoAndPlay"><span class="tocnumber">2</span>
+									<span class="toctext">gotoAndPlay</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-3"><a href="#.E5.8F.82.E6.95.B0"><span
+												class="tocnumber">2.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-4"><a href="#stop"><span class="tocnumber">3</span> <span
+										class="toctext">stop</span></a></li>
+							<li class="toclevel-1 tocsection-5"><a href="#gotoAndStop"><span class="tocnumber">4</span>
+									<span class="toctext">gotoAndStop</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-6"><a href="#.E5.8F.82.E6.95.B0_2"><span
+												class="tocnumber">4.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-7"><a href="#togglePause"><span class="tocnumber">5</span>
+									<span class="toctext">togglePause</span></a></li>
+							<li class="toclevel-1 tocsection-8"><a href="#stopOnComplete"><span
+										class="tocnumber">6</span> <span class="toctext">stopOnComplete</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<h2> <span class="mw-headline" id="play"> play </span></h2>
+			<p>function play():void;
+			</p>
+			<dl>
+				<dd>开始播放效果
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="gotoAndPlay"> gotoAndPlay </span></h2>
+			<p>function gotoAndPlay(time:Number):void;
+			</p>
+			<dl>
+				<dd>跳跃至指定时间并开始播放效果
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0"> 参数 </span></h4>
+			<dl>
+				<dd><b>time</b>:Number — 以秒为单位的时间
+				</dd>
+			</dl>
+			<p><br />
+			</p>
+			<h2> <span class="mw-headline" id="stop"> stop </span></h2>
+			<p>function stop():void;
+			</p>
+			<dl>
+				<dd>终止播放效果
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="gotoAndStop"> gotoAndStop </span></h2>
+			<p>function gotoAndStop(time:Number):void;
+			</p>
+			<dl>
+				<dd>跳跃至指定时间并停止播放效果
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_2"> 参数 </span></h4>
+			<dl>
+				<dd><b>time</b>:Number — 以秒为单位的时间
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="togglePause"> togglePause </span></h2>
+			<p>function togglePause():void;
+			</p>
+			<dl>
+				<dd>切换播放/暂停
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="stopOnComplete"> stopOnComplete </span></h2>
+			<p>public var stopOnComplete:Boolean;
+			</p>
+			<dl>
+				<dd>设置是否重复播放效果 (true则不重复播放)
+				</dd>
+			</dl>
+			<p><br /> <br /> <br />
+			</p>
+			<!-- 
+NewPP limit report
+Preprocessor node count: 30/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+			<!-- Saved in parser cache with key wikidb:pcache:idhash:101-0!*!0!!zh-cn!*!edit=0 and timestamp 20130517044156 -->
+			<div class="printfooter">
+				取自“<a
+					href="http://wikipage.bilibili.tv/wiki/ITween">http://wikipage.bilibili.tv/wiki/ITween</a>”
+			</div>
+			<!-- /bodytext -->
+			<!-- catlinks -->
+			<div id="catlinks" class="catlinks">
+				<div id="mw-normal-catlinks"><a
+						href="./Category_PageCategory.html"
+						title="特殊:页面分类">1个分类</a>: <span dir="ltr"><a
+							href="./Category_Script.html"
+							title="分类:Script">Script</a></span></div>
+			</div> <!-- /catlinks -->
+			<div class="visualClear"></div>
+		</div>
+		<!-- /bodyContent -->
+	</div>
+	<!-- /content -->
+	<!-- header -->
+	<div id="mw-head" class="noprint">
+
+		<!-- 0 -->
+		<div id="p-personal" class="">
+			<h5>个人工具</h5>
+			<ul>
+				<li id="pt-login"><a
+						href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=ITween"
+						title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o">登录</a></li>
+			</ul>
+		</div>
+
+		<!-- /0 -->
+		<div id="left-navigation">
+
+			<!-- 0 -->
+			<div id="p-namespaces" class="vectorTabs">
+				<h5>名字空间</h5>
+				<ul>
+					<li id="ca-nstab-main" class="selected"><span><a
+								href="./ITween.html" title="查看页面内容 [c]"
+								accesskey="c">页面</a></span></li>
+					<li id="ca-talk" class="new"><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E8%AE%A8%E8%AE%BA:ITween&amp;action=edit&amp;redlink=1"
+								title="关于页面正文的讨论 [t]" accesskey="t">讨论</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-variants" class="vectorMenu emptyPortlet">
+				<h5><span>变换</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+		</div>
+		<div id="right-navigation">
+
+			<!-- 0 -->
+			<div id="p-views" class="vectorTabs">
+				<h5>查看</h5>
+				<ul>
+					<li id="ca-view" class="selected"><span><a
+								href="./ITween.html">阅读</a></span></li>
+					<li id="ca-viewsource"><span><a
+								href="http://docs.bilibili.tv/index.php?title=ITween&amp;action=edit"
+								title="此页面已被保护，你可以查看其源代码。 [e]" accesskey="e">查看源代码</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a
+								href="http://docs.bilibili.tv/index.php?title=ITween&amp;action=history"
+								title="此页面的早前修订版本 [h]" accesskey="h">查看历史</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-cactions" class="vectorMenu emptyPortlet">
+				<h5><span>动作</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+
+			<!-- 2 -->
+			<div id="p-search">
+				<h5><label for="searchInput">搜索</label></h5>
+				<form action="http://docs.bilibili.tv/index.php" id="searchform">
+					<input type="hidden" name="title" value="特殊:搜索" />
+					<input id="searchInput" name="search" type="text" title="搜索该网站 [f]" accesskey="f" value="" />
+					<input type="submit" name="go" class="searchButton" id="searchGoButton" value="进入"
+						title="如果相同的标题存在的话便直接前往该页面" />
+					<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="搜索"
+						title="搜索该文字的页面" />
+				</form>
+			</div>
+
+			<!-- /2 -->
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- panel -->
+	<div id="mw-panel" class="noprint">
+		<!-- logo -->
+		<div id="p-logo"><a
+				style="background-image: url(../images/baike.png);"
+				href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+		<!-- /logo -->
+
+		<!-- navigation -->
+		<div class="portal" id="p-navigation">
+			<h5>导航</h5>
+			<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a
+							href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页 [z]"
+							accesskey="z">首页</a></li>
+					<li id="n-.E5.8A.9F.E8.83.BD.E8.AF.B4.E6.98.8E"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">功能说明</a>
+					</li>
+					<li id="n-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">更新日志</a>
+					</li>
+					<li id="n-.E9.AB.98.E7.BA.A7.E5.BC.B9.E5.B9.95.E8.AF.AD.E8.A8.80"><a
+							href="./Category_Script.html">高级弹幕语言</a>
+					</li>
+					<li id="n-.E5.BC.80.E6.94.BE.E5.B9.B3.E5.8F.B0"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:API">开放平台</a></li>
+					<li id="n-randompage"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2"
+							title="随机载入一个页面 [x]" accesskey="x">随机页面</a></li>
+					<li id="n-help"><a
+							href="http://docs.bilibili.tv/wiki/%E5%B8%AE%E5%8A%A9:%E7%9B%AE%E5%BD%95"
+							title="寻求帮助">帮助</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /navigation -->
+
+		<!-- 更新 -->
+		<div class="portal" id="p-.E6.9B.B4.E6.96.B0">
+			<h5>更新</h5>
+			<div class="body">
+				<ul>
+					<li id="n-currentevents"><a
+							href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6"
+							title="查找当前事件的背景信息">当前事件</a></li>
+					<li id="n-recentchanges"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9"
+							title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+					<li id="n-.E6.9C.80.E6.96.B0.E5.9B.BE.E7.89.87"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6">最新图片</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /更新 -->
+
+		<!-- SEARCH -->
+
+		<!-- /SEARCH -->
+
+		<!-- TOOLBOX -->
+		<div class="portal" id="p-tb">
+			<h5>工具箱</h5>
+			<div class="body">
+				<ul>
+					<li id="t-whatlinkshere"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/ITween"
+							title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+					<li id="t-recentchangeslinked"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/ITween"
+							title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+					<li id="t-specialpages"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2"
+							title="所有特殊页面列表 [q]" accesskey="q">特殊页面</a></li>
+					<li id="t-print"><a
+							href="http://docs.bilibili.tv/index.php?title=ITween&amp;printable=yes"
+							rel="alternate" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+					<li id="t-permalink"><a
+							href="http://docs.bilibili.tv/index.php?title=ITween&amp;oldid=463"
+							title="这个页面修订版本的永久链接">永久链接</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /TOOLBOX -->
+
+		<!-- LANGUAGES -->
+
+		<!-- /LANGUAGES -->
+	</div>
+	<!-- /panel -->
+	<!-- footer -->
+	<div id="footer">
+		<ul id="footer-info">
+			<li id="footer-info-lastmod"> 此页面最后修订于2012年11月23日 (星期五) 00:02。</li>
+		</ul>
+		<ul id="footer-places">
+			<li id="footer-places-privacy"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96"
+					title="嗶哩嗶哩百科:隐私政策">隐私政策</a></li>
+			<li id="footer-places-about"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E"
+					title="嗶哩嗶哩百科:关于">关于嗶哩嗶哩百科</a></li>
+			<li id="footer-places-disclaimer"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"
+					title="嗶哩嗶哩百科:免责声明">免责声明</a></li>
+		</ul>
+		<ul id="footer-icons" class="noprint">
+			<li id="footer-poweredbyico">
+				<a href="http://www.mediawiki.org/"><img
+						src="../images/poweredby_mediawiki_88x31.png"
+						alt="Powered by MediaWiki" width="88" height="31" /></a>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<!-- /footer -->
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.config.set({
+				"wgCanonicalNamespace": "",
+				"wgCanonicalSpecialPageName": false,
+				"wgNamespaceNumber": 0,
+				"wgPageName": "ITween",
+				"wgTitle": "ITween",
+				"wgAction": "view",
+				"wgArticleId": 101,
+				"wgIsArticle": true,
+				"wgUserName": null,
+				"wgUserGroups": ["*"],
+				"wgCurRevisionId": 463,
+				"wgCategories": ["Script"],
+				"wgBreakFrames": false,
+				"wgRestrictionEdit": [],
+				"wgRestrictionMove": [],
+				"wgFCKEditorDir": "extensions/WYSIWYG/ckeditor/",
+				"wgFCKEditorExtDir": "extensions/WYSIWYG",
+				"wgFCKEditorToolbarSet": "Wiki",
+				"wgFCKEditorHeight": "0",
+				"wgCKeditorMagicWords": {
+					"wikitags": ["nowiki", "includeonly", "onlyinclude", "noinclude", "pre", "gallery"],
+					"magicwords": ["NOTOC", "FORCETOC", "TOC", "NOEDITSECTION", "NEWSECTIONLINK", "NONEWSECTIONLINK",
+						"NOCONTENTCONVERT", "NOCC", "NOTITLECONVERT", "NOTC", "NOGALLERY", "INDEX", "NOINDEX",
+						"STATICREDIRECT", "NOGALLERY", "HIDDENCAT", "START", "END"
+					],
+					"datevars": ["CURRENTYEAR", "CURRENTMONTH", "CURRENTMONTHNAME", "CURRENTMONTHNAMEGEN",
+						"CURRENTMONTHABBREV", "CURRENTDAY", "CURRENTDAY2", "CURRENTDOW", "CURRENTDAYNAME",
+						"CURRENTTIME", "CURRENTHOUR", "CURRENTWEEK", "CURRENTTIMESTAMP"
+					],
+					"wikivars": ["SITENAME", "SERVER", "SERVERNAME", "DIRMARK", "SCRIPTPATH", "CURRENTVERSION",
+						"CONTENTLANG", "REVISIONID", "REVISIONDAY", "REVISIONDAY2", "REVISIONMONTH",
+						"REVISIONYEAR", "REVISIONTIMESTAMP", "REVISIONUSER", "FULLPAGENAME", "PAGENAME",
+						"BASEPAGENAME", "SUBPAGENAME", "SUBJECTPAGENAME", "TALKPAGENAME", "NAMESPACE",
+						"ARTICLESPACE", "TALKSPACE"
+					],
+					"parserhooks": ["lc", "lcfirst", "uc", "ucfirst", "formatnum", "#dateformat", "padleft",
+						"padright", "plural", "grammar", "#language", "int", "#tag", "#int", "#ns", "#nse",
+						"#urlencode", "#lcfirst", "#ucfirst", "#lc", "#uc", "#localurl", "#localurle", "#fullurl",
+						"#fullurle", "#formatnum", "#grammar", "#gender", "#plural", "#numberofpages",
+						"#numberofusers", "#numberofactiveusers", "#numberofarticles", "#numberoffiles",
+						"#numberofadmins", "#numberingroup", "#numberofedits", "#numberofviews", "#padleft",
+						"#padright", "#anchorencode", "#special", "#defaultsort", "#filepath", "#pagesincategory",
+						"#pagesize", "#protectionlevel", "#namespace", "#namespacee", "#talkspace", "#talkspacee",
+						"#subjectspace", "#subjectspacee", "#pagename", "#pagenamee", "#fullpagename",
+						"#fullpagenamee", "#basepagename", "#basepagenamee", "#subpagename", "#subpagenamee",
+						"#talkpagename", "#talkpagenamee", "#subjectpagename", "#subjectpagenamee", "#formatdate",
+						"#displaytitle"
+					]
+				},
+				"wgCKeditorUseBuildin4Extensions": [],
+				"wgAllowExternalImages": true
+			});
+		}
+	</script>
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+			mediaWiki.loader.go();
+		}
+	</script>
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.user.options.set({
+				"ccmeonemails": 0,
+				"cols": 80,
+				"contextchars": 50,
+				"contextlines": 5,
+				"date": "default",
+				"diffonly": 0,
+				"disablemail": 0,
+				"disablesuggest": 0,
+				"editfont": "default",
+				"editondblclick": 0,
+				"editsection": 1,
+				"editsectiononrightclick": 0,
+				"enotifminoredits": 0,
+				"enotifrevealaddr": 0,
+				"enotifusertalkpages": 1,
+				"enotifwatchlistpages": 0,
+				"extendwatchlist": 0,
+				"externaldiff": 0,
+				"externaleditor": 0,
+				"fancysig": 0,
+				"forceeditsummary": 0,
+				"gender": "unknown",
+				"hideminor": 0,
+				"hidepatrolled": 0,
+				"highlightbroken": 1,
+				"imagesize": 2,
+				"justify": 0,
+				"math": 1,
+				"minordefault": 0,
+				"newpageshidepatrolled": 0,
+				"nocache": 0,
+				"noconvertlink": 0,
+				"norollbackdiff": 0,
+				"numberheadings": 0,
+				"previewonfirst": 0,
+				"previewontop": 1,
+				"quickbar": 1,
+				"rcdays": 7,
+				"rclimit": 50,
+				"rememberpassword": 0,
+				"rows": 25,
+				"searchlimit": 20,
+				"showhiddencats": 0,
+				"showjumplinks": 1,
+				"shownumberswatching": 1,
+				"showtoc": 1,
+				"showtoolbar": 1,
+				"skin": "vector",
+				"stubthreshold": 0,
+				"thumbsize": 2,
+				"underline": 2,
+				"uselivepreview": 0,
+				"usenewrc": 0,
+				"watchcreations": 0,
+				"watchdefault": 0,
+				"watchdeletion": 0,
+				"watchlistdays": 3,
+				"watchlisthideanons": 0,
+				"watchlisthidebots": 0,
+				"watchlisthideliu": 0,
+				"watchlisthideminor": 0,
+				"watchlisthideown": 0,
+				"watchlisthidepatrolled": 0,
+				"watchmoves": 0,
+				"wllimit": 250,
+				"riched_use_toggle": 1,
+				"riched_start_disabled": 1,
+				"riched_use_popup": 1,
+				"riched_toggle_remember_state": 1,
+				"usebetatoolbar": 1,
+				"usebetatoolbar-cgd": 1,
+				"wikieditor-preview": 1,
+				"variant": "zh-cn",
+				"language": "zh-cn",
+				"searchNs0": true,
+				"searchNs1": false,
+				"searchNs2": false,
+				"searchNs3": false,
+				"searchNs4": false,
+				"searchNs5": false,
+				"searchNs6": false,
+				"searchNs7": false,
+				"searchNs8": false,
+				"searchNs9": false,
+				"searchNs10": false,
+				"searchNs11": false,
+				"searchNs12": false,
+				"searchNs13": false,
+				"searchNs14": false,
+				"searchNs15": false
+			});;
+			mediaWiki.loader.state({
+				"user.options": "ready"
+			});
+		}
+	</script> <!-- fixalpha -->
+	<script type="text/javascript">
+		if (window.isMSIE55) fixalpha();
+	</script>
+	<!-- /fixalpha -->
+	<!-- Served in 0.061 secs. -->
+</body>
+
+</html>

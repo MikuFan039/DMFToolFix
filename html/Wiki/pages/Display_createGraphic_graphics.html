@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title>Display.createGraphic.graphics - 嗶哩嗶哩百科</title>
+	<meta name="generator" content="MediaWiki 1.17.0" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="search" type="application/opensearchdescription+xml"
+		href="http://docs.bilibili.tv/opensearch_desc.php" title="嗶哩嗶哩百科 (zh-cn)" />
+	<link rel="EditURI" type="application/rsd+xml" href="http://wikipage.bilibili.tv/api.php?action=rsd" />
+	<link rel="alternate" type="application/atom+xml" title="嗶哩嗶哩百科的Atom订阅"
+		href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+	<link rel="stylesheet"
+		href="../stylesheets/mediawiki.legacy.commonPrint.css" />
+	<meta name="ResourceLoaderDynamicStyles" content="" />
+	<link rel="stylesheet"
+		href="../stylesheets/site.css" />
+
+	<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]-->
+</head>
+
+<body class="mediawiki ltr ns-0 ns-subject page-Display_createGraphic_graphics skin-vector">
+	<div id="mw-page-base" class="noprint"></div>
+	<div id="mw-head-base" class="noprint"></div>
+	<!-- content -->
+	<div id="content">
+		<a id="top"></a>
+		<div id="mw-js-message" style="display:none;"></div>
+		<!-- firstHeading -->
+		<h1 id="firstHeading" class="firstHeading">Display.createGraphic.graphics</h1>
+		<!-- /firstHeading -->
+		<!-- bodyContent -->
+		<div id="bodyContent">
+			<!-- tagline -->
+			<div id="siteSub">出自嗶哩嗶哩百科</div>
+			<!-- /tagline -->
+			<!-- subtitle -->
+			<div id="contentSub"></div>
+			<!-- /subtitle -->
+			<!-- jumpto -->
+			<div id="jump-to-nav">
+				跳转到： <a href="#mw-head">导航</a>,
+				<a href="#p-search">搜索</a>
+			</div>
+			<!-- /jumpto -->
+			<!-- bodytext -->
+			<table id="toc" class="toc">
+				<tr>
+					<td>
+						<div id="toctitle">
+							<h2>目录</h2>
+						</div>
+						<ul>
+							<li class="toclevel-1 tocsection-1"><a href="#beginFill"><span class="tocnumber">1</span>
+									<span class="toctext">beginFill</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-2"><a href="#.E5.8F.82.E6.95.B0"><span
+												class="tocnumber">1.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-3"><a href="#beginGradientFill"><span
+										class="tocnumber">2</span> <span class="toctext">beginGradientFill</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-4"><a href="#.E5.8F.82.E6.95.B0_2"><span
+												class="tocnumber">2.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-5"><a href="#clear"><span class="tocnumber">3</span> <span
+										class="toctext">clear</span></a></li>
+							<li class="toclevel-1 tocsection-6"><a href="#curveTo"><span class="tocnumber">4</span>
+									<span class="toctext">curveTo</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-7"><a href="#.E5.8F.82.E6.95.B0_3"><span
+												class="tocnumber">4.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-8"><a href="#.E7.A4.BA.E4.BE.8B"><span
+												class="tocnumber">4.2</span> <span class="toctext">示例</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-9"><a href="#drawCircle"><span class="tocnumber">5</span>
+									<span class="toctext">drawCircle</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-10"><a href="#.E5.8F.82.E6.95.B0_4"><span
+												class="tocnumber">5.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-11"><a href="#drawEllipse"><span class="tocnumber">6</span>
+									<span class="toctext">drawEllipse</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-12"><a href="#.E5.8F.82.E6.95.B0.3D"><span
+												class="tocnumber">6.1</span> <span class="toctext">参数=</span></a></li>
+									<li class="toclevel-2 tocsection-13"><a href="#.E7.A4.BA.E4.BE.8B_2"><span
+												class="tocnumber">6.2</span> <span class="toctext">示例</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-14"><a href="#drawRect"><span class="tocnumber">7</span>
+									<span class="toctext">drawRect</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-15"><a href="#.E5.8F.82.E6.95.B0_5"><span
+												class="tocnumber">7.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-16"><a href="#drawRoundRect"><span
+										class="tocnumber">8</span> <span class="toctext">drawRoundRect</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-17"><a href="#.E5.8F.82.E6.95.B0_6"><span
+												class="tocnumber">8.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-18"><a href="#endFill"><span class="tocnumber">9</span>
+									<span class="toctext">endFill</span></a></li>
+							<li class="toclevel-1 tocsection-19"><a href="#lineGradientStyle"><span
+										class="tocnumber">10</span> <span class="toctext">lineGradientStyle</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-20"><a href="#.E7.A4.BA.E4.BE.8B_3"><span
+												class="tocnumber">10.1</span> <span class="toctext">示例</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-21"><a href="#lineStyle"><span class="tocnumber">11</span>
+									<span class="toctext">lineStyle</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-22"><a href="#.E5.8F.82.E6.95.B0_7"><span
+												class="tocnumber">11.1</span> <span class="toctext">参数</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-23"><a href="#lineTo"><span class="tocnumber">12</span>
+									<span class="toctext">lineTo</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-24"><a href="#.E5.8F.82.E6.95.B0_8"><span
+												class="tocnumber">12.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-25"><a href="#.E7.A4.BA.E4.BE.8B_4"><span
+												class="tocnumber">12.2</span> <span class="toctext">示例</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-26"><a href="#moveTo"><span class="tocnumber">13</span>
+									<span class="toctext">moveTo</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-27"><a href="#.E5.8F.82.E6.95.B0_9"><span
+												class="tocnumber">13.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-28"><a href="#.E7.A4.BA.E4.BE.8B_5"><span
+												class="tocnumber">13.2</span> <span class="toctext">示例</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-29"><a href="#.E5.8F.82.E9.98.85"><span
+										class="tocnumber">14</span> <span class="toctext">参阅</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<h2> <span class="mw-headline" id="beginFill">beginFill</span></h2>
+			<p>public function beginFill(color:uint, alpha:Number = 1.0):void
+			</p>
+			<dl>
+				<dd>指定一种简单的单一颜色填充，可将该填充用于随后调用对象的其它 Graphics 方法（如 lineTo() 或 drawCircle()）。 该填充将保持有效，直到您调用 beginFill() 或
+					beginGradientFill() 方法。 调用 clear() 方法会清除填充。
+				</dd>
+			</dl>
+			<dl>
+				<dd>在调用 endFill() 方法之前，不会呈现填充。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0">参数</span></h4>
+			<dl>
+				<dd><b>color</b>:uint — 填充的颜色 (0xRRGGBB)。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>alpha</b>:Number (default = 1.0) — 填充的 Alpha 值（从 0.0 到 1.0）。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="beginGradientFill">beginGradientFill</span></h2>
+			<p>public function beginGradientFill(type:String, colors:Array, alphas:Array, ratios:Array, matrix:Matrix =
+				null, spreadMethod:String = "pad", interpolationMethod:String = "rgb", focalPointRatio:Number = 0):void
+			</p>
+			<dl>
+				<dd>指定一种渐变填充，可将该填充用于随后调用对象的其它 Graphics 方法（如 lineTo() 或 drawCircle()）。 该填充将保持有效，直到您调用 beginFill() 或
+					beginGradientFill() 方法。 调用 clear() 方法会清除填充。
+				</dd>
+			</dl>
+			<dl>
+				<dd>在调用 endFill() 方法之前，不会呈现填充。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_2">参数</span></h4>
+			<dl>
+				<dd><b>type</b>:String — 用于指定要使用哪种渐变类型的 GradientType 值：linear 或 radial。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>colors</b>:Array — 要在渐变中使用的 RGB 十六进制颜色值数组（例如，红色为 0xFF0000，蓝色为 0x0000FF，等等）。 可以至多指定 15 种颜色。
+					对于每种颜色，请确保在 alphas 和 ratios 参数中指定对应的值。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>alphas</b>:Array — colors 数组中对应颜色的 alpha 值数组；有效值为 0 到 1。 如果值小于 0，则默认值为 0。 如果值大于 1，则默认值为 1。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>ratios</b>:Array — 颜色分布比例的数组；有效值为 0 到 255。 该值定义 100% 采样的颜色所在位置的宽度百分比。 值 0 表示渐变框中的左侧位置，255
+					表示渐变框中的右侧位置。
+				</dd>
+				<dd>注意：该值表示渐变框中的位置，而不是最终渐变的坐标空间，坐标空间可能比渐变框宽或窄。 为 colors 参数中的每个值指定一个值。
+				</dd>
+			</dl>
+			<dl>
+				<dd>例如，对于包括蓝和绿两种颜色的线性渐变，下例显示了基于不同 ratios 数组值的渐变中的颜色配比：
+				</dd>
+			</dl>
+			<table class="wikitable">
+				<tr>
+					<th> ratios </th>
+					<th> 渐变
+					</th>
+				</tr>
+				<tr>
+					<td> [0, 127] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-1.jpg"
+							alt="gradient-ratios-1.jpg" />
+					</td>
+				</tr>
+				<tr>
+					<td> [0, 255] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-2.jpg"
+							alt="gradient-ratios-2.jpg" />
+					</td>
+				</tr>
+				<tr>
+					<td> [127, 255] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-3.jpg"
+							alt="gradient-ratios-3.jpg" />
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dd>数组中的值必须持续增加；例如，[0, 63, 127, 190, 255]。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>matrix</b>:Matrix (default = null) — 一个由 Matrix 类定义的转换矩阵。 Matrix 类包括 createGradientBox()
+					方法，通过该方法可以方便地设置矩阵，以便与 beginGradientFill() 方法一起使用，亦可使用$.createGradientBox()。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>spreadMethod</b>:String (default = "pad") — 用于指定要使用哪种 spread 方法的 值：pad、reflect 或 repeat。
+				</dd>
+			</dl>
+			<p>例如，请考虑两种颜色之间的简单线性渐变：
+			</p>
+			<pre> var g = $.createShape({x:0,y:0,lifeTime:3});
+ var colors = [0xFF0000, 0x0000FF];
+ var alphas = [1, 1];
+ var ratios = [0x00, 0xFF];
+ var matr = $.createMatrix();
+ matr.createGradientBox(20, 20, 0, 0, 0);
+ g.graphics.beginGradientFill("linear", colors, alphas, ratios, matr, "pad");  
+ g.graphics.drawRect(0,0,100,100);
+ 
+</pre>
+			<dl>
+				<dd>此示例将 pad 用于 spread 方法，并且渐变填充看起来将类似于下图：
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/beginGradientFill_spread_pad.jpg"
+						alt="beginGradientFill_spread_pad.jpg" />
+				</dd>
+			</dl>
+			<dl>
+				<dd>如果将 reflect 用于 spread 方法，则渐变填充看起来将类似于下图：
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/beginGradientFill_spread_reflect.jpg"
+						alt="beginGradientFill_spread_reflect.jpg" />
+				</dd>
+			</dl>
+			<dl>
+				<dd>如果将 repeat 用于 spread 方法，则渐变填充看起来将类似于下图：
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/beginGradientFill_spread_repeat.jpg"
+						alt="beginGradientFill_spread_repeat.jpg" />
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>interpolationMethod</b>:String (default = "rgb") — 用于指定要使用哪个值的 值：linearRGB 或 rgb
+				</dd>
+			</dl>
+			<p>例如，假设有两种颜色之间的简单线性渐变（spreadMethod 参数设置为 reflect）。 不同的插值方法对外观的影响如下所示：
+			</p>
+			<table>
+
+				<tr>
+					<td> <img
+							src="../images/doc/beginGradientFill_interp_linearrgb.jpg"
+							alt="beginGradientFill_interp_linearrgb.jpg" />
+					</td>
+					<td> <img
+							src="../images/doc/beginGradientFill_interp_rgb.jpg"
+							alt="beginGradientFill_interp_rgb.jpg" />
+					</td>
+				</tr>
+				<tr align="center">
+					<td> linearRGB
+					</td>
+					<td> rgb
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dd><b>focalPointRatio</b>:Number (default = 0) — 一个控制渐变的焦点位置的数字。 0 表示焦点位于中心。 1 表示焦点位于渐变圆的一条边界上。 -1
+					表示焦点位于渐变圆的另一条边界上。 小于 -1 或大于 1 的值将舍入为 -1 或 1。 例如，下例显示 focalPointRatio 设置为 0.75：
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/radial_sketch.jpg"
+						alt="radial_sketch.jpg" />
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="clear">clear</span></h2>
+			<p>public function clear():void
+			</p>
+			<dl>
+				<dd>清除绘制到此 Graphics 对象的图形，并重置填充和线条样式设置。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="curveTo">curveTo</span></h2>
+			<p>public function curveTo(controlX:Number, controlY:Number, anchorX:Number, anchorY:Number):void
+			</p>
+			<dl>
+				<dd>通过由 (controlX, controlY) 指定的控制点，使用当前线条样式绘制一条从当前绘画位置开始到 (anchorX, anchorY) 结束的曲线。 当前绘画位置随后设置为
+					(anchorX, anchorY)。 如果正在其中绘制的影片剪辑包含用 Flash 绘画工具创建的内容，则调用 curveTo() 方法将在该内容下面进行绘制。 如果在调用 moveTo()
+					方法之前调用了 curveTo() 方法，则当前绘画位置的默认值为 (0, 0)。 如果缺少任何一个参数，则此方法将失败，并且当前绘画位置不改变。
+				</dd>
+			</dl>
+			<dl>
+				<dd>绘制的曲线是二次贝塞尔曲线。 二次贝塞尔曲线包含两个锚点和一个控制点。 该曲线内插这两个锚点，并向控制点弯曲。
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/quad_bezier.jpg"
+						alt="quad_bezier.jpg" />
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_3">参数</span></h4>
+			<dl>
+				<dd><b>controlX</b>:Number — 一个数字，指定控制点相对于父显示对象注册点的水平位置。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>controlY</b>:Number — 一个数字，指定控制点相对于父显示对象注册点的垂直位置。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>anchorX</b>:Number — 一个数字，指定下一个锚点相对于父显示对象注册点的水平位置。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>anchorY</b>:Number — 一个数字，指定下一个锚点相对于父显示对象注册点的垂直位置。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B">示例</span></h4>
+			<p>下面的示例在显示对象注册点 (0, 0) 右侧 250 个像素的位置绘制一个绿色圆形对象，宽度和高度为 100 个像素。
+				绘制 4 条曲线以生成一个圆，并将其填充为绿色。
+			</p>
+			<p>请注意，由于二次贝塞尔方程式所具有的特性，此对象并不是完美的圆。 绘制圆的最佳方法是使用 Graphics 类的 drawCircle() 方法。
+			</p>
+			<pre> var g = $.createShape({lifeTime:2,x:10,y:250});
+ g.graphics.beginFill(0xFFCC00);
+ g.graphics.moveTo(250, 0);
+ g.graphics.curveTo(300, 0, 300, 50);
+ g.graphics.curveTo(300, 100, 250, 100);
+ g.graphics.curveTo(200, 100, 200, 50);
+ g.graphics.curveTo(200, 0, 250, 0);
+ g.graphics.endFill();
+</pre>
+			<p>下面的示例使用 curveTo() 方法绘制一个新月。
+			</p>
+			<p>绘制两条 1 个像素粗的曲线，并将两条曲线之间的区域填充为白色。 moveTo() 方法用于将当前绘制位置放在坐标 (100, 100) 上。 第一条曲线将绘制位置移到 (100, 200)，这是其目标点。
+				第二条曲线将该位置恢复为开始位置 (100, 100)，这是其目标点。 水平控制点决定了不同的曲线大小。
+			</p>
+			<pre>  var newMoon = $.createShape({lifeTime:2,x:0,y:0});
+           
+  newMoon.graphics.lineStyle(1, 0);
+  newMoon.graphics.beginFill(0xFFFFFF);
+  newMoon.graphics.moveTo(100, 100); 
+  newMoon.graphics.curveTo(30, 150, 100, 200);    
+  newMoon.graphics.curveTo(50, 150, 100, 100);
+  newMoon.graphics.endFill();
+</pre>
+			<p>下面的示例使用 curveTo() 方法绘制一把扇。
+			</p>
+			<pre> function drawArc(r,ang,color,rttz) {
+ 	var myObj = $.createShape({x:270,y:200,lifeTime:3});
+ 	myObj.graphics.beginFill(color);
+ 	myObj.graphics.lineStyle(1);
+ 	var a=ang/180*Math.PI/0.01;
+ 	myObj.graphics.lineTo(r,0);
+ 	for (var i=0; i&lt;=a; i++) {
+ 		myObj.graphics.curveTo(Math.cos((i-0.5)*0.01)*r,Math.sin((i-0.5)*0.01)*r,Math.cos(i*0.01)*r,Math.sin(i*0.01)*r);
+ 	}
+ 	myObj.graphics.endFill();
+ 	myObj.rotationZ=rttz;
+ };
+ drawArc(100,120,0xff99ff,-150);
+ drawArc(30,120,0xff99ff,30);
+</pre>
+			<h2> <span class="mw-headline" id="drawCircle">drawCircle</span></h2>
+			<p>public function drawCircle(x:Number, y:Number, radius:Number):void
+			</p>
+			<dl>
+				<dd>绘制一个圆。 您必须在调用 drawCircle() 方法之前，通过调用 linestyle()、lineGradientStyle()、beginFill() 或
+					beginGradientFill() 方法来设置线条样式和/或填充。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_4">参数</span></h4>
+			<dl>
+				<dd><b>x</b>:Number — 相对于父显示对象注册点的圆心的 x 位置（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>y</b>:Number — 相对于父显示对象注册点的圆心的 y 位置（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>radius</b>:Number — 圆的半径（以像素为单位）。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="drawEllipse">drawEllipse</span></h2>
+			<p>public function drawEllipse(x:Number, y:Number, width:Number, height:Number):void
+			</p>
+			<dl>
+				<dd>绘制一个椭圆。 您必须在调用 drawEllipse() 方法之前，通过调用 linestyle()、lineGradientStyle()、beginFill() 或
+					beginGradientFill() 方法来设置线条样式和/或填充。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0.3D">参数=</span></h4>
+			<dl>
+				<dd><b>x</b>:Number — 相对于父显示对象注册点的椭圆圆心的 x 位置（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>y</b>:Number — 相对于父显示对象注册点的椭圆圆心的 y 位置（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>width</b>:Number — 椭圆的宽度（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>height</b>:Number — 椭圆的高度（以像素为单位）。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B_2">示例</span></h4>
+			<p>下面的示例使用 drawEgg() 函数绘制三个不同大小的鸡蛋（三种尺寸的椭圆），具体取决于 eggSize 参数。
+				构造函数调用 drawEgg() 函数，并为应该绘制鸡蛋的位置传递水平和垂直参数以及鸡蛋类型 (eggSize)。 （可使用鸡蛋（椭圆形）高度和宽度来确定其显示位置。）
+				drawEgg() 函数绘制不同大小的椭圆，并使用 beginFill() 方法将其填充为白色。 没有事先为此函数编写错误处理代码。
+			</p>
+			<pre> var SMALL = 0;
+ var MEDIUM = 1;
+ var LARGE = 2;
+ 
+ function drawEgg(eggSize, x, y)  {
+ 	var myEgg = $.createShape({x:0,y:0,lifeTime:3});
+ 	
+ 	myEgg.graphics.beginFill(0xFFFFFF);
+ 	myEgg.graphics.lineStyle(1);
+ 
+ 	switch(eggSize) {
+ 		case SMALL:
+ 			myEgg.graphics.drawEllipse(x, y, 60, 70);
+ 			break;
+ 		case MEDIUM:
+ 			myEgg.graphics.drawEllipse(x, y, 120, 150);    
+ 			break;
+ 		case LARGE:
+ 			myEgg.graphics.drawEllipse(x, y, 150, 200);
+ 			break;
+ 		default:
+ 			trace ("Wrong size! There is no egg.");
+ 		break;            
+ 	}
+ 	
+ 	myEgg.graphics.endFill();
+ }
+ drawEgg(SMALL, 0, 100);
+ drawEgg(MEDIUM, 100, 60);
+ drawEgg(LARGE, 250, 35);   
+</pre>
+			<h2> <span class="mw-headline" id="drawRect">drawRect</span></h2>
+			<p>public function drawRect(x:Number, y:Number, width:Number, height:Number):void
+			</p>
+			<dl>
+				<dd>绘制一个矩形。 您必须在调用 drawRect() 方法之前，通过调用 linestyle()、lineGradientStyle()、beginFill() 或
+					beginGradientFill() 方法来设置线条样式和/或填充。
+				</dd>
+			</dl>
+			<h3> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_5">参数</span></h3>
+			<dl>
+				<dd><b>x</b>:Number — 一个表示相对于父显示对象注册点的水平位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>y</b>:Number — 一个表示相对于父显示对象注册点的垂直位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>width</b>:Number — 矩形的宽度（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>height</b>:Number — 矩形的高度（以像素为单位）。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="drawRoundRect">drawRoundRect</span></h2>
+			<p>public function drawRoundRect(x:Number, y:Number, width:Number, height:Number, ellipseWidth:Number,
+				ellipseHeight:Number):void
+			</p>
+			<dl>
+				<dd>绘制一个圆角矩形。 您必须在调用 drawRoundRect() 方法之前，通过调用 linestyle()、lineGradientStyle()、beginFill() 或
+					beginGradientFill() 方法来设置线条样式和/或填充。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_6">参数</span></h4>
+			<dl>
+				<dd><b>x</b>:Number — 一个表示相对于父显示对象注册点的水平位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>y</b>:Number — 一个表示相对于父显示对象注册点的垂直位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>width</b>:Number — 圆角矩形的宽度（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>height</b>:Number — 圆角矩形的高度（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>ellipseWidth</b>:Number — 用于绘制圆角的椭圆的宽度（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>ellipseHeight</b>:Number — 用于绘制圆角的椭圆的高度（以像素为单位）。 （可选）如果未指定值，则默认值与为 ellipseWidth 参数提供的值相匹配。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="endFill">endFill</span></h2>
+			<p>public function endFill():void
+			</p>
+			<dl>
+				<dd>对从上一次调用 beginFill() 或 beginGradientFill() 方法之后添加的直线和曲线应用填充。 Flash 使用的是对 beginFill() 或
+					beginGradientFill() 方法的先前调用中指定的填充。 如果当前绘画位置不等于 moveTo() 方法中指定的上一个位置，而且定义了填充，则用线条闭合该路径，然后进行填充。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id="lineGradientStyle">lineGradientStyle</span></h2>
+			<p>public function lineGradientStyle(type:String, colors:Array, alphas:Array, ratios:Array, matrix:Matrix =
+				null, spreadMethod:String = "pad", interpolationMethod:String = "rgb", focalPointRatio:Number = 0):void
+			</p>
+			<dl>
+				<dd>指定一种线条样式的渐变，Flash Player 可将该渐变用于随后调用对象的其它 Graphics 方法（如 lineTo() 或 drawCircle()）。
+					线条样式仍然有效，直到使用不同的参数调用 lineStyle() 方法或 lineGradientStyle() 方法为止。 可以在绘制路径的中间调用 lineGradientStyle()
+					方法以为路径中的不同线段指定不同的样式。
+				</dd>
+			</dl>
+			<dl>
+				<dd>在调用 lineGradientStyle() 之前调用 lineStyle() 以启用笔触，否则线条样式的值仍然是 undefined。
+				</dd>
+			</dl>
+			<dl>
+				<dd>调用 clear() 会将线条样式设置回 undefined。
+				</dd>
+			</dl>
+			<p>参数
+			</p>
+			<dl>
+				<dd><b>type</b>:String — 用于指定要使用哪种渐变类型的 GradientType 类的值：GradientType.LINEAR 或 GradientType.RADIAL。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>colors</b>:Array — 要在渐变中使用的 RGB 十六进制颜色值数组（例如，红色为 0xFF0000，蓝色为 0x0000FF 等等）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>alphas</b>:Array — colors 数组中对应颜色的 alpha 值数组；有效值为 0 到 100。 如果值小于 0，Flash Player 将使用 0。 如果值大于
+					100，Flash Player 将使用 100。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>ratios</b>:Array — 颜色分布比率的数组；有效值为 0 到 255。 该值定义 100% 采样的颜色所在位置的宽度百分比。 值 0 表示渐变框中的左侧位置，255
+					表示渐变框中的右侧位置。 该值表示渐变框中的位置，而不是最终渐变的坐标空间，坐标空间可能比渐变框宽或窄。 为 colors 参数中的每个值指定一个值。
+				</dd>
+			</dl>
+			<dl>
+				<dd>例如，对于包括蓝和绿两种颜色的线性渐变，下例显示了基于不同 ratios 数组值的渐变中的颜色配比：
+				</dd>
+			</dl>
+			<table class="wikitable">
+				<tr>
+					<th> ratios </th>
+					<th> 渐变
+					</th>
+				</tr>
+				<tr>
+					<td> [0, 127] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-1.jpg"
+							alt="gradient-ratios-1.jpg" />
+					</td>
+				</tr>
+				<tr>
+					<td> [0, 255] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-2.jpg"
+							alt="gradient-ratios-2.jpg" />
+					</td>
+				</tr>
+				<tr>
+					<td> [127, 255] </td>
+					<td> <img
+							src="../images/doc/gradient-ratios-3.jpg"
+							alt="gradient-ratios-3.jpg" />
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dd>数组中的值必须持续增加；例如，[0, 63, 127, 190, 255]。
+				</dd>
+			</dl>
+			<p><br />
+			</p>
+			<dl>
+				<dd><b>matrix</b>:Matrix (default = null) — 一个由 Matrix 类定义的转换矩阵。 Matrix 类包括 createGradientBox()
+					方法，通过该方法可以方便地设置矩阵，以便与 beginGradientFill() 方法一起使用，亦可使用$.createGradientBox()。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>spreadMethod</b>:String (default = "pad") — 用于指定要使用哪种 spread 方法的 值：
+				</dd>
+			</dl>
+			<table>
+
+				<tr>
+					<td> <img
+							src="../images/doc/beginGradientFill_spread_pad.jpg"
+							alt="beginGradientFill_spread_pad.jpg" /> </td>
+					<td> <img
+							src="../images/doc/beginGradientFill_spread_repeat.jpg"
+							alt="beginGradientFill_spread_repeat.jpg" /> </td>
+					<td> <img
+							src="../images/doc/beginGradientFill_spread_reflect.jpg"
+							alt="beginGradientFill_spread_reflect.jpg" />
+					</td>
+				</tr>
+				<tr align="center">
+					<td> pad </td>
+					<td> reflect </td>
+					<td> repeat
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dd><b>interpolationMethod</b>:String (default = "rgb") — 用于指定要使用哪个值的 值：linearRGB 或 rgb
+				</dd>
+			</dl>
+			<p>例如，假设有两种颜色之间的简单线性渐变（spreadMethod 参数设置为 reflect）。 不同的插值方法对外观的影响如下所示：
+			</p>
+			<table>
+
+				<tr>
+					<td> <img
+							src="../images/doc/beginGradientFill_interp_linearrgb.jpg"
+							alt="beginGradientFill_interp_linearrgb.jpg" />
+					</td>
+					<td> <img
+							src="../images/doc/beginGradientFill_interp_rgb.jpg"
+							alt="beginGradientFill_interp_rgb.jpg" />
+					</td>
+				</tr>
+				<tr align="center">
+					<td> linearRGB
+					</td>
+					<td> rgb
+					</td>
+				</tr>
+			</table>
+			<dl>
+				<dd><b>focalPointRatio</b>:Number (default = 0) — 一个控制渐变的焦点位置的数字。 0 表示焦点位于中心。 1 表示焦点位于渐变圆的一条边界上。 -1
+					表示焦点位于渐变圆的另一条边界上。 小于 -1 或大于 1 的值将舍入为 -1 或 1。 例如，下例显示 focalPointRatio 设置为 0.75：
+				</dd>
+			</dl>
+			<dl>
+				<dd><img src="../images/doc/radial_sketch.jpg"
+						alt="radial_sketch.jpg" />
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B_3">示例</span></h4>
+			<dl>
+				<dd>下面的示例绘制一个矩形和一个圆，它们使用从红色到绿色、再到蓝色的渐变笔触。
+				</dd>
+				<dd>Matrix 类中的方法 createGradientBox() 用于将渐变框定义为 200 个像素宽、40 个像素高。 线条粗细设置为 5 个像素。 必须为 lineGradientStyle()
+					方法定义笔触粗细。 渐变设置为线性。 渐变颜色设置为红色、绿色和蓝色。 颜色透明度（Alpha 值）设置为 1（不透明）。 渐变的分布是均匀的，其中在
+					0（渐变框中的左侧位置）、128（渐变框的中间位置）和 255（渐变框中的右侧位置）处的颜色采样率为 100%。 矩形宽度范围内包含渐变的所有色谱；而圆包含色谱中间的 50%。
+				</dd>
+			</dl>
+			<pre> var g = $.createShape({lifeTime:3,x:50});
+ g.graphics.beginGradientFill("linear", [0xFF0000, 0x00FF00, 0x0000FF],[1,1,1],[0x00,0x7f,0xff] , $.createGradientBox(200, 40, 0, 0, 0));
+ g.graphics.drawRect(0,0,200,40);
+ g.graphics.drawCircle(100, 120, 50);  
+ g.graphics.endFill();
+</pre>
+			<h2> <span class="mw-headline" id="lineStyle">lineStyle</span></h2>
+			<p>public function lineStyle(thickness:Number, color:uint = 0, alpha:Number = 1.0, pixelHinting:Boolean =
+				false, scaleMode:String = "normal", caps:String = null, joints:String = null, miterLimit:Number =
+				3):void
+			</p>
+			<dl>
+				<dd>指定一种线条样式，Flash 可将该样式用于随后调用对象的其它 Graphics 方法（如 lineTo() 或 drawCircle()）。 线条样式仍然有效，直到使用不同的参数调用
+					lineGradientStyle() 方法或 lineStyle() 方法为止。 可以在绘制路径的中间调用 lineStyle()，以便为路径中的不同线段指定不同的样式。
+				</dd>
+			</dl>
+			<dl>
+				<dd>注意：调用 clear() 方法会将线条样式设置回 undefined。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_7">参数</span></h4>
+			<dl>
+				<dd><b>thickness</b>:Number — 一个整数，以磅为单位表示线条的粗细；有效值为 0 到 255。 如果未指定数字，或者未定义该参数，则不绘制线条。 如果传递的值小于 0，则默认值为
+					0。 值 0 表示极细的粗细；最大粗细为 255。 如果传递的值大于 255，则默认值为 255。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>color</b>:uint (default = 0) — 线条的十六进制颜色值（例如，红色为 0xFF0000，蓝色为 0x0000FF 等）。 如果未指明值，则默认值为
+					0x000000（黑色）。 可选。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>alpha</b>:Number (default = 1.0) — 表示线条颜色的 Alpha 值的数字；有效值为 0 到 1。 如果未指明值，则默认值为 1（纯色）。 如果值小于
+					0，则默认值为 0。 如果值大于 1，则默认值为 1。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>pixelHinting</b>:Boolean (default = false) — 用于指定是否提示笔触采用完整像素的布尔值。 它同时影响曲线锚点的位置以及线条笔触大小本身。 在
+					pixelHinting 设置为 true 的情况下，Flash Player 将提示线条宽度采用完整像素宽度。 在 pixelHinting 设置为 false
+					的情况下，对于曲线和直线可能会出现脱节。 例如，下图显示了 Flash Player 如何呈现两个相同的圆角矩形，不同之处是用于 lineStyle() 方法的 pixelHinting
+					参数设置不同（将图像放大 200% 以强调差异）：
+				</dd>
+				<dd><img src="../images/doc/lineStyle_pixelHinting.jpg"
+						alt="lineStyle_pixelHinting.jpg" />
+				</dd>
+				<dd>如果未提供值，则线条不使用像素提示。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>scaleMode</b>:String (default = "normal") — 用于指定要使用哪种缩放模式的 LineScaleMode 类的值：
+				</dd>
+			</dl>
+			<dl>
+				<dd>
+					<ul>
+						<li>normal -- 在缩放对象时总是缩放线条的粗细（默认值）。
+						</li>
+						<li>none -- 从不缩放线条粗细。
+						</li>
+						<li>vertical -- 如果仅 垂直缩放对象，则不缩放线条粗细。 例如，考虑下面的圆形，它们是用一个像素的线条绘制的，每个圆的 scaleMode 参数都被设置为 vertical。
+							左边的圆仅在垂直方向上缩放，而右边的圆则同时在垂直和水平方向上缩放：
+						</li>
+					</ul>
+					<dl>
+						<dd><img src="../images/doc/LineScaleMode_VERTICAL.jpg"
+								alt="LineScaleMode_VERTICAL.jpg" />
+						</dd>
+					</dl>
+					<ul>
+						<li>horizontal -- *如果仅 水平缩放对象，则不缩放线条粗细。 例如，考虑下面的圆形，它们是用一个像素的线条绘制的，每个圆的 scaleMode 参数都被设置为
+							horizontal。 左边的圆仅在水平方向上缩放，而右边的圆则同时在垂直和水平方向上缩放：
+						</li>
+					</ul>
+					<dl>
+						<dd><img src="../images/doc/LineScaleMode_HORIZONTAL.jpg"
+								alt="LineScaleMode_HORIZONTAL.jpg" />
+						</dd>
+					</dl>
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>caps</b>:String (default = null) — 用于指定线条末端处端点类型的 CapsStyle 类的值。 有效值为：none、round 和 square。
+					如果未指示值，则 Flash 使用圆头端点。
+					<dl>
+						<dd>例如，以下图示显示了不同的 capsStyle 设置。 对于每种设置，插图显示了一条粗细为 30 的蓝色线条（应用 capsStyle 的线条），以及重叠于其上的粗细为 1
+							的黑色线条（未应用 capsStyle 的线条）：
+						</dd>
+						<dd><img src="../images/doc/linecap.jpg"
+								alt="linecap.jpg" />
+						</dd>
+					</dl>
+				</dd>
+				<dd><b>joints</b>:String (default = null) — JointStyle 类的值，指定用于拐角的连接外观的类型。 有效值为：bevel、miter 和 round。
+					如果未指示值，则 Flash 使用圆角连接。
+					<dl>
+						<dd>例如，以下图示显示了不同的 joints 设置。 对于每种设置，插图显示了一条粗细为 30 的带拐角的蓝色线条（应用 jointStyle 的线条），以及重叠于其上的粗细为 1
+							的带拐角的黑色线条（未应用 jointStyle 的线条）：
+						</dd>
+						<dd><img src="../images/doc/linejoin.jpg"
+								alt="linejoin.jpg" />
+						</dd>
+						<dd><b>注意</b>：对于设置为 JointStyle.MITER 的 joints，您可以使用 miterLimit 参数限制尖角的长度。
+						</dd>
+					</dl>
+				</dd>
+				<dd><b>miterLimit</b>:Number (default = 3) — 一个表示将在哪个限制位置切断尖角的数字。 有效值的范围是 1 到 255（超出该范围的值将舍入为 1 或 255）。
+					此值只可用于 jointStyle 设置为 "miter" 的情况下。 miterLimit 值表示向外延伸的尖角可以超出角边相交所形成的结合点的长度。 此值表示为线条 thickness 的因子。
+					例如，miterLimit 因子为 2.5 且 thickness 为 10 像素时，尖角将在 25 像素处切断。
+					<dl>
+						<dd>例如，请考虑下列带拐角的线条，每个线条都以 thickness 20 进行绘制，但它们的 miterLimit 分别设置为 1、2 和 4。
+							重叠在其上的黑色参考线条显示了结合处的联结点：
+						</dd>
+						<dd><img src="../images/doc/miterLimit.jpg"
+								alt="miterLimit.jpg" />
+						</dd>
+						<dd>请注意，对于给定的 miterLimit 值，会有一个被切断的尖角的特定最大角度。 下表列出了部分示例：
+						</dd>
+					</dl>
+				</dd>
+			</dl>
+			<table class="wikitable">
+				<tr>
+					<th> miterLimit 值：</th>
+					<th>小于此角度将被切断：
+					</th>
+				</tr>
+				<tr>
+					<td> 1.414</td>
+					<td>90 度
+					</td>
+				</tr>
+				<tr>
+					<td> 2</td>
+					<td>60 度
+					</td>
+				</tr>
+				<tr>
+					<td> 4</td>
+					<td>30 度
+					</td>
+				</tr>
+				<tr>
+					<td> 8</td>
+					<td>15 度
+					</td>
+				</tr>
+			</table>
+			<h2> <span class="mw-headline" id="lineTo">lineTo</span></h2>
+			<p>public function lineTo(x:Number, y:Number):void
+			</p>
+			<dl>
+				<dd>使用当前线条样式绘制一条从当前绘画位置开始到 (x, y) 结束的直线；当前绘画位置随后会设置为 (x, y)。 如果正在其中绘制的显示对象包含用 Flash 绘画工具创建的内容，则调用
+					lineTo() 方法将在该内容下面进行绘制。 如果在对 moveTo() 方法进行任何调用之前调用了 lineTo()，则当前绘画的默认位置为 (0, 0)。
+					如果缺少任何一个参数，则此方法将失败，并且当前绘画位置不改变。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_8">参数</span></h4>
+			<dl>
+				<dd><b>x:Number</b> — 一个表示相对于父显示对象注册点的水平位置的数字（以像素为单位）。
+				</dd>
+				<dd><b>y:Number</b> — 一个表示相对于父显示对象注册点的垂直位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B_4">示例</span></h4>
+			<dl>
+				<dd>下面的示例使用 lineTo() 方法绘制一个梯形，从像素 (100, 100) 开始。
+				</dd>
+				<dd>线条粗细设置为 10 个像素，颜色为金色且不透明，线条终点设置为 none（因为联接了所有线条），两条线之间的联接点设置为 MITER 并将尖角限制设置为 10 以绘制尖锐的边角。
+				</dd>
+			</dl>
+			<pre> var trapezoid = $.createShape({lifeTime:2,x:250,y:0});
+ trapezoid.graphics.lineStyle(10, 0xFFD700, 1, false, "vertical","none", "miter", 10);
+ trapezoid.graphics.moveTo(100, 100);
+ trapezoid.graphics.lineTo(120, 50);
+ trapezoid.graphics.lineTo(200, 50);
+ trapezoid.graphics.lineTo(220, 100);
+ trapezoid.graphics.lineTo(100, 100); 
+</pre>
+			<h2> <span class="mw-headline" id="moveTo">moveTo</span></h2>
+			<p>public function moveTo(x:Number, y:Number):void
+			</p>
+			<dl>
+				<dd>将当前绘画位置移动到 (x, y)。 如果缺少任何一个参数，则此方法将失败，并且当前绘画位置不改变。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_9">参数</span></h4>
+			<dl>
+				<dd><b>x</b>:Number — 一个表示相对于父显示对象注册点的水平位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<dl>
+				<dd><b>y</b>:Number — 一个表示相对于父显示对象注册点的垂直位置的数字（以像素为单位）。
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E7.A4.BA.E4.BE.8B_5">示例</span></h4>
+			<dl>
+				<dd>下面的示例使用 moveTo() 和 lineTo() 方法绘制一条 3 个像素粗的虚线。
+				</dd>
+				<dd>通过使用 lineStyle() 方法，将线条粗细设置为 3 个像素。 还将其设置为不进行缩放。 颜色设置为红色，并且不透明度为 25%。 CapsStyle 属性设置为 square（默认值为
+					round）。
+				</dd>
+			</dl>
+			<pre> var trapezoid = $.createShape({lifeTime:2,x:250,y:0});
+ trapezoid.graphics.lineStyle(3, 0x990000, 0.25, false,"none","square");
+ trapezoid.graphics.moveTo(10, 20);
+ trapezoid.graphics.lineTo(20, 20);
+ trapezoid.graphics.moveTo(30, 20);
+ trapezoid.graphics.lineTo(50, 20);
+ trapezoid.graphics.moveTo(60, 20);
+ trapezoid.graphics.lineTo(80, 20);
+ trapezoid.graphics.moveTo(90, 20);
+ trapezoid.graphics.lineTo(110, 20);
+ trapezoid.graphics.moveTo(120, 20);
+ trapezoid.graphics.lineTo(130, 20);
+</pre>
+			<h2> <span class="mw-headline" id=".E5.8F.82.E9.98.85"> 参阅 </span></h2>
+			<ul>
+				<li> <a href="./Drawing_API.html"
+						title="绘图 API 使用基础知识">绘图 API 使用基础知识</a>
+				</li>
+			</ul>
+
+			<!-- 
+NewPP limit report
+Preprocessor node count: 114/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+			<!-- Saved in parser cache with key wikidb:pcache:idhash:24-0!*!0!!zh-cn!*!edit=0 and timestamp 20130517041008 -->
+			<div class="printfooter">
+				取自“<a
+					href="http://wikipage.bilibili.tv/wiki/Display.createGraphic.graphics">http://wikipage.bilibili.tv/wiki/Display.createGraphic.graphics</a>”
+			</div>
+			<!-- /bodytext -->
+			<!-- catlinks -->
+			<div id="catlinks" class="catlinks">
+				<div id="mw-normal-catlinks"><a
+						href="./Category_PageCategory.html"
+						title="特殊:页面分类">1个分类</a>: <span dir="ltr"><a
+							href="./Category_Script.html"
+							title="分类:Script">Script</a></span></div>
+			</div> <!-- /catlinks -->
+			<div class="visualClear"></div>
+		</div>
+		<!-- /bodyContent -->
+	</div>
+	<!-- /content -->
+	<!-- header -->
+	<div id="mw-head" class="noprint">
+
+		<!-- 0 -->
+		<div id="p-personal" class="">
+			<h5>个人工具</h5>
+			<ul>
+				<li id="pt-anonuserpage"><a
+						href="http://docs.bilibili.tv/wiki/%E7%94%A8%E6%88%B7:"
+						title="您编辑本站所用IP的对应用户页 [.]" accesskey="." class="new"></a></li>
+				<li id="pt-anontalk"><a
+						href="http://docs.bilibili.tv/wiki/%E7%94%A8%E6%88%B7%E8%AE%A8%E8%AE%BA:"
+						title="对于来自此IP地址的编辑的对话 [n]" accesskey="n" class="new">该IP的讨论页</a></li>
+				<li id="pt-anonlogin"><a
+						href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=Display.createGraphic.graphics"
+						title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o">登录</a></li>
+			</ul>
+		</div>
+
+		<!-- /0 -->
+		<div id="left-navigation">
+
+			<!-- 0 -->
+			<div id="p-namespaces" class="vectorTabs">
+				<h5>名字空间</h5>
+				<ul>
+					<li id="ca-nstab-main" class="selected"><span><a
+								href="./Display_createGraphic_graphics.html"
+								title="查看页面内容 [c]" accesskey="c">页面</a></span></li>
+					<li id="ca-talk" class="new"><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E8%AE%A8%E8%AE%BA:Display.createGraphic.graphics&amp;action=edit&amp;redlink=1"
+								title="关于页面正文的讨论 [t]" accesskey="t">讨论</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-variants" class="vectorMenu emptyPortlet">
+				<h5><span>变换</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+		</div>
+		<div id="right-navigation">
+
+			<!-- 0 -->
+			<div id="p-views" class="vectorTabs">
+				<h5>查看</h5>
+				<ul>
+					<li id="ca-view" class="selected"><span><a
+								href="./Display_createGraphic_graphics.html">阅读</a></span>
+					</li>
+					<li id="ca-viewsource"><span><a
+								href="http://docs.bilibili.tv/index.php?title=Display.createGraphic.graphics&amp;action=edit"
+								title="此页面已被保护，你可以查看其源代码。 [e]" accesskey="e">查看源代码</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a
+								href="http://docs.bilibili.tv/index.php?title=Display.createGraphic.graphics&amp;action=history"
+								title="此页面的早前修订版本 [h]" accesskey="h">查看历史</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-cactions" class="vectorMenu emptyPortlet">
+				<h5><span>动作</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+
+			<!-- 2 -->
+			<div id="p-search">
+				<h5><label for="searchInput">搜索</label></h5>
+				<form action="http://docs.bilibili.tv/index.php" id="searchform">
+					<input type="hidden" name="title" value="特殊:搜索" />
+					<input id="searchInput" name="search" type="text" title="搜索该网站 [f]" accesskey="f" value="" />
+					<input type="submit" name="go" class="searchButton" id="searchGoButton" value="进入"
+						title="如果相同的标题存在的话便直接前往该页面" />
+					<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="搜索"
+						title="搜索该文字的页面" />
+				</form>
+			</div>
+
+			<!-- /2 -->
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- panel -->
+	<div id="mw-panel" class="noprint">
+		<!-- logo -->
+		<div id="p-logo"><a
+				style="background-image: url(../images/baike.png);"
+				href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+		<!-- /logo -->
+
+		<!-- navigation -->
+		<div class="portal" id="p-navigation">
+			<h5>导航</h5>
+			<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a
+							href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页 [z]"
+							accesskey="z">首页</a></li>
+					<li id="n-.E5.8A.9F.E8.83.BD.E8.AF.B4.E6.98.8E"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">功能说明</a>
+					</li>
+					<li id="n-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">更新日志</a>
+					</li>
+					<li id="n-.E9.AB.98.E7.BA.A7.E5.BC.B9.E5.B9.95.E8.AF.AD.E8.A8.80"><a
+							href="./Category_Script.html">高级弹幕语言</a>
+					</li>
+					<li id="n-.E5.BC.80.E6.94.BE.E5.B9.B3.E5.8F.B0"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:API">开放平台</a></li>
+					<li id="n-randompage"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2"
+							title="随机载入一个页面 [x]" accesskey="x">随机页面</a></li>
+					<li id="n-help"><a
+							href="http://docs.bilibili.tv/wiki/%E5%B8%AE%E5%8A%A9:%E7%9B%AE%E5%BD%95"
+							title="寻求帮助">帮助</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /navigation -->
+
+		<!-- 更新 -->
+		<div class="portal" id="p-.E6.9B.B4.E6.96.B0">
+			<h5>更新</h5>
+			<div class="body">
+				<ul>
+					<li id="n-currentevents"><a
+							href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6"
+							title="查找当前事件的背景信息">当前事件</a></li>
+					<li id="n-recentchanges"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9"
+							title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+					<li id="n-.E6.9C.80.E6.96.B0.E5.9B.BE.E7.89.87"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6">最新图片</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /更新 -->
+
+		<!-- SEARCH -->
+
+		<!-- /SEARCH -->
+
+		<!-- TOOLBOX -->
+		<div class="portal" id="p-tb">
+			<h5>工具箱</h5>
+			<div class="body">
+				<ul>
+					<li id="t-whatlinkshere"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/Display.createGraphic.graphics"
+							title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+					<li id="t-recentchangeslinked"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/Display.createGraphic.graphics"
+							title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+					<li id="t-specialpages"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2"
+							title="所有特殊页面列表 [q]" accesskey="q">特殊页面</a></li>
+					<li id="t-print"><a
+							href="http://docs.bilibili.tv/index.php?title=Display.createGraphic.graphics&amp;printable=yes"
+							rel="alternate" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+					<li id="t-permalink"><a
+							href="http://docs.bilibili.tv/index.php?title=Display.createGraphic.graphics&amp;oldid=132"
+							title="这个页面修订版本的永久链接">永久链接</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /TOOLBOX -->
+
+		<!-- LANGUAGES -->
+
+		<!-- /LANGUAGES -->
+	</div>
+	<!-- /panel -->
+	<!-- footer -->
+	<div id="footer">
+		<ul id="footer-info">
+			<li id="footer-info-lastmod"> 此页面最后修订于2011年7月26日 (星期二) 09:50。</li>
+		</ul>
+		<ul id="footer-places">
+			<li id="footer-places-privacy"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96"
+					title="嗶哩嗶哩百科:隐私政策">隐私政策</a></li>
+			<li id="footer-places-about"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E"
+					title="嗶哩嗶哩百科:关于">关于嗶哩嗶哩百科</a></li>
+			<li id="footer-places-disclaimer"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"
+					title="嗶哩嗶哩百科:免责声明">免责声明</a></li>
+		</ul>
+		<ul id="footer-icons" class="noprint">
+			<li id="footer-poweredbyico">
+				<a href="http://www.mediawiki.org/"><img
+						src="../images/wiki/common/images/poweredby_mediawiki_88x31.png"
+						alt="Powered by MediaWiki" width="88" height="31" /></a>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<!-- /footer -->
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.config.set({
+				"wgCanonicalNamespace": "",
+				"wgCanonicalSpecialPageName": false,
+				"wgNamespaceNumber": 0,
+				"wgPageName": "Display.createGraphic.graphics",
+				"wgTitle": "Display.createGraphic.graphics",
+				"wgAction": "view",
+				"wgArticleId": 24,
+				"wgIsArticle": true,
+				"wgUserName": null,
+				"wgUserGroups": ["*"],
+				"wgCurRevisionId": 132,
+				"wgCategories": ["Script"],
+				"wgBreakFrames": false,
+				"wgRestrictionEdit": ["sysop"],
+				"wgRestrictionMove": ["sysop"],
+				"wgFCKEditorDir": "extensions/WYSIWYG/ckeditor/",
+				"wgFCKEditorExtDir": "extensions/WYSIWYG",
+				"wgFCKEditorToolbarSet": "Wiki",
+				"wgFCKEditorHeight": "0",
+				"wgCKeditorMagicWords": {
+					"wikitags": ["nowiki", "includeonly", "onlyinclude", "noinclude", "pre", "gallery"],
+					"magicwords": ["NOTOC", "FORCETOC", "TOC", "NOEDITSECTION", "NEWSECTIONLINK", "NONEWSECTIONLINK",
+						"NOCONTENTCONVERT", "NOCC", "NOTITLECONVERT", "NOTC", "NOGALLERY", "INDEX", "NOINDEX",
+						"STATICREDIRECT", "NOGALLERY", "HIDDENCAT", "START", "END"
+					],
+					"datevars": ["CURRENTYEAR", "CURRENTMONTH", "CURRENTMONTHNAME", "CURRENTMONTHNAMEGEN",
+						"CURRENTMONTHABBREV", "CURRENTDAY", "CURRENTDAY2", "CURRENTDOW", "CURRENTDAYNAME",
+						"CURRENTTIME", "CURRENTHOUR", "CURRENTWEEK", "CURRENTTIMESTAMP"
+					],
+					"wikivars": ["SITENAME", "SERVER", "SERVERNAME", "DIRMARK", "SCRIPTPATH", "CURRENTVERSION",
+						"CONTENTLANG", "REVISIONID", "REVISIONDAY", "REVISIONDAY2", "REVISIONMONTH",
+						"REVISIONYEAR", "REVISIONTIMESTAMP", "REVISIONUSER", "FULLPAGENAME", "PAGENAME",
+						"BASEPAGENAME", "SUBPAGENAME", "SUBJECTPAGENAME", "TALKPAGENAME", "NAMESPACE",
+						"ARTICLESPACE", "TALKSPACE"
+					],
+					"parserhooks": ["lc", "lcfirst", "uc", "ucfirst", "formatnum", "#dateformat", "padleft",
+						"padright", "plural", "grammar", "#language", "int", "#tag", "#int", "#ns", "#nse",
+						"#urlencode", "#lcfirst", "#ucfirst", "#lc", "#uc", "#localurl", "#localurle", "#fullurl",
+						"#fullurle", "#formatnum", "#grammar", "#gender", "#plural", "#numberofpages",
+						"#numberofusers", "#numberofactiveusers", "#numberofarticles", "#numberoffiles",
+						"#numberofadmins", "#numberingroup", "#numberofedits", "#numberofviews", "#padleft",
+						"#padright", "#anchorencode", "#special", "#defaultsort", "#filepath", "#pagesincategory",
+						"#pagesize", "#protectionlevel", "#namespace", "#namespacee", "#talkspace", "#talkspacee",
+						"#subjectspace", "#subjectspacee", "#pagename", "#pagenamee", "#fullpagename",
+						"#fullpagenamee", "#basepagename", "#basepagenamee", "#subpagename", "#subpagenamee",
+						"#talkpagename", "#talkpagenamee", "#subjectpagename", "#subjectpagenamee", "#formatdate",
+						"#displaytitle"
+					]
+				},
+				"wgCKeditorUseBuildin4Extensions": [],
+				"wgAllowExternalImages": true
+			});
+		}
+	</script>
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+			mediaWiki.loader.go();
+		}
+	</script>
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.user.options.set({
+				"ccmeonemails": 0,
+				"cols": 80,
+				"contextchars": 50,
+				"contextlines": 5,
+				"date": "default",
+				"diffonly": 0,
+				"disablemail": 0,
+				"disablesuggest": 0,
+				"editfont": "default",
+				"editondblclick": 0,
+				"editsection": 1,
+				"editsectiononrightclick": 0,
+				"enotifminoredits": 0,
+				"enotifrevealaddr": 0,
+				"enotifusertalkpages": 1,
+				"enotifwatchlistpages": 0,
+				"extendwatchlist": 0,
+				"externaldiff": 0,
+				"externaleditor": 0,
+				"fancysig": 0,
+				"forceeditsummary": 0,
+				"gender": "unknown",
+				"hideminor": 0,
+				"hidepatrolled": 0,
+				"highlightbroken": 1,
+				"imagesize": 2,
+				"justify": 0,
+				"math": 1,
+				"minordefault": 0,
+				"newpageshidepatrolled": 0,
+				"nocache": 0,
+				"noconvertlink": 0,
+				"norollbackdiff": 0,
+				"numberheadings": 0,
+				"previewonfirst": 0,
+				"previewontop": 1,
+				"quickbar": 1,
+				"rcdays": 7,
+				"rclimit": 50,
+				"rememberpassword": 0,
+				"rows": 25,
+				"searchlimit": 20,
+				"showhiddencats": 0,
+				"showjumplinks": 1,
+				"shownumberswatching": 1,
+				"showtoc": 1,
+				"showtoolbar": 1,
+				"skin": "vector",
+				"stubthreshold": 0,
+				"thumbsize": 2,
+				"underline": 2,
+				"uselivepreview": 0,
+				"usenewrc": 0,
+				"watchcreations": 0,
+				"watchdefault": 0,
+				"watchdeletion": 0,
+				"watchlistdays": 3,
+				"watchlisthideanons": 0,
+				"watchlisthidebots": 0,
+				"watchlisthideliu": 0,
+				"watchlisthideminor": 0,
+				"watchlisthideown": 0,
+				"watchlisthidepatrolled": 0,
+				"watchmoves": 0,
+				"wllimit": 250,
+				"riched_use_toggle": 1,
+				"riched_start_disabled": 1,
+				"riched_use_popup": 1,
+				"riched_toggle_remember_state": 1,
+				"usebetatoolbar": 1,
+				"usebetatoolbar-cgd": 1,
+				"wikieditor-preview": 1,
+				"variant": "zh-cn",
+				"language": "zh-cn",
+				"searchNs0": true,
+				"searchNs1": false,
+				"searchNs2": false,
+				"searchNs3": false,
+				"searchNs4": false,
+				"searchNs5": false,
+				"searchNs6": false,
+				"searchNs7": false,
+				"searchNs8": false,
+				"searchNs9": false,
+				"searchNs10": false,
+				"searchNs11": false,
+				"searchNs12": false,
+				"searchNs13": false,
+				"searchNs14": false,
+				"searchNs15": false
+			});;
+			mediaWiki.loader.state({
+				"user.options": "ready"
+			});
+		}
+	</script> <!-- fixalpha -->
+	<script type="text/javascript">
+		if (window.isMSIE55) fixalpha();
+	</script>
+	<!-- /fixalpha -->
+	<!-- Served in 0.228 secs. -->
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>高级弹幕绘图助手：DanmakuHelper Ver1.15 0325更新 - 弹幕艺术联合文档</title>
+    <meta name="description" content="">
+    <meta name="author" content="Encode.X">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../../assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="../../../../atom.xml" type="application/atom+xml" rel="alternate" title="日志更新 Atom 1.0">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">弹幕艺术联合文档</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../../examples.html">代码样例</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../../performance.html">性能</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../../reference.html">速查手册</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li><a href="https://github.com/biliscript-syndicate">Github项目</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>高级弹幕绘图助手：DanmakuHelper Ver1.15 0325更新 <small></small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    
+<p>一款高级弹幕(Mode8)的绘图辅助工具</p>
+
+<p><img src="../../../../res/DanmakuHelper/1_1.png" alt="img01" /></p>
+
+<!-- break -->
+
+<p><img src="../../../../res/DanmakuHelper/1_2.png" alt="img02" />
+<!-- break --></p>
+
+<p><img src="../../../../res/DanmakuHelper/screenshot20130301202046.png" alt="img03" /></p>
+
+<p>以下引用 <a href="http://space.bilibili.tv/92776">面汤拌菜菌</a> 在<a href="http://tieba.baidu.com/p/2178184922">bilibili吧</a>发布的内容（底部为下载链接）：</p>
+
+<p>去年拜年祭的时候自己也有过类似的工具，但是功能比较局限。同时<a href="http://space.bilibili.tv/16425">音叉(Encode.X)</a>也开发了类似的工具。去年的弹幕大赛的举办也开启了全会员的高级弹幕权限。所以在去年就想过能够把两个工具合体了。于是这是完成品。</p>
+
+<p>能实现的功能：</p>
+
+<ol>
+  <li>
+    <p> 可添加背景临摹图片，图片可调整放缩透明度。</p>
+  </li>
+  <li>
+    <p> 支持分图层绘图，图层可删除，可排序。</p>
+  </li>
+  <li>
+    <p> 绘图按flash代码习惯分直线和曲线（二次贝塞尔）工具。可填充，可线描。理论上可无限次撤销重做。每层不相互影响。（曲线工具按操作习惯分两种，一种是类似PS的钢笔，一种类似windows画图的钢笔）</p>
+  </li>
+  <li>
+    <p> 画布可拖曳放缩，不影响坐标。</p>
+  </li>
+  <li>
+    <p> 可对图片取色。</p>
+  </li>
+  <li>
+    <p> 代码的输出按层顺序，有两种格式选择。同时可以选择输出为文本文件。</p>
+  </li>
+  <li>
+    <p> 代码支持导入。可选择追加与覆盖两种模式。同时可以选择导入为文本文件。</p>
+  </li>
+  <li>
+    <p> 常用按键全分配了键盘快捷键。可查看帮助信息。鼠标悬停也有提示信息。</p>
+  </li>
+</ol>
+
+<p>由于是音叉与我两人原来工具的合体版本，同时添加了许多新功能。框架是Flex，（UI和基础功能都是音叉设计的，跪<em>(:з」∠)</em>）现学现写。</p>
+
+<p>肯定存在部分bug未有发现。欢迎提交。有部分功能由于一些因素暂时未添加。后续版本会跟进。</p>
+
+<p>自弹幕艺术刚开始发展的时候，就已经有一些辅助的工具。随着播放器的进步与改变，从前的工具也很多失去兼容。弹幕君也一直在努力开发新的工具。让设计更简单与方便，这也是开发工具一直以来的初衷。</p>
+
+<p>但是无论如何，工具永远只是工具，永远只是程式化的东西，只能是辅助作用。不能替代设计的过程。更重要的是弹幕作品的内容。还希望使用者能够健康的使用工具，能为Bilibili的弹幕艺术添姿加彩。</p>
+
+<p>音叉要说的话：</p>
+
+<p>这个工具终于能以一个比较全面的姿态发布出来了，自己打心眼里高兴。面瘫真的很厉害呀，解决了很多我一个人无法处理的问题。当然这个工具只是作为制作高级弹幕的一个辅助来使用的，而且还有不少我们想继续加入的功能，以个人角度来讲这个东西依旧不友好，今后会加以修正。作为高三学生假期里抽空弄这个东西也不能太浪费时间也请理解…有bug的话希望踊跃地提交。</p>
+
+<p>另外帮助文档的帮助是不完全的，请自己暂时再试探着发现一些用法。</p>
+
+<p>有关bug提交:可以访问 <a href="http://tieba.baidu.com/f?tp=0&amp;kw=%C3%E6%CC%B1%B0%EB%D5%AC%BE%FD">面瘫半宅君</a> 吧 和 <a href="http://tieba.baidu.com/f?tp=0&amp;kw=encode_x">Encode_X</a> 吧 或 私信两人的微博：<a href="http://weibo.com/mt233">@面汤拌菜菌</a> <a href="http://weibo.com/encodex">@饮茶子</a></p>
+
+<p>或者跟帖即可。</p>
+
+<p>下载文件： <a href="http://pan.baidu.com/share/link?shareid=374245&amp;uk=1745881826">DanmakuHelperVer1.15.zip</a> (3.2MB,百度网盘)</p>
+
+<h2 id="section">以下为更新文档：</h2>
+
+<p>Ver1.15 2013-03-25</p>
+
+<hr />
+
+<p>1.重构构架。</p>
+
+<p>2.增加Svg导入转Mode8功能，支持初步的误差处理。</p>
+
+<p>3.修复部分bug。</p>
+
+<p>4.双 曲线工具位置及快捷键对换（C/V）。</p>
+
+<p>Ver1.1 2013-03-01</p>
+
+<hr />
+
+<p>1.修复导入文本、移动层的一些bug。</p>
+
+<p>2.重写界面UI。</p>
+
+<p>3.增加moveTo(不可见直线)操作工具。</p>
+
+<p>4.修改一些冲突的快捷键，将常用工具键放到了易触及的地方。</p>
+
+<p>5.增加代码区“复制到剪切板”、“清除”两个按钮。</p>
+
+<p>6.增加取色功能。</p>
+
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="../../../../news/2013/02/15/rnr-making-of.html" title="《Round and Round》后记">&larr; 前</a></li>
+      
+        <li><a href="../../../../archive.html">存档</a></li>
+      
+        <li class="next"><a href="../../../../news/2013/02/26/scratchpad-project-timeline.html" title="弹幕涂鸦系统">后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'biliscript-syndicate'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>请开启JavaScript查看评论。</noscript>
+<a href="http://disqus.com" class="dsq-brlink">评论系统由<span class="logo-disqus">Disqus</span>提供。</a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>作者</h4>
+    <div><span>Encode.X</span></div>
+    <h4>日期</h4>
+    <div class="date"><span>2013年02月23日</span></div>
+
+  
+  
+    <h4>标签</h4>
+    <ul class="tag_box">
+    
+    
+
+
+  
+     
+    	<li><a href="/tags.html#工具-ref">工具 <span>1</span></a></li>
+    
+  
+
+
+
+    </ul>
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="https://github.com/biliscript-syndicate">Biliscript Syndicate</a> 2015
+          使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

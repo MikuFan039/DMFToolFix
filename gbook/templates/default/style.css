@@ -1,0 +1,115 @@
+/* 
+GBook CSS Document
+Template: default
+Last modified: January 29th, 2022
+*/
+
+/*--------------------------------------------HEADER--------------------------------------------*/
+
+body{margin:0; padding:0; background-image:url(images/bg.png); background-repeat:repeat-x; font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color:#003399;}
+
+#gbook_header{max-width:600px; height:150px; margin:0 auto; background-image:url(images/book.png); background-repeat:no-repeat;}
+
+#gbook_top_links{max-width:450px; height:50px; margin-left:120px; margin-top:10px;}
+
+a{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color: #003399; text-decoration:underline;}
+a:hover{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color: #003399; text-decoration:none;}
+
+#gbook_top_links a{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color: #003399; text-decoration:underline; font-weight:bold;}
+#gbook_top_links a:hover{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#003399; text-decoration:none; font-weight:bold;}
+
+img.gbook_logo{margin-left:150px; margin-top:10px;}
+
+span.gbook_entries_top{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#003399; text-decoration:none; line-height:25px;}
+
+br.clear{clear:both;}
+
+.clear{line-height:10px; clear:both}
+
+hr{ width:99%; height:1px; color:#333333;}
+
+h1{margin:0; padding-top:5px; font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#010097; font-weight:bold; font-size:20px; position:relative; left:30px;}
+/*--------------------------------------------HEADER--------------------------------------------*/
+
+
+/*--------------------------------------------BODY--------------------------------------------*/
+
+.gbook_break_text {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.gbook_do_not_break_text {
+  white-space: nowrap;
+}
+
+.gbook_commentbox{width:96%; height:auto; background-image:url(images/bg_comment_box.gif); background-repeat:repeat-x; background-color:#f9f9f9; margin:0 auto; border:solid 1px #CCCCCC; display: table; margin-bottom:20px;}
+
+.gbook_left_box{width:30%; height:auto; float:left; position:relative;}
+.gbook_right_box{width:68%; height:auto; float:right;}
+.gbook_right_box_1{width:50%; height:auto; float:left;}
+.gbook_right_box_2{width:50%; height:auto; float:right;}
+
+img.gbook_nobrd{border:none; margin-left:10px; margin-right:3px;}
+img.gbook_emoticons{border:none; margin-left:3px; margin-right:3px;}
+
+span.gbook_submitted{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold; font-size:12px; padding-left:5px; float:left; margin-bottom:7px; margin-top:3px;}
+span.gbook_submitted_by{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:12px; padding-left:5px; line-height:18px; }
+span.gbook_comments{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#FFFFFF; font-weight:bold; font-size:12px; margin-bottom:7px; float:left; margin-top:3px; }
+span.gbook_comment{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:12px; float:left; line-height:18px; margin-right:5px; text-align:justify; }
+span.gbook_added{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:11px; float:left }
+
+
+a.gbook_submitted{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#0066FF; text-decoration:underline;}
+a.gbook_submitted:hover{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#0066FF; text-decoration:none;}
+
+.gbook_bottom a{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#0066FF; text-decoration:underline; font-weight:bold;}
+.gbook_bottom a:hover{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#0066FF; text-decoration:none; font-weight:bold;}
+.gbook_bottom {font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:12px; color:#0066FF; text-decoration:none;}
+
+
+#gbook_guestbook{width:100%; height:auto; margin-bottom:20px;}
+span.gbook_guestbook{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:20px; color:#0e67af; font-weight:bold; text-align:center}
+span.gbook_required{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:12px; }
+
+
+#gbook_entries{width:500px; margin:0 auto; background-color:#f4f9fd; border: solid 1px #b0b0b1; margin-bottom:10px;}
+.gbook_sign_error{color: #FF3333; font-weight: bold; margin-left:10px; margin-top:10px;}
+.gbook_sign_text{font-size: 12px; color: #464645; margin-left:10px; margin-top:10px; margin-right:10px; text-align: justify;}
+.gbook_sign_notice{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size:14px; color: #228B22; font-weight: bold; text-align: center; margin-bottom: 10px;}
+
+.gbook_left{width:150px; height:auto; position:relative; float:left; margin-left:10px; margin-top:10px;}
+.gbook_right{width:300px; height:auto; position:relative; float:left; margin-top:10px;}
+
+span.gbook_entries{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:12px; line-height:25px; }
+span.gbook_small{font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; color:#464645; font-size:11px;}
+
+textarea{margin-left:10px; margin-right:15px}
+
+#gbook_bottom_images{ width:400px; height:auto; position:relative; float:left; margin-left:10px; margin-top:15px;}
+.gbook_bottom_images img{border:none;}
+
+input.gbook_checkbox{vertical-align:middle;}
+
+img.gbook_sec_img {border:none; margin-top:10px;}
+
+input.gbook_submit{position:relative; top:30px;}
+input.submit{border: medium none;  font-size:14px; text-transform:uppercase; background-image:url(images/submit.gif); background-repeat:repeat-x; position:relative;  top:10px; color:#FFFFFF; font-family:Verdana; font-weight:bold ; text-decoration:none; width:237px; height:32px;margin-top:0px; }
+
+
+#gbook_no_spam{position:relative; top:20px; width:100%; height:auto;}
+.gbook_no_spam img{border:none}
+
+body.gbook_emoticons{margin:0; padding:0; background-image:url(images/bg.png); background-repeat:repeat-x; background-color:#FFFFFF; font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12px; color:#464645;}
+div.gbook_emoticons{font-size: 12px; color: #464645; margin:10px; text-align: center;}
+img.gbook_emoticon {border:none; margin:5px;}
+
+/*--------------------------------------------BODY--------------------------------------------*/
+

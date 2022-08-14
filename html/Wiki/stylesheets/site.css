@@ -1,0 +1,16 @@
+.paramTable {
+    background-color: #ccc;
+    margin-left: 15px;
+    border: 0px;
+    border-spacing: 1px
+}
+
+.paramTable tbody tr {
+    background-color: #fff
+}
+
+.paramTable tbody tr td {
+    padding: 2px
+}
+
+@media print {}

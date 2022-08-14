@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title>弹幕示例:Galgame - 嗶哩嗶哩百科</title>
+	<meta name="generator" content="MediaWiki 1.17.0" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="search" type="application/opensearchdescription+xml"
+		href="http://docs.bilibili.tv/opensearch_desc.php" title="嗶哩嗶哩百科 (zh-cn)" />
+	<link rel="EditURI" type="application/rsd+xml" href="http://wikipage.bilibili.tv/api.php?action=rsd" />
+	<link rel="alternate" type="application/atom+xml" title="嗶哩嗶哩百科的Atom订阅"
+		href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+	<link rel="stylesheet"
+		href="../stylesheets/mediawiki.legacy.commonPrint.css" />
+	<meta name="ResourceLoaderDynamicStyles" content="" />
+	<link rel="stylesheet"
+		href="../stylesheets/site.css" />
+
+	<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]-->
+</head>
+
+<body class="mediawiki ltr ns-0 ns-subject page-弹幕示例_Galgame skin-vector">
+	<div id="mw-page-base" class="noprint"></div>
+	<div id="mw-head-base" class="noprint"></div>
+	<!-- content -->
+	<div id="content">
+		<a id="top"></a>
+		<div id="mw-js-message" style="display:none;"></div>
+		<!-- firstHeading -->
+		<h1 id="firstHeading" class="firstHeading">弹幕示例:Galgame</h1>
+		<!-- /firstHeading -->
+		<!-- bodyContent -->
+		<div id="bodyContent">
+			<!-- tagline -->
+			<div id="siteSub">出自嗶哩嗶哩百科</div>
+			<!-- /tagline -->
+			<!-- subtitle -->
+			<div id="contentSub"></div>
+			<!-- /subtitle -->
+			<!-- jumpto -->
+			<div id="jump-to-nav">
+				跳转到： <a href="#mw-head">导航</a>,
+				<a href="#p-search">搜索</a>
+			</div>
+			<!-- /jumpto -->
+			<!-- bodytext -->
+			<dl>
+				<dd>本示例提供制作Galgame的基础函数
+				</dd>
+			</dl>
+			<table id="toc" class="toc">
+				<tr>
+					<td>
+						<div id="toctitle">
+							<h2>目录</h2>
+						</div>
+						<ul>
+							<li class="toclevel-1 tocsection-1"><a
+									href="#.E5.BB.BA.E7.AB.8B.E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3"><span
+										class="tocnumber">1</span> <span class="toctext">建立对话窗口</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-2"><a href="#.E5.8F.82.E6.95.B0"><span
+												class="tocnumber">1.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-3"><a
+											href="#.E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89"><span
+												class="tocnumber">1.2</span> <span class="toctext">函数定义</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-4"><a
+									href="#.E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3.E4.BF.A1.E6.81.AF.E6.B7.BB.E5.8A.A0"><span
+										class="tocnumber">2</span> <span class="toctext">对话窗口信息添加</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-5"><a href="#.E5.8F.82.E6.95.B0_2"><span
+												class="tocnumber">2.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-6"><a
+											href="#.E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_2"><span
+												class="tocnumber">2.2</span> <span class="toctext">函数定义</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-7"><a
+									href="#.E6.8C.89.E9.92.AE.E4.BF.A1.E6.81.AF.E6.B7.BB.E5.8A.A0"><span
+										class="tocnumber">3</span> <span class="toctext">按钮信息添加</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-8"><a href="#.E5.8F.82.E6.95.B0_3"><span
+												class="tocnumber">3.1</span> <span class="toctext">参数</span></a></li>
+									<li class="toclevel-2 tocsection-9"><a
+											href="#.E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_3"><span
+												class="tocnumber">3.2</span> <span class="toctext">函数定义</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-10"><a
+									href="#.E7.A7.BB.E9.99.A4.E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3"><span
+										class="tocnumber">4</span> <span class="toctext">移除对话窗口</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-11"><a
+											href="#.E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_4"><span
+												class="tocnumber">4.1</span> <span class="toctext">函数定义</span></a></li>
+								</ul>
+							</li>
+							<li class="toclevel-1 tocsection-12"><a href="#.E4.BD.BF.E7.94.A8.E7.A4.BA.E4.BE.8B"><span
+										class="tocnumber">5</span> <span class="toctext">使用示例</span></a></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<h2> <span class="mw-headline" id=".E5.BB.BA.E7.AB.8B.E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3">建立对话窗口</span>
+			</h2>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0">参数</span></h4>
+			<dl>
+				<dd><b>owner</b>:String ─ Galgame中对话窗口角色
+				</dd>
+				<dd><b>txt</b>:String ─ Galgame中对话窗口信息
+				</dd>
+				<dd><b>onfinish</b>:Function ─ 提示完成时的回调函数
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89">函数定义</span></h4>
+			<pre> function createGalbox(owner,txt,onfinish,createArrowNow)
+ {
+ 	var ownfsize = 14;  /** 设置对话人文字大小 **/
+ 	var cboxWidth = Player.width-20; var cboxHeight = 80+ownfsize+4;
+ 	
+ 	$G._set("_gal_cboxWidth",cboxWidth);
+ 	$G._set("_gal_cboxHeight",cboxHeight);
+ 	
+ 	var cbox = $.createCanvas({lifeTime:0,x:10,y:Player.height-85-ownfsize-4});
+ 	$G._set("_gal_cbox",cbox);
+ 	var box = $.createShape({lifeTime:0,x:0,y:0,alpha:0.4,parent:cbox});
+ 	box.graphics.beginFill(0x008aff); /** 设置背景色彩 **/
+ 	box.graphics.lineStyle(2, 0x00649e, 1, false, "vertical","none", "miter", 10);  /** 设置对话人线条色彩 **/
+ 	box.graphics.drawRoundRect(-2,-8,owner.length*ownfsize*1.5+4,ownfsize+8,20);
+ 	box.graphics.lineStyle(5, 0x00649e, 1, false, "vertical","none", "miter", 10);  /** 设置对话信息背景色彩 **/
+ 	box.graphics.drawRect(0,ownfsize+4,cboxWidth,80);
+ 	box.graphics.endFill();
+ 	
+ 	var bown = $.createComment(owner,{x:10,y:-7,fontsize:ownfsize,lifeTime:0,parent:cbox,color:0x0036ff});
+ 	bown.bold = false; bown.filters=null;
+ 	
+ 	vx=txt.substr(0,1);
+ 	oTxt=$.createComment(vx,{x:10,y:ownfsize+10+4,fontsize:20,lifeTime:0,parent:cbox});
+ 	$G._set("_gal_galTextObj",oTxt);
+ 	galTextTmr = $G._("_gal_galText");
+ 	if (galTextTmr!=undefined)
+ 	{
+ 		galTextTmr.stop();
+ 	}
+ 	var galTextTmr = interval(function(){ oTxt.text+=txt.substr(oTxt.length,1); 
+ 		if (oTxt.length==txt.length)
+ 		{
+ 			if (onfinish!=undefined) onfinish();
+ 			if (createArrowNow == undefined || createArrowNow) timer(createGalArrow,300);
+ 		}
+ 	}, 50, txt.length-1);
+ 	$G._set("_gal_galText",galTextTmr);
+ }
+ function createGalArrow(){
+ 	var yArrow = $.createShape({lifeTime:0,x:$G._("_gal_cboxWidth")-20,y:$G._("_gal_cboxHeight")-20,parent:$G._("_gal_cbox")});
+ 	yArrow.graphics.lineStyle(1, 0xff900c, 1, false, "vertical","none", "miter", 10);
+ 	yArrow.graphics.beginFill(0xffffff);
+ 	yArrow.graphics.moveTo(0,10);
+ 	yArrow.graphics.lineTo(-5,0);
+ 	yArrow.graphics.lineTo(5,0);
+ 	yArrow.graphics.lineTo(0,10);
+ 	yArrow.graphics.endFill();
+ 	$G._set("_gal_yArrow",yArrow);
+ 
+ 	if ($G._("_gal_yArrowTimer")!=undefined){
+ 		yArrowTimer = $G._("_gal_yArrowTimer");
+ 		yArrowTimer.stop();
+ 	}
+ 	var yArrowTimer = interval(function(){ var ya=$G._("_gal_yArrow"); ya.rotationY+=10;},100,0);
+ 	$G._set("_gal_yArrowTimer",yArrowTimer);
+ }
+</pre>
+			<h2> <span class="mw-headline"
+					id=".E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3.E4.BF.A1.E6.81.AF.E6.B7.BB.E5.8A.A0">对话窗口信息添加</span></h2>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_2">参数</span></h4>
+			<dl>
+				<dd><b>txt</b>:String ─ Galgame中对话窗口中添加的信息
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_2">函数定义</span></h4>
+			<pre> function appendGalText(txt,onFinish)
+ {
+ 	var oTxt = $G._("_gal_galTextObj");
+ 	if (galTextTmr!=undefined)
+ 	{
+ 		galTextTmr.stop();
+ 	}
+ 	s=oTxt.length;
+ 	var galTextTmr = interval(function(){ oTxt.text+=txt.substr(oTxt.length-s,1); if (onFinish!=undefined &amp;&amp; oTxt.length-s == txt.length) onFinish(); }, 50, txt.length);
+ 	$G._set("_gal_galText",galTextTmr);
+ }
+</pre>
+			<h2> <span class="mw-headline" id=".E6.8C.89.E9.92.AE.E4.BF.A1.E6.81.AF.E6.B7.BB.E5.8A.A0">按钮信息添加</span>
+			</h2>
+			<h4> <span class="mw-headline" id=".E5.8F.82.E6.95.B0_3">参数</span></h4>
+			<dl>
+				<dd><b>x</b>:Number ─ 按钮X位置
+				</dd>
+				<dd><b>y</b>:Number ─ 按钮y起始位置
+				</dd>
+				<dd><b>btn</b>:Array ─ 按钮设置
+				</dd>
+				<dd><b>step</b>:Number ─ 按钮垂直间隔 (默认50)
+				</dd>
+			</dl>
+			<h4> <span class="mw-headline" id=".E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_3">函数定义</span></h4>
+			<pre> function createGalButton(x,y,btn,step)
+ {
+ 	var galButtons = [];
+ 	if (step==undefined) step=50;
+ 	for (var i=0;i&lt;btn.length;i++)
+ 	{
+ 		var motion = undefined;
+ 		var width = 250;
+ 		if (btn[i].width&#160;!= undefined) width = btn[i].width;
+ 		var bx = x;
+ 		if ($G._("_gal_set_animation"))
+ 		{
+ 			bx = (i%2==0&#160;? 0-width&#160;: Player.width+width);
+ 			motion = {x:{fromValue:bx, toValue:x, lifeTime: 0.5}};
+ 		}
+ 		var b=$.createButton({text:btn[i].text,x:bx,y:y+i*step,lifeTime:0,width:width,onclick:btn[i].onclick,motion:motion});
+ 		if (btn[i].fillColors&#160;!= undefined) b.setStyle("fillColors",btn[i].fillColors);
+ 		if (btn[i].fillAlphas&#160;!= undefined) b.setStyle("fillAlphas",btn[i].fillAlphas);
+ 		galButtons.push(b);
+ 	}
+ 	$G._set("_gal_galButtons",galButtons);
+ }
+</pre>
+			<h2> <span class="mw-headline" id=".E7.A7.BB.E9.99.A4.E5.AF.B9.E8.AF.9D.E7.AA.97.E5.8F.A3">移除对话窗口</span>
+			</h2>
+			<h4> <span class="mw-headline" id=".E5.87.BD.E6.95.B0.E5.AE.9A.E4.B9.89_4">函数定义</span></h4>
+			<pre> function removeGalBox()
+ {
+ 	var cbox = $G._("_gal_cbox");
+ 	var yArrow = $G._("_gal_yArrow");
+ 	var yArrowTimer = $G._("_gal_yArrowTimer");
+ 	var galButtons = $G._("_gal_galButtons");
+ 	if (yArrow!=undefined) yArrow.remove();
+ 	if (yArrow!=yArrowTimer) yArrowTimer.stop();
+ 	$G._set("_gal_yArrowTimer",undefined);
+ 	if (cbox!=yArrowTimer) cbox.remove();
+ 	if (galButtons==undefined) return;
+ 	for (;galButtons.length&gt;0;)
+ 	{
+ 		var b=galButtons.pop();
+ 		b.remove();
+ 	}
+ }
+</pre>
+			<h2> <span class="mw-headline" id=".E4.BD.BF.E7.94.A8.E7.A4.BA.E4.BE.8B">使用示例</span></h2>
+			<pre> $G._set("_gal_set_animation",true);
+ var galbg=$.createCanvas({x:-1,y:-1,width:Player.width,height:Player.height,lifeTime:0});
+ var bg_=$.createShape({x:0,y:0,lifeTime:0,parent:bg});
+ bg_.graphics.beginFill(0xffffff);
+ bg_.graphics.drawRect(0,0,Player.width,Player.height);
+ bg_.graphics.endFill();
+ 
+ createGalbox("哔哩哔哩","欢迎来到高级弹幕测试视频...",function(){
+ 	appendGalText("\n请请在上方选择您要观看的项目...",function(){timer(createGalArrow,300);});
+ 	createGalButton(150,20,[
+ 	{text:"基础代码演示",onclick:function(){Player.jump("av120040",2);}},
+ 	{text:"Idol Master",fillColors:[0xffffff,0xff900c],onclick:function(){Player.jump("av120040",3);}},
+ 	{text:"魔法少女小圆OP",fillColors:[0xffffff,0xff7777],onclick:function(){Player.jump("av120040",4);}},
+ 	{text:"キミとふたり",fillColors:[0xffffff,0x00991d],onclick:function(){Player.jump("av120040",5);}},
+ 	{text:"いとうかなこ - Hacking to the Gate",fillColors:[0xffffff,0x6d2400],onclick:function(){Player.jump("av120040",6);}},
+ 	{text:"什么都不做",onclick:function(){Player.seek(190500);}}
+ 	],45);
+ },false);
+ function timerEvent()
+ {
+ 	if (Player.time &gt; 190500 &amp;&amp; $G._("galBadend")==undefined)
+ 	{
+ 		$G._set("galBadend",1);
+ 		removeGalBox();
+ 		ScriptManager.clearEl();
+ 		var galbg=$.createCanvas({x:-1,y:-1,width:Player.width,height:Player.height,lifeTime:0});
+ 		var bg_=$.createShape({x:0,y:0,lifeTime:0,parent:bg});
+ 		bg_.graphics.beginFill(0x00);
+ 		bg_.graphics.drawRect(0,0,Player.width,Player.height);
+ 		bg_.graphics.endFill();
+ 		var y=0;
+ 			for (var i=0;i&lt;3;i++){
+ 				var a=$.createComment("Bad End",{fontsize:72,x:130,y:100+y--*3,lifeTime:6,color:0xff0000,alpha:0,motion:
+ 				{
+ 					alpha:{fromValue:0,toValue:1,lifeTime:1}
+ 				}
+ 				});
+ 			};
+ 		createGalbox("哔哩哔哩","请重新来过...");
+ 	}else if (Player.time &lt; 190500)
+ 	{
+ 		$G._set("galBadend",undefined);
+ 	}
+ }
+ interval(timerEvent,500,0);
+</pre>
+			<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+			<!-- Saved in parser cache with key wikidb:pcache:idhash:50-0!*!0!!zh-cn!*!edit=0 and timestamp 20130711132531 -->
+			<div class="printfooter">
+				取自“<a
+					href="http://wikipage.bilibili.tv/wiki/%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame">http://wikipage.bilibili.tv/wiki/%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame</a>”
+			</div>
+			<!-- /bodytext -->
+			<!-- catlinks -->
+			<div id="catlinks" class="catlinks">
+				<div id="mw-normal-catlinks"><a
+						href="./Category_PageCategory.html"
+						title="特殊:页面分类">2个分类</a>: <span dir="ltr"><a
+							href="./Category_Script.html"
+							title="分类:Script">Script</a></span> | <span dir="ltr"><a
+							href="./Category_Example.html"
+							title="分类:弹幕示例">弹幕示例</a></span></div>
+			</div> <!-- /catlinks -->
+			<div class="visualClear"></div>
+		</div>
+		<!-- /bodyContent -->
+	</div>
+	<!-- /content -->
+	<!-- header -->
+	<div id="mw-head" class="noprint">
+
+		<!-- 0 -->
+		<div id="p-personal" class="">
+			<h5>个人工具</h5>
+			<ul>
+				<li id="pt-login"><a
+						href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame"
+						title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o">登录</a></li>
+			</ul>
+		</div>
+
+		<!-- /0 -->
+		<div id="left-navigation">
+
+			<!-- 0 -->
+			<div id="p-namespaces" class="vectorTabs">
+				<h5>名字空间</h5>
+				<ul>
+					<li id="ca-nstab-main" class="selected"><span><a
+								href="./Example_Galgame.html"
+								title="查看页面内容 [c]" accesskey="c">页面</a></span></li>
+					<li id="ca-talk" class="new"><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E8%AE%A8%E8%AE%BA:%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame&amp;action=edit&amp;redlink=1"
+								title="关于页面正文的讨论 [t]" accesskey="t">讨论</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-variants" class="vectorMenu emptyPortlet">
+				<h5><span>变换</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+		</div>
+		<div id="right-navigation">
+
+			<!-- 0 -->
+			<div id="p-views" class="vectorTabs">
+				<h5>查看</h5>
+				<ul>
+					<li id="ca-view" class="selected"><span><a
+								href="./Example_Galgame.html">阅读</a></span>
+					</li>
+					<li id="ca-viewsource"><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame&amp;action=edit"
+								title="此页面已被保护，你可以查看其源代码。 [e]" accesskey="e">查看源代码</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame&amp;action=history"
+								title="此页面的早前修订版本 [h]" accesskey="h">查看历史</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-cactions" class="vectorMenu emptyPortlet">
+				<h5><span>动作</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+
+			<!-- 2 -->
+			<div id="p-search">
+				<h5><label for="searchInput">搜索</label></h5>
+				<form action="http://docs.bilibili.tv/index.php" id="searchform">
+					<input type="hidden" name="title" value="特殊:搜索" />
+					<input id="searchInput" name="search" type="text" title="搜索该网站 [f]" accesskey="f" value="" />
+					<input type="submit" name="go" class="searchButton" id="searchGoButton" value="进入"
+						title="如果相同的标题存在的话便直接前往该页面" />
+					<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="搜索"
+						title="搜索该文字的页面" />
+				</form>
+			</div>
+
+			<!-- /2 -->
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- panel -->
+	<div id="mw-panel" class="noprint">
+		<!-- logo -->
+		<div id="p-logo"><a
+				style="background-image: url(../images/baike.png);"
+				href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+		<!-- /logo -->
+
+		<!-- navigation -->
+		<div class="portal" id="p-navigation">
+			<h5>导航</h5>
+			<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a
+							href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页 [z]"
+							accesskey="z">首页</a></li>
+					<li id="n-.E5.8A.9F.E8.83.BD.E8.AF.B4.E6.98.8E"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">功能说明</a>
+					</li>
+					<li id="n-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">更新日志</a>
+					</li>
+					<li id="n-.E9.AB.98.E7.BA.A7.E5.BC.B9.E5.B9.95.E8.AF.AD.E8.A8.80"><a
+							href="./Category_Script.html">高级弹幕语言</a>
+					</li>
+					<li id="n-.E5.BC.80.E6.94.BE.E5.B9.B3.E5.8F.B0"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:API">开放平台</a></li>
+					<li id="n-randompage"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2"
+							title="随机载入一个页面 [x]" accesskey="x">随机页面</a></li>
+					<li id="n-help"><a
+							href="http://docs.bilibili.tv/wiki/%E5%B8%AE%E5%8A%A9:%E7%9B%AE%E5%BD%95"
+							title="寻求帮助">帮助</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /navigation -->
+
+		<!-- 更新 -->
+		<div class="portal" id="p-.E6.9B.B4.E6.96.B0">
+			<h5>更新</h5>
+			<div class="body">
+				<ul>
+					<li id="n-currentevents"><a
+							href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6"
+							title="查找当前事件的背景信息">当前事件</a></li>
+					<li id="n-recentchanges"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9"
+							title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+					<li id="n-.E6.9C.80.E6.96.B0.E5.9B.BE.E7.89.87"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6">最新图片</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /更新 -->
+
+		<!-- SEARCH -->
+
+		<!-- /SEARCH -->
+
+		<!-- TOOLBOX -->
+		<div class="portal" id="p-tb">
+			<h5>工具箱</h5>
+			<div class="body">
+				<ul>
+					<li id="t-whatlinkshere"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame"
+							title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+					<li id="t-recentchangeslinked"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame"
+							title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+					<li id="t-specialpages"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2"
+							title="所有特殊页面列表 [q]" accesskey="q">特殊页面</a></li>
+					<li id="t-print"><a
+							href="http://docs.bilibili.tv/index.php?title=%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame&amp;printable=yes"
+							rel="alternate" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+					<li id="t-permalink"><a
+							href="http://docs.bilibili.tv/index.php?title=%E5%BC%B9%E5%B9%95%E7%A4%BA%E4%BE%8B:Galgame&amp;oldid=175"
+							title="这个页面修订版本的永久链接">永久链接</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /TOOLBOX -->
+
+		<!-- LANGUAGES -->
+
+		<!-- /LANGUAGES -->
+	</div>
+	<!-- /panel -->
+	<!-- footer -->
+	<div id="footer">
+		<ul id="footer-info">
+			<li id="footer-info-lastmod"> 此页面最后修订于2011年7月28日 (星期四) 07:01。</li>
+		</ul>
+		<ul id="footer-places">
+			<li id="footer-places-privacy"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96"
+					title="嗶哩嗶哩百科:隐私政策">隐私政策</a></li>
+			<li id="footer-places-about"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E"
+					title="嗶哩嗶哩百科:关于">关于嗶哩嗶哩百科</a></li>
+			<li id="footer-places-disclaimer"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"
+					title="嗶哩嗶哩百科:免责声明">免责声明</a></li>
+		</ul>
+		<ul id="footer-icons" class="noprint">
+			<li id="footer-poweredbyico">
+				<a href="http://www.mediawiki.org/"><img
+						src="../images/poweredby_mediawiki_88x31.png"
+						alt="Powered by MediaWiki" width="88" height="31" /></a>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<!-- /footer -->
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.config.set({
+				"wgCanonicalNamespace": "",
+				"wgCanonicalSpecialPageName": false,
+				"wgNamespaceNumber": 0,
+				"wgPageName": "弹幕示例:Galgame",
+				"wgTitle": "弹幕示例:Galgame",
+				"wgAction": "view",
+				"wgArticleId": 50,
+				"wgIsArticle": true,
+				"wgUserName": null,
+				"wgUserGroups": ["*"],
+				"wgCurRevisionId": 175,
+				"wgCategories": ["Script", "弹幕示例"],
+				"wgBreakFrames": false,
+				"wgRestrictionEdit": [],
+				"wgRestrictionMove": [],
+				"wgFCKEditorDir": "extensions/WYSIWYG/ckeditor/",
+				"wgFCKEditorExtDir": "extensions/WYSIWYG",
+				"wgFCKEditorToolbarSet": "Wiki",
+				"wgFCKEditorHeight": "0",
+				"wgCKeditorMagicWords": {
+					"wikitags": ["nowiki", "includeonly", "onlyinclude", "noinclude", "pre", "gallery"],
+					"magicwords": ["NOTOC", "FORCETOC", "TOC", "NOEDITSECTION", "NEWSECTIONLINK", "NONEWSECTIONLINK",
+						"NOCONTENTCONVERT", "NOCC", "NOTITLECONVERT", "NOTC", "NOGALLERY", "INDEX", "NOINDEX",
+						"STATICREDIRECT", "NOGALLERY", "HIDDENCAT", "START", "END"
+					],
+					"datevars": ["CURRENTYEAR", "CURRENTMONTH", "CURRENTMONTHNAME", "CURRENTMONTHNAMEGEN",
+						"CURRENTMONTHABBREV", "CURRENTDAY", "CURRENTDAY2", "CURRENTDOW", "CURRENTDAYNAME",
+						"CURRENTTIME", "CURRENTHOUR", "CURRENTWEEK", "CURRENTTIMESTAMP"
+					],
+					"wikivars": ["SITENAME", "SERVER", "SERVERNAME", "DIRMARK", "SCRIPTPATH", "CURRENTVERSION",
+						"CONTENTLANG", "REVISIONID", "REVISIONDAY", "REVISIONDAY2", "REVISIONMONTH",
+						"REVISIONYEAR", "REVISIONTIMESTAMP", "REVISIONUSER", "FULLPAGENAME", "PAGENAME",
+						"BASEPAGENAME", "SUBPAGENAME", "SUBJECTPAGENAME", "TALKPAGENAME", "NAMESPACE",
+						"ARTICLESPACE", "TALKSPACE"
+					],
+					"parserhooks": ["lc", "lcfirst", "uc", "ucfirst", "formatnum", "#dateformat", "padleft",
+						"padright", "plural", "grammar", "#language", "int", "#tag", "#int", "#ns", "#nse",
+						"#urlencode", "#lcfirst", "#ucfirst", "#lc", "#uc", "#localurl", "#localurle", "#fullurl",
+						"#fullurle", "#formatnum", "#grammar", "#gender", "#plural", "#numberofpages",
+						"#numberofusers", "#numberofactiveusers", "#numberofarticles", "#numberoffiles",
+						"#numberofadmins", "#numberingroup", "#numberofedits", "#numberofviews", "#padleft",
+						"#padright", "#anchorencode", "#special", "#defaultsort", "#filepath", "#pagesincategory",
+						"#pagesize", "#protectionlevel", "#namespace", "#namespacee", "#talkspace", "#talkspacee",
+						"#subjectspace", "#subjectspacee", "#pagename", "#pagenamee", "#fullpagename",
+						"#fullpagenamee", "#basepagename", "#basepagenamee", "#subpagename", "#subpagenamee",
+						"#talkpagename", "#talkpagenamee", "#subjectpagename", "#subjectpagenamee", "#formatdate",
+						"#displaytitle"
+					]
+				},
+				"wgCKeditorUseBuildin4Extensions": [],
+				"wgAllowExternalImages": true
+			});
+		}
+	</script>
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+			mediaWiki.loader.go();
+		}
+	</script>
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.user.options.set({
+				"ccmeonemails": 0,
+				"cols": 80,
+				"contextchars": 50,
+				"contextlines": 5,
+				"date": "default",
+				"diffonly": 0,
+				"disablemail": 0,
+				"disablesuggest": 0,
+				"editfont": "default",
+				"editondblclick": 0,
+				"editsection": 1,
+				"editsectiononrightclick": 0,
+				"enotifminoredits": 0,
+				"enotifrevealaddr": 0,
+				"enotifusertalkpages": 1,
+				"enotifwatchlistpages": 0,
+				"extendwatchlist": 0,
+				"externaldiff": 0,
+				"externaleditor": 0,
+				"fancysig": 0,
+				"forceeditsummary": 0,
+				"gender": "unknown",
+				"hideminor": 0,
+				"hidepatrolled": 0,
+				"highlightbroken": 1,
+				"imagesize": 2,
+				"justify": 0,
+				"math": 1,
+				"minordefault": 0,
+				"newpageshidepatrolled": 0,
+				"nocache": 0,
+				"noconvertlink": 0,
+				"norollbackdiff": 0,
+				"numberheadings": 0,
+				"previewonfirst": 0,
+				"previewontop": 1,
+				"quickbar": 1,
+				"rcdays": 7,
+				"rclimit": 50,
+				"rememberpassword": 0,
+				"rows": 25,
+				"searchlimit": 20,
+				"showhiddencats": 0,
+				"showjumplinks": 1,
+				"shownumberswatching": 1,
+				"showtoc": 1,
+				"showtoolbar": 1,
+				"skin": "vector",
+				"stubthreshold": 0,
+				"thumbsize": 2,
+				"underline": 2,
+				"uselivepreview": 0,
+				"usenewrc": 0,
+				"watchcreations": 0,
+				"watchdefault": 0,
+				"watchdeletion": 0,
+				"watchlistdays": 3,
+				"watchlisthideanons": 0,
+				"watchlisthidebots": 0,
+				"watchlisthideliu": 0,
+				"watchlisthideminor": 0,
+				"watchlisthideown": 0,
+				"watchlisthidepatrolled": 0,
+				"watchmoves": 0,
+				"wllimit": 250,
+				"riched_use_toggle": 1,
+				"riched_start_disabled": 1,
+				"riched_use_popup": 1,
+				"riched_toggle_remember_state": 1,
+				"usebetatoolbar": 1,
+				"usebetatoolbar-cgd": 1,
+				"wikieditor-preview": 1,
+				"variant": "zh-cn",
+				"language": "zh-cn",
+				"searchNs0": true,
+				"searchNs1": false,
+				"searchNs2": false,
+				"searchNs3": false,
+				"searchNs4": false,
+				"searchNs5": false,
+				"searchNs6": false,
+				"searchNs7": false,
+				"searchNs8": false,
+				"searchNs9": false,
+				"searchNs10": false,
+				"searchNs11": false,
+				"searchNs12": false,
+				"searchNs13": false,
+				"searchNs14": false,
+				"searchNs15": false
+			});;
+			mediaWiki.loader.state({
+				"user.options": "ready"
+			});
+		}
+	</script> <!-- fixalpha -->
+	<script type="text/javascript">
+		if (window.isMSIE55) fixalpha();
+	</script>
+	<!-- /fixalpha -->
+	<!-- Served in 0.088 secs. -->
+</body>
+
+</html>

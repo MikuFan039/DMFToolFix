@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>第一届bilibili弹幕大赛观看感想 - 弹幕艺术联合文档</title>
+    <meta name="description" content="">
+    <meta name="author" content="nekofs">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../../../assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="../../../../atom.xml" type="application/atom+xml" rel="alternate" title="日志更新 Atom 1.0">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">弹幕艺术联合文档</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../..../../../../examples.html">代码样例</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../../performance.html">性能</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="../../../../reference.html">速查手册</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li><a href="https://github.com/biliscript-syndicate">Github项目</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>第一届bilibili弹幕大赛观看感想 <small></small></h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    
+<p>（原发表于space.bilibili.tv）</p>
+
+<p>公告：<a href="http://www.bilibili.tv/html/danmubisai.html">http://www.bilibili.tv/html/danmubisai.html</a></p>
+
+<p>投票：<a href="http://www.bilibili.tv/list/vote/1.html">http://www.bilibili.tv/list/vote/1.html</a></p>
+
+<p>这是一个Flash播放器中诞生的demoscene。弹幕从此从视频的次级内容升级成主要内容。</p>
+
+<p>20件脚本弹幕作品，18件mode7定位弹幕作品（其中7件尝试脚本）。</p>
+
+<p>但是脚本弹幕不是万能的，最难的地方还在于怎样创意编排内容和组织特效，这是学技术学不来的。</p>
+
+<p>按制作时间看，脚本弹幕从两周到三月不等，这显然是不可持续的。脚本弹幕还未找到一个工程量与完成度的平衡点，怎样用较少的工程量达到较好的效果还是一个问题。</p>
+
+<p>观众投票结果反映，观众最关注内容认同感和叙事性，对特效有一定关注，对技术实现难度认知不多，对陌生内容接受度偏低。</p>
+
+<p>黑/白屏纯粹弹幕实现视频编排特效最终还是无法与专业工具相比（效率、丰富程度）。我认为脚本弹幕可以做而专业工具不能做的，是用较少的代码过程性地生成一些材质、模式，这是demoscene一般在做的。</p>
+
+<p>细节上影响图形质量的两个主要问题：播放器帧率的refreshRate接口不工作因此被卡死在24fps（更新：播放器已提高到60fps）；无法嵌入优质字体，默认字体是渣（不一致的客户端破坏布局排版）。</p>
+
+<p>评选方式还可改善：排序固定和实时显示结果造成群体极化、未按形式分组造成候选量过大。</p>
+
+<!-- break -->
+
+<h3 id="mad">音MAD（原创）</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av410205/">Round and Round</a> 得分:+13760  (2周+)</li>
+  <li><a href="http://www.bilibili.tv/video/av379138/">Rolling Girl</a> 得分:+7618  (3月)</li>
+  <li><a href="http://www.bilibili.tv/video/av392859/">Crazy ∞ nighT</a> 得分:+3469  (3周)</li>
+  <li><a href="http://www.bilibili.tv/video/av394678/">六等星之夜（NO.6 ED)</a> 得分:+2485 </li>
+  <li><a href="http://www.bilibili.tv/video/av409098/">THE WORLD’S END UMBRELLA</a> 得分:+768 </li>
+</ul>
+
+<p>5件。以音乐为背景完全用脚本生成控制图形图像。
+制作难点：图形处理、动画编导、特效实现、素材导入。
+特点：高观赏性、多特效、高动态。</p>
+
+<h3 id="mvpv">MV/PV（原创）</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av411036/">一首研究镜音的胸部里是什么的歌</a> 得分:+34540 </li>
+</ul>
+
+<p>1件。图画叙事。
+制作难点：内容创作/组织、特效实现、素材导入。
+特点：高故事性、观赏性、静态。</p>
+
+<h3 id="madpv">音MAD/PV（重制）</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av411358/">乾杯 - ( ゜- ゜)つロ</a> 得分:+32357  (3月+)</li>
+  <li><a href="http://www.bilibili.tv/video/av409835/">魔法少女小圆OP-完整版</a> 得分:+9531 </li>
+  <li><a href="http://www.bilibili.tv/video/av383598/">弹幕字符画BadApple</a> 得分:+9284 </li>
+  <li><a href="http://www.bilibili.tv/video/av397395/">我们的报复政策</a> 得分:+798 </li>
+  <li><a href="http://www.bilibili.tv/video/av399127/">Q&amp;A リサイタル! ~TV ver~</a> 得分:+792 </li>
+</ul>
+
+<p>5件。仿制已有视频。
+制作难点：特效实现、素材导入。
+特点：故事性、一定观赏性、静态。</p>
+
+<h3 id="section">弹幕射击游戏</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av393926/">东方永夜抄 Stage III.Rebuilt</a> 得分:+19260 </li>
+  <li><a href="http://www.bilibili.tv/video/av410448/">小电视君的小黑屋大作战</a> 得分:+6472 </li>
+  <li><a href="http://www.bilibili.tv/video/av397565/">一起来玩弹幕游戏吧</a> 得分:+4161 </li>
+  <li><a href="http://www.bilibili.tv/video/av412604/">大小姐的飞行 鬼畜星空版</a> 得分:+1667 </li>
+  <li><a href="http://www.bilibili.tv/video/av409229/">【糕蛋】红白游戏</a> 得分:+773 </li>
+</ul>
+
+<p>5件。
+制作难点：交互控制、物理模拟、渲染性能、素材导入。
+特点：高互动性、一定特效、趣味。</p>
+
+<h3 id="section-1">其他游戏</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av412614/">Hexagon弹幕移植版</a> 得分:+2050 </li>
+</ul>
+
+<p>（同上）</p>
+
+<h3 id="mode7">mode7定位弹幕</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av392083/">射杀恋人之日</a> 得分:+5452  (半月)</li>
+  <li><a href="http://www.bilibili.tv/video/av393948/">TSUBASA（海猫鸣泣之时）</a> 得分:+4120 </li>
+  <li><a href="http://www.bilibili.tv/video/av398861/">敬启，这封书信给十五岁的你</a> 得分:+3233 </li>
+  <li><a href="http://www.bilibili.tv/video/av379446/">伪物语OP「二言目」</a> 得分:+2836  (4日)</li>
+  <li><a href="http://www.bilibili.tv/video/av397716/">反正你们就是喜欢那种歌，对吧</a> 得分:+1902 </li>
+  <li><a href="http://www.bilibili.tv/video/av396694/">脱团没那么简单</a> 得分:+1386 </li>
+  <li><a href="http://www.bilibili.tv/video/av393132/">Yellow 【MMD】</a> 得分:+1357 </li>
+  <li><a href="http://www.bilibili.tv/video/av402034/">Psy Phone short ver</a> 得分:+1231 </li>
+  <li><a href="http://www.bilibili.tv/video/av411230/">梦与叶樱</a> 得分:+1194 </li>
+  <li><a href="http://www.bilibili.tv/video/av406862/">快乐合成器</a> 得分:+938 </li>
+  <li><a href="http://www.bilibili.tv/video/av395440/">脱团曲 girlfriend</a> 得分:+915 </li>
+  <li><a href="http://www.bilibili.tv/video/av411335/">少年T_愛言葉-piano_ver-_</a> 得分:+909 </li>
+  <li><a href="http://www.bilibili.tv/video/av403774/">想见到你</a> 得分:+790 </li>
+  <li><a href="http://www.bilibili.tv/video/av395714/">Ur-Style</a> 得分:+781 </li>
+  <li><a href="http://www.bilibili.tv/video/av393047/">孤雏市</a> 得分:+781 </li>
+  <li><a href="http://www.bilibili.tv/video/av395452/">Re:make</a> 得分:+778 </li>
+  <li><a href="http://www.bilibili.tv/video/av410019/">アルタイル</a> 得分:+773 </li>
+  <li><a href="http://www.bilibili.tv/video/av386221/">【樱歌】「Love symmetry」</a> 得分:+761 </li>
+</ul>
+
+<p>18件。其中7件尝试使用脚本作为辅助。
+未制作过，不便评论。</p>
+
+<h3 id="section-2">实验/相声</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av395113/">【洛天依】你们为什么要嘲笑矮杉只１７０呢</a> 得分:+884 </li>
+</ul>
+
+<p>新内容形式？弹幕相声？</p>
+
+<h3 id="section-3">点缀</h3>
+
+<ul>
+  <li><a href="http://www.bilibili.tv/video/av408152/">Only my railgun</a> 得分:+6274 </li>
+  <li><a href="http://www.bilibili.tv/video/av391780/">天使立华奏获得2012世萌萌王纪</a> 得分:+3504 </li>
+</ul>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev disabled"><a>&larr; 前</a></li>
+      
+        <li><a href="../../../../archive.html">存档</a></li>
+      
+        <li class="next"><a href="../../../../news/2013/02/07/hello-world.html" title="沙发">后 &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'biliscript-syndicate'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>请开启JavaScript查看评论。</noscript>
+<a href="http://disqus.com" class="dsq-brlink">评论系统由<span class="logo-disqus">Disqus</span>提供。</a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>作者</h4>
+    <div><span>nekofs</span></div>
+    <h4>日期</h4>
+    <div class="date"><span>2012年12月29日</span></div>
+
+  
+    
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="https://github.com/biliscript-syndicate">Biliscript Syndicate</a> 2015
+          使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

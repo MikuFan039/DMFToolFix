@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>速查手册 - 弹幕艺术联合文档</title>
+    <meta name="description" content="">
+    <meta name="author" content="nekofs">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="./atom.xml" type="application/atom+xml" rel="alternate" title="日志更新 Atom 1.0">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  
+    <style type="text/css">
+      body { font-size: 13px; line-height: 16px;} li { line-height: 16px;}
+    </style>
+  
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">弹幕艺术联合文档</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="./examples.html">代码样例</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="./performance.html">性能</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="./reference.html" class="active">速查手册</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li><a href="https://github.com/biliscript-syndicate">Github项目</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>速查手册 </h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    
+<h2 id="api">API</h2>
+
+<div class="row">
+  <div class="span6">
+
+    <h3 id="section">基本操作</h3>
+
+    <ul>
+      <li><strong>clear</strong>():void</li>
+      <li><strong>clone</strong>(object:*):*<br />
+(Utils.clone) 有些（TODO）类型无法正确复制</li>
+      <li><strong>foreach</strong>(object:Object, iterator:Function):void<br />
+(Utils.foreach) 只能访问公开可遍历属性。例<code>foreach({1:2, 3:4}, function(key, value) {trace(key, value);});</code></li>
+      <li><strong>load</strong>(library:String, onload:Function):void<br />
+（<code>libBitmap</code>已内嵌）。只在加载成功时调用onload。例<code>load('libBitmap', function(){trace('ok', Bitmap);});</code></li>
+      <li><strong>trace</strong>(… args):void<br />
+例<code>trace(1, 2, [3,4], '5 6', trace);</code></li>
+      <li>$G.<strong>_get</strong>(name:String):*<br />
+($G._, Global._get, Global._)</li>
+      <li>$G.<strong>_set</strong>(name:String, value:*):void<br />
+(Global._set)</li>
+      <li>ScriptManager.<strong>clearEl</strong>():void<br />
+停止并清除$.createComment()、$.createShape()、$.createCanvas()、$.createButton()、Bitmap.createBitmap()产生的运动元件。</li>
+      <li>ScriptManager.<strong>clearTimer</strong>():void<br />
+清除只由interval()产生的计时器。不清除timer()。</li>
+      <li>ScriptManager.<strong>clearTrigger</strong>():void<br />
+清除只由Player.keyTrigger()产生的键盘事件侦听。不清除Player.commentTrigger()。</li>
+    </ul>
+
+    <h3 id="section-1">时间</h3>
+
+    <ul>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/package.html#clearTimeout%28%29">clearTimeout</a></strong>(timeout_id:uint)<br />
+中止由timeout_id指定的延时操作。</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/package.html#getTimer%28%29">getTimer</a></strong>():int<br />
+毫秒</li>
+      <li><strong>interval</strong>(exec:Function, delay_msec:Number = 1000, repeatCount:uint = 1):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/utils/Timer.html">Timer</a><br />
+(Utils.interval) 重复定时执行。repeatCount为0则无限重复。delay推荐最小20毫秒（再小影响性能）。</li>
+      <li><strong>timer</strong>(exec:Function, delay_msec:Number = 1000):uint<br />
+(Utils.delay) 一次延时执行。delay最小1毫秒。返回timeout_id。</li>
+    </ul>
+
+    <h3 id="section-2">数据转换</h3>
+
+    <ul>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/package.html#parseInt%28%29">parseInt</a></strong>(str:String, radix:uint = 0):Number</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/packate.html#parseFloat%28%29">parseFloat</a></strong>(str:String):Number</li>
+      <li>$.<strong>toIntVector</strong>(ints:Array):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html">Vector</a>.&lt;int&gt;</li>
+      <li>$.<strong>toUintVector</strong>(uints:Array):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html">Vector</a>.&lt;uint&gt;</li>
+      <li>$.<strong>toNumberVector</strong>(numbers:Array):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html">Vector</a>.&lt;Number&gt;</li>
+      <li>String.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/String.html#fromCharCode%28%29">fromCharCode</a></strong>(… charCodes):String<br />
+Unicode码，0到65535。例<code>trace(String.fromCharCode(27979, 35797, 10, 9731, 9773));</code></li>
+      <li>Utils.<strong>distance</strong>(x1:Number, y1:Number, x2:Number, y2:Number):Number<br />
+即<code>Math.sqrt((x1 - x2)*(x1 - x2) + (y1 - y2)*(y1 - y2))</code></li>
+      <li>Utils.<strong>formatTimes</strong>(second:Number):String<br />
+时间格式mm:ss；例<code>trace(Utils.formatTimes(Player.time / 1000));</code></li>
+      <li>Utils.<strong>hue</strong>(value:int):int<br />
+最小0 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAAICAIAAABbBPJsAAAAZ0lEQVR42u3UMQqAMBAEwDUvT+G7E61EBFGJ6WY4LIIeG4tdkl7TlvTLlP15N2PvP38yJ89zmLl5akv6Mev/QdtdoPLT/vHl8+9bS9Lq+ciPnpGnBOAjxQEoDkBxAIoDUByA4gB4YwNtkWicaN4UaAAAAABJRU5ErkJggg==" alt="色谱" /> 最大359</li>
+      <li>Utils.<strong>rand</strong>(min:Number, max:Number):Number<br />
+整数，即<code>Math.floor(min + Math.random() * (max - min))</code></li>
+      <li>Utils.<strong>rgb</strong>(r:int, g:int, b:int):int<br />
+耗时是 <code>r &lt;&lt; 16 | g &lt;&lt; 8 | b</code> 的2倍。</li>
+    </ul>
+
+    <h3 id="section-3">几何</h3>
+
+    <p>详细参数见链接的Adobe手册页面。</p>
+
+    <ul>
+      <li>$.<strong>createColorTransform</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/ColorTransform.html">ColorTransform</a></li>
+      <li>$.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix.html#createGradientBox%28%29">createGradientBox</a></strong>(…):<a href="{geom}}/Matrix.html">Matrix</a><br />
+即<code>(new Matrix()).createGradientBox(...)</code>。用于beginGradientFill()和lineGradientStyle()。</li>
+      <li>$.<strong>createMatrix</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix.html">Matrix</a></li>
+      <li>$.<strong>createMatrix3D</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html">Matrix3D</a></li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/PerspectiveProjection.html">PerspectiveProjection</a></strong><br />
+<code>clone($.root.transform.perspectiveProjection)</code></li>
+      <li>$.<strong>createPoint</strong>(x:Number = 0, y:Number = 0):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html">Point</a></li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html">Rectangle</a></strong><br />
+<code>$.root.getRect(null)</code>或<code>Bitmap.createRectangle(x, y, w, h)</code></li>
+      <li>$.<strong>createVector3D</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Vector3D.html">Vector3D</a></li>
+      <li>$.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Utils3D.html#pointTowards%28%29">pointTowards</a></strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Matrix3D.html">Matrix3D</a></li>
+      <li>$.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Utils3D.html#projectVector%28%29">projectVector</a></strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Vector3D.html">Vector3D</a></li>
+      <li>$.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Utils3D.html#projectVectors%28%29">projectVectors</a></strong>(…):void</li>
+    </ul>
+
+    <h3 id="section-4">库</h3>
+
+    <ul>
+      <li><strong><a href="http://www.libspark.org/wiki/BetweenAS3/en">Tween</a></strong><br />
+(org.libspark.betweenas3::BetweenAS3)</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Math.html">Math</a></strong></li>
+    </ul>
+
+  </div>
+  <div class="span6">
+
+    <h3 id="player">Player信息</h3>
+
+    <ul>
+      <li>Player.<strong>videoWidth</strong>:uint, Player.<strong>videoHeight</strong>:uint [只读]<br />
+视频等比例尺寸</li>
+      <li>$.<strong>width</strong>:uint, $.<strong>height</strong>:uint [只读]<br />
+(Player.width:uint, Player.height:uint) 播放窗口尺寸；包括黑边</li>
+      <li>$.<strong>stageWidth</strong>:uint, $.<strong>stageHeight</strong>:uint [只读]<br />
+Flash界面尺寸</li>
+      <li>$.<strong>screenWidth</strong>:uint, $.<strong>screenHeight</strong>:uint [只读]<br />
+($.fullScreenWidth:uint, $.fullScreenHeight:uint) 屏幕尺寸</li>
+      <li>Player.<strong>commentList</strong>:Array [只读]<br />
+一组<a href="#CommentData">CommentData</a>。</li>
+      <li>Player.<strong>state</strong>:String [只读]<br />
+<code>stop</code>, <code>pause</code>, <code>playing</code></li>
+      <li>Player.<strong>time</strong>:Number [只读]<br />
+毫秒</li>
+    </ul>
+
+    <h3 id="player-1">Player控制</h3>
+
+    <ul>
+      <li>Player.<strong>commentTrigger</strong>(onComment:Function, timeout_msec:Number = 1000):uint<br />
+返回timeout_id。不能用clearTimeout或者ScriptManager清除。
+例<code>Player.commentTrigger(function(c){trace(c, c.text);}, 1 &lt;&lt; 30);</code></li>
+      <li>Player.<strong>createSound</strong>(sample:String, onload:Function = null):ScriptSound<br />
+目前已知sample：<code>btnover</code>。ScriptSound.<strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html#play%28%29">play</a></strong>(startTime:Number = 0, loops:int = 0):void. <a href="#Player.createSound-example">查看样例</a></li>
+      <li>Player.<strong>jump</strong>(av:String, page:int = 1, newwindow:Boolean = false):void</li>
+      <li>Player.<strong>keyTrigger</strong>(onKey:Function, timeout_msec:Number = 1000, up:Boolean = false):uint<br />
+timeout最大2147483647，小于0不工作。返回timeout_id。<a href="#Player.keyTrigger-example">查看样例</a>。</li>
+      <li>Player.<strong>pause</strong>():void</li>
+      <li>Player.<strong>play</strong>():void</li>
+      <li>Player.<strong>refreshRate</strong>:int<br />
+不工作；暂不修复。</li>
+      <li>$.<strong>frameRate</strong>:Number<br />
+大于0小于120，超过60一般无意义。</li>
+      <li>Player.<strong>seek</strong>(time_msec:Number):void<br />
+只能seek到关键帧。</li>
+      <li>Player.<strong>setMask</strong>(mask:DisplayObject):void<br />
+即<code>player.parent.mask = mask;</code></li>
+    </ul>
+
+    <h3 id="section-5">图形元件</h3>
+
+    <p>以下通用参数（附默认值）：<code>{x:0, y:0, z:null, scale:1, alpha:1,</code><br />
+<code>parent:$.root, lifeTime:3, motion:{}}</code></p>
+
+    <ul>
+      <li>$.<strong>createButton</strong>(params:Object):<a href="#CommentObjects">CommentButton</a><br />
+<code>{text:"Button", width:60, height:30, onclick:undefined}</code></li>
+      <li>$.<strong>createCanvas</strong>(params:Object):<a href="#CommentObjects">CommentCanvas</a>  </li>
+      <li>$.<strong>createComment</strong>(text:String, params:Object):<a href="#CommentObjects">CommentField</a><br />
+<code>{color:0xffffff, font:"黑体", fontsize:25}</code></li>
+      <li>$.<strong>createShape</strong>(params:Object):<a href="#CommentObjects">CommentShape</a>  </li>
+      <li>$.<strong>createTextField</strong>():<a href="#CommentObjects">CommentField</a><br />
+不初始化</li>
+      <li>$.<strong>createTextFormat</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html">TextFormat</a></li>
+    </ul>
+
+    <h3 id="bitmap">Bitmap库</h3>
+
+    <ul>
+      <li>Bitmap.<strong>createBitmap</strong>(params:Object):<a href="#CommentObjects">CommentBitmap</a><br />
+<code>{bitmapData:undefined, pixelSnapping:"auto", smothing:undefined, scale:1}</code></li>
+      <li>Bitmap.<strong>createBitmapData</strong>(width:int, height:int, transparent:Boolean = true, fillColor:uint = 0xFFFFFFFF):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html">BitmapData</a></li>
+      <li>Bitmap.<strong>createParticle</strong>(params:Object):<a href="#CommentObjects">CommentBitmap</a><br />
+TODO</li>
+      <li>Bitmap.<strong>createRectangle</strong>(x:Number, y:Number, width:Number, height:Number):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Rectangle.html">Rectangle</a></li>
+    </ul>
+
+    <h3 id="section-6">滤镜</h3>
+
+    <p>无法获得ShaderFilter。详细参数见Adobe手册页面。</p>
+
+    <ul>
+      <li>$.<strong>createBevelFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/BevelFilter.html">BevelFilter</a></li>
+      <li>$.<strong>createBlurFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/BlurFilter.html">BlurFilter</a></li>
+      <li>$.<strong>createColorMatrixFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/ColorMatrixFilter.html">ColorMatrixFilter</a></li>
+      <li>$.<strong>createConvolutionFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/ConvolutionFilter.html">ConvolutionFilter</a></li>
+      <li>$.<strong>createDisplacementMapFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/DisplacementMapFilter.html">DisplacementMapFilter</a></li>
+      <li>$.<strong>createDropShadowFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/DropShadowFilter.html">DropShadowFilter</a></li>
+      <li>$.<strong>createGlowFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/GlowFilter.html">GlowFilter</a></li>
+      <li>$.<strong>createGradientBevelFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/GradientBevelFilter.html">GradientBevelFilter</a></li>
+      <li>$.<strong>createGradientGlowFilter</strong>(…):<a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/filters/GradientGlowFilter.html">GradientGlowFilter</a></li>
+    </ul>
+
+    <h3 id="section-7">内部</h3>
+
+    <ul>
+      <li>$.<strong>root</strong></li>
+      <li>ScriptManager.<strong>pushEl</strong>(param1:IMotionElement):void</li>
+      <li>ScriptManager.<strong>popEl</strong>(param1:IMotionElement):void</li>
+      <li>ScriptManager.<strong>pushTimer</strong>(param1:Timer):void</li>
+      <li>ScriptManager.<strong>popTimer</strong>(param1:Timer):void</li>
+    </ul>
+
+  </div>
+</div>
+
+<hr />
+
+<h2 id="section-8">类定义</h2>
+<div class="row">
+  <div class="span6">
+    <p><a id="CommentData"> </a></p>
+
+    <h3 id="commentdata">CommentData</h3>
+
+    <ul>
+      <li><strong>blocked</strong>:Boolean</li>
+      <li><strong>blockType</strong>:uint</li>
+      <li><strong>border</strong>:Boolean</li>
+      <li><strong>color</strong>:uint</li>
+      <li><strong>credit</strong>:Boolean</li>
+      <li><strong>danmuId</strong>:uint [只读]</li>
+      <li><strong>date</strong>:String</li>
+      <li><strong>deleted</strong>:Boolean</li>
+      <li><strong>id</strong>:uint</li>
+      <li><strong>mode</strong>:uint</li>
+      <li><strong>msg</strong>:String</li>
+      <li><strong>live</strong>:Boolean</li>
+      <li><strong>locked</strong>:Boolean</li>
+      <li><strong>on</strong>:Boolean</li>
+      <li><strong>pool</strong>:int</li>
+      <li><strong>preview</strong>:Boolean</li>
+      <li><strong>reported</strong>:Boolean</li>
+      <li><strong>size</strong>:int</li>
+      <li><strong>stime</strong>:Number [只读] 秒</li>
+      <li><strong>text</strong>:String [只读]</li>
+      <li><strong>type</strong>:String</li>
+      <li><strong>userId</strong>:String [只读]</li>
+    </ul>
+
+    <p>例<code>Player.commentList.forEach(function(e) {trace(e.stime, e.text);});</code></p>
+
+    <p><a id="MotionManager"> </a></p>
+
+    <h3 id="motionmanager">MotionManager</h3>
+
+    <ul>
+      <li><strong>running</strong>:Boolean [只读]</li>
+      <li><strong>reset</strong>():void</li>
+      <li><strong>play</strong>():void</li>
+      <li><strong>stop</strong>():void</li>
+      <li><strong>forcasting</strong>(param1:Number):Boolean</li>
+      <li><strong>setPlayTime</strong>(param1:Number):void</li>
+      <li><strong>initTween</strong>(param1:Object, param2:Boolean = false):String</li>
+      <li><strong>initTweenGroup</strong>(motionGroup:Array, lifeTime:Number = NaN):void</li>
+      <li><strong>setCompleteListener</strong>(param1:Function):void</li>
+    </ul>
+
+  </div>
+  <div class="span6">
+
+    <p><a id="CommentObjects"> </a></p>
+
+    <h3 id="comment">Comment元件通用</h3>
+
+    <ul>
+      <li><strong>motionManager</strong>:MotionManager [只读]</li>
+      <li><strong>initStyle</strong>(params:Object):void<br />
+CommentBitmap除外</li>
+      <li><strong>remove</strong>():void</li>
+    </ul>
+
+    <h3 id="commentbitmap-rarr-bitmaphttphelpadobecomenusflashplatformreferenceactionscript3flashdisplaybitmaphtml">CommentBitmap → <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Bitmap.html">Bitmap</a></h3>
+
+    <ul>
+      <li><strong>motionManager</strong>:MotionManager [读写]</li>
+      <li><strong>setParent</strong>(parent:*):void<br />
+即<code>parent.addChild(this)</code></li>
+    </ul>
+
+    <h3 id="commentbutton-rarr-spritehttphelpadobecomenusflashplatformreferenceactionscript3flashdisplayspritehtml">CommentButton → <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Sprite.html">Sprite</a></h3>
+
+    <ul>
+      <li><strong>text</strong>:String</li>
+      <li><strong>fillColors</strong>:Array</li>
+      <li><strong>fillAlphas</strong>:Array</li>
+    </ul>
+
+    <h3 id="commentcanvas-rarr-spritehttphelpadobecomenusflashplatformreferenceactionscript3flashdisplayspritehtml">CommentCanvas → <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Sprite.html">Sprite</a></h3>
+
+    <h3 id="commentfield-rarr-textfieldhttphelpadobecomenusflashplatformreferenceactionscript3flashtexttextfieldhtml">CommentField → <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html">TextField</a></h3>
+
+    <ul>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html#align">align</a></strong>:String</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html#bold">bold</a></strong>:Boolean</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html#font">font</a></strong>:String</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html#size">fontsize</a></strong>:uint</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html#color">color</a></strong>:String</li>
+      <li><strong><a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#htmlText">htmlText</a></strong>:String<br />
+过滤所有html</li>
+    </ul>
+
+    <h3 id="commentshape-rarr-shapehttphelpadobecomenusflashplatformreferenceactionscript3flashdisplayshapehtml">CommentShape → <a href="http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Shape.html">Shape</a></h3>
+
+  </div>
+</div>
+
+<hr />
+
+<h2 id="section-9">样板代码</h2>
+
+<div class="row">
+  <div class="span6">
+    <p><a id="Player.keyTrigger-example"> </a></p>
+
+    <h3 id="playerkeytrigger">Player.keyTrigger</h3>
+
+    <pre><code>Keysym = {65: 'A', 68: 'D', 83: 'S', 87: 'W'};
+var keyPressed = {};
+ScriptManager.clearTrigger();
+clearTimeout(Player.keyTrigger(function(keyCode) {
+    keyPressed[Keysym[keyCode]] = true;
+}));
+clearTimeout(Player.keyTrigger(function(keyCode) {
+    keyPressed[Keysym[keyCode]] = false;
+}, 1000, true));
+ScriptManager.clearTimer();
+interval(function() {
+    trace('Key A is', keyPressed.A ? 'pressed.' : 'not pressed.');
+}, 100, 100);
+//Press A and observe debug console
+</code></pre>
+
+    <p><a id="Player.createSound-example"> </a></p>
+
+    <h3 id="playercreatesound">Player.createSound</h3>
+
+    <pre><code> var btn = $.createButton({
+text:"mouseOver",x:$.width * 0.5 - 60,y:$.height * 0.5 - 15,lifeTime:0,width:120,
+onclick:function()
+{
+  trace("btnover");
+}
+});		
+btn.addEventListener("mouseOver",function()
+{ 
+var sound = 
+ Player.createSound("btnover",function()
+ {
+	trace(sound.loadPercent(),sound.remove,sound.stop);
+ });	
+sound.play();
+t=interval(function(){btn.text=t.delay-=10;sound.play();},1000,1000);
+});
+</code></pre>
+
+    <h3 id="section-10">鼠标定位</h3>
+
+    <p><code>trace($.root.mouseX, $.root.mouseY);</code>或者：</p>
+
+    <pre><code>var c = $.createComment('+', {lifeTime:0});
+c.transform.matrix3D = null;
+c.bold = false;
+var canvas = $.root;
+canvas.graphics.beginFill(0, 0);
+canvas.graphics.drawRect(0, 0, $.width, $.height);
+canvas.graphics.endFill();
+canvas.mouseEnabled = true;
+canvas.addEventListener('mouseMove', function (e) {
+    c.x = e.localX - c.width / 2;
+    c.y = e.localY - c.height / 2;
+});
+</code></pre>
+
+  </div>
+  <div class="span6">
+
+    <h3 id="bitmap-1">Bitmap库加载</h3>
+
+    <p>（Bitmap库已内嵌无需再加载，以下仅作示例。）</p>
+
+    <pre><code>function startApplication() {
+    var bmd = Bitmap.createBitmapData(40, 30, false, 0xffffff);
+    var bmp = Bitmap.createBitmap({bitmapData:bmd, lifeTime:0, scale:2});
+}
+var loadText = $.createComment('加载Bitmap库，稍候…', {lifeTime:0, fontsize:14});
+loadText.transform.matrix3D = null;
+
+var loadTimeout = timer(function() {
+    loadText.text = '载入超时，请刷新重试或检查网络连接。';
+}, 5000);
+load('libBitmap', function() {
+    clearTimeout(loadTimeout);
+    loadText.remove();
+    startApplication();
+});
+</code></pre>
+
+    <h3 id="section-11">遍历显示列表</h3>
+
+    <pre><code>function getChildren(path, node) {
+    trace('[' + path + ']', node);
+    if (!node.hasOwnProperty('numChildren')) return;
+    for (var i = 0; i &lt; node.numChildren; i++)
+        getChildren(path.concat(i), node.getChildAt(i));
+}
+getChildren([], $.root);
+
+function getChildFrom(root, path) {
+    if (!path.length) return root;
+    return getChildFrom(root.getChildAt(path.shift()), path);
+}
+</code></pre>
+
+    <h3 id="seek">检测seek</h3>
+
+    <pre><code>var probe = $.createShape({lifeTime:0});
+probe.motionManager.setPlayTime(365 * 24 * 3600 * 1000);
+$.root.addEventListener('enterFrame', function() {
+    if (!probe.visible) {
+        probe.visible = true;
+        trace('seeking to', Utils.formatTimes(Player.time / 1000));
+    }
+});
+</code></pre>
+
+  </div>
+</div>
+
+<hr />
+
+<h2 id="section-12">已知问题</h2>
+
+<p>(TODO: 扩充重现方法和结果)</p>
+
+<ul>
+  <li>安全考虑，TextField.htmlText被去掉所有html。</li>
+  <li>安全考虑，.loaderInfo属性被禁止访问。</li>
+  <li>UI控制考虑，.root、.parent、.stage属性被禁止访问。</li>
+  <li>Bitmap.createBitmap的smoothing参数被错别字成smothing。</li>
+  <li>$.createComment、$.createShape、$.createCanvas、$.createButton会给进行DisplayObject.z = null导致产生一个Matrix3D导致图形模糊。解决方法<code>displayObject.transform.matrix3D = null;</code>。</li>
+  <li>flash.display::Graphics里面没有cubicCurveTo方法，这是在FP11.0的特性（2011年10月）。<br />
+无法修复。站方player.swf开发环境Flex SDK 4.1尚未支持加入此特性。近期无升级计划。</li>
+  <li>字符串中的<code>/n</code>会在提交后被转义成换行。</li>
+  <li><code>[]</code>访问符语法问题，无法嵌套<code>a = [0,1]; b = [0,1]; trace(a[0], b[a[0]]);</code></li>
+  <li>调用类静态方法。<code>String.fromCharCode()</code>可以这样实现：<code>''.constructor.fromCharCode()</code>。</li>
+</ul>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="https://github.com/biliscript-syndicate">Biliscript Syndicate</a> 2015
+          使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

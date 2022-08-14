@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="zh-hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>日志 - 弹幕艺术联合文档</title>
+    
+    <meta name="author" content="Biliscript Syndicate">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="./atom.xml" type="application/atom+xml" rel="alternate" title="日志更新 Atom 1.0">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">弹幕艺术联合文档</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="./examples.html">代码样例</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="./performance.html">性能</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="./reference.html">速查手册</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+
+            <li><a href="https://github.com/biliscript-syndicate">Github项目</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>日志  <small>关于bilibili弹幕播放器的技术文档及消息</small></h1>
+</div>
+
+<div class="row">
+  <div class="span12">
+    
+
+<div class="row">
+<div class="span8">
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2015/10/30/security-update.html">播放器安全更新总结</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2015年10月30日</p>
+    
+<p>player.swf <strong>20151029</strong> 。并没有功能更新。观看了第二届弹幕大赛后，我深受启发，查阅了从上个帖子至今近两年58个play.swf更新版本，在此证实确无功能上的更新（好像没什么用）。安全更新包括（2015年8月14日）：禁止了<code>__scope</code>属性的访问；关闭了<code>with</code>语法关键词的解析，现在会产生异常“不能使用 with!”。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2014/02/22/libBitmap-embedded.html">播放器更新：内嵌libBitmap</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2014年02月22日</p>
+    
+<p>player.swf <strong>20140130</strong> 。libBitmap库已内嵌入player.swf，无需再用<code>load()</code>加载造成额外延迟。以前使用<code>load</code>的代码仍然正常工作，可以看出更新时考虑了向以前兼容的问题。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/11/21/projectVectors.html">播放器更新：$.projectVectors</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">2013年11月21日</p>
+    
+<p>player.swf <strong>20131120</strong> 。Display库中增加了<code>pointTowards projectVector projectVectors</code>函数。曾在9月3日加入，后11月11日改版时未并入新版。今已恢复。projectVectors是若干伪3D效果的基石。以下是两个基于它实现的例子。</p>
+
+
+    
+      <a href="./news/2013/11/21/projectVectors.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/09/22/biliscript-toolkit.html">Biliscript Toolkit 1.2</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">xarple / 2013年09月22日</p>
+    
+<p>BiliscriptToolkit是专门用于辅助高级弹幕制作的一系列工具的集合，提供了一些针对各种制作过程中或许需要的一些解决方案。</p>
+
+
+    
+      <a href="./news/2013/09/22/biliscript-toolkit.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/05/10/danmu-couple.html">【关于弹幕双子形象的确定】</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">面汤 / 2013年05月10日</p>
+    
+<p><a href="http://space.bilibili.com/65413/4380.html">原地址</a></p>
+
+<p>弹幕娘这个ID，当初仅仅是作为蓝白弹幕祭投稿的一个官方马甲。渐渐地，蓝白弹幕祭成为弹幕君共同梦想的结晶，弹幕娘也已成为“弹幕君”这个群体的化身ww。</p>
+
+<p>“弹幕君”这么一个群体，完全依附于弹幕播放器的存在。他们依靠自己的能力传达自己能够传达的正能量。一直以来，都有愿望，希望能够将弹幕娘的形象具现化。但苦于没有人去邀请相关的画师，并且，在形象上也难以统一，这个形象就一直悬而未决。</p>
+
+<h3 id="section">弹幕君是一群怎么样的人？</h3>
+
+
+    
+      <a href="./news/2013/05/10/danmu-couple.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/05/10/blue-white.html">【蓝白弹幕祭简介】</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">面汤 / 2013年05月10日</p>
+    
+<p><a href="http://www.bilibili.com/video/av734560/" target="_blank"><img src="./res/blue-white/bbbefda266cf05ef332f87ad2820abbc9e5d6596.jpg" /></a></p>
+
+<h3 id="section">写在前面的话：</h3>
+
+<p>弹幕艺术【<a href="http://www.bilibili.com/sp/%E5%BC%B9%E5%B9%95%E8%89%BA%E6%9C%AF">点击详情</a>】，作为一种存在于弹幕播放器上的独特艺术。]</p>
+
+<p>对播放器的改变有着十分明显的依赖性。可以说播放器的发展史，就是弹幕艺术的发展史。</p>
+
+<p>同时，不同的站点拥有不一样的播放器，其弹幕文化也有着或多或少的差异。当然，即使是有着不一样的弹幕方式，但在内容表达上，所有弹幕站点的弹幕文化都会是一致的。弹幕艺术应该是能够传达弹幕的美和弹幕所修饰的物事（比如歌曲）的美，同时也是传达某种弹幕君所要表达的感情。当然，我的理解也许显得片面，可能会因为时间的推移，这个概念也会得到扩展。</p>
+
+<p>随着Bilibili的高速发展，弹幕现状同样是风云变幻，弹幕模式的进步与淘汰在所难免。新的弹幕模式越来越多姿多彩，弹幕能做到的也越来越多，弹幕艺术的定义也得以变得更加丰富饱满。</p>
+
+<p>过去的蓝白弹幕祭曾作为弹幕职人最高的弹幕礼赞，聚集了一批又一批的热爱“弹幕艺术”的弹幕君。大家都用自己的热情和爱来诠释这种独特的艺术！
+虽然有很多人因为各种各样的原因隐退，但是这份对弹幕的热情却依然在传承。</p>
+
+
+    
+      <a href="./news/2013/05/10/blue-white.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/03/18/player-update.html">播放器更新：$.frameRate</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">2013年03月18日</p>
+    
+<p>player.swf <strong>20130318</strong> 默认帧率从60改回24。增加<code>$.frameRate</code>接口，样例：<code>$.frameRate = 60; trace($.frameRate);</code>。</p>
+
+<p>之前发现60帧仍然存在弹幕运动不连贯的状况。播放器也许跑不到60帧。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/26/scratchpad-project-timeline.html">弹幕涂鸦系统</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2013年02月26日</p>
+    
+<p>我比较好奇，一个合作代码弹幕项目，会按怎样的过程进行下来，会经历多少情况。偶然一句话，产生了两周的工作，<a href="http://www.bilibili.tv/video/av488629/">《弹幕涂鸦系统》</a>。以下是<a href="http://space.bilibili.tv/140964">Xarple</a>与我的合作项目制作日志。</p>
+
+<p><img src="./res/scratchpad-project-timeline/screenshot.png" alt="" /></p>
+
+
+    
+      <a href="./news/2013/02/26/scratchpad-project-timeline.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/23/Danmaku-Helper.html">高级弹幕绘图助手：DanmakuHelper Ver1.15 0325更新</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">Encode.X / 2013年02月23日</p>
+    
+<p>一款高级弹幕(Mode8)的绘图辅助工具</p>
+
+<p><img src="./res/DanmakuHelper/1_1.png" alt="img01" /></p>
+
+
+    
+      <a href="./news/2013/02/23/Danmaku-Helper.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/15/rnr-making-of.html">《Round and Round》后记</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">akaza-akari / 2013年02月15日</p>
+    
+<p>……都要统一性的写成XXX后记这样的标题的吗？</p>
+
+
+    
+      <a href="./news/2013/02/15/rnr-making-of.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/14/kokoro-making-of.html">《一首研究镜音的胸部里是什么的歌》后记</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">xarple / 2013年02月14日</p>
+    
+<p>这篇文章就是一大篇废话，在文章的最后有工具的下载，你可以直接跳到最后。</p>
+
+<p>大家好，我是bilibili第一届弹幕比赛中<a href="http://www.bilibili.tv/video/av411036/">一首研究镜音的胸部里是什么的歌</a>的作者，在这里我给大家简单说下这个从头抄到尾的作品的由来～</p>
+
+<p>先说一下我自己吧，我是一个还在学校里挣扎的小伙子，在之前我并不常上B站，帐号应该是2010（2011??）年注册的，当时我还不知道有高级弹幕这东西，反正当时注册的动机只是发现这个网站居然开注册了的感脚。</p>
+
+<p>然后在比赛消息公布之前我无意中发现了B站原来还有高级弹幕这东西，能够使用代码来展现各种东西，接着就产生了极大的性趣。很快我就发布了第一个高级弹幕的作品并得到了意料之中的反响，于是我便开始筹划下一个作品的计划什么的，这时上B站已经成为了我的日常，所以我很快就得知了比赛的信息并满腔热血，在那瞬间我便立下了我要参加的念头。距离比赛投稿截止日期还有一个多月的时间，对于我来说时间并不是很充足，我空余的时间只有放学回家后的四个多小时。</p>
+
+<p>在求问几个有些许美术能力的朋友的帮助并得到了一致的拒绝后，有着小许编程经验的我便展开了迈向自闭佬的旅程。作品的策划由于在之前已经有了个大概，所以整个作品的分镜什么的在几个念头之间就决定了。嗯..就是把原曲的PV从头抄到尾！</p>
+
+<p>整个作品的制作时间差不多有一个月，其中差不多一个星期的时间我用了来写一个工具，一个能够将矢量图格式SVG文件直接转换成bilibili代码的形式，因为就目前公开的几个绘画工具比较鸡肋，效率比较低，很难满足要求～工具的编写过程是很枯燥的，完全是一个自闭佬的表现时间orz</p>
+
+<p>接着才是填坑的开始，先把大概的分镜都截了个图，基本上所有都是从原PV里抽出来的～</p>
+
+
+    
+      <a href="./news/2013/02/14/kokoro-making-of.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/13/submission-test.html">日志发表测试</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2013年02月13日</p>
+    
+<p>弹幕艺术联合文档希望能把弹幕艺术相关的信息收集聚合在一起，便于信息的查阅和更多开发。</p>
+
+<p>把文章发布到此处的步骤简单，列如下：</p>
+
+<ol>
+  <li>打开<a href="https://github.com/">github</a>，填写用户名、邮箱、密码，点击“Sign up for free”。</li>
+  <li>联系<a href="https://github.com/biliscript-syndicate?tab=members">一个成员</a>。</li>
+  <li>该成员将你<a href="https://github.com/organizations/biliscript-syndicate/teams">加入</a>。</li>
+  <li>打开<a href="https://github.com/biliscript-syndicate/biliscript-syndicate.github.com/tree/master/_posts">_posts目录</a>。</li>
+  <li>点击<code>[+]</code>图标“Create a new file here”。</li>
+  <li>填写文件名，必须为<code>yyyy-mm-dd-ascii-string.md</code>格式，标明日志发表时间和URL。</li>
+  <li>打开<a href="https://raw.github.com/biliscript-syndicate/biliscript-syndicate.github.com/master/_posts/2013-02-07-hello-world.md">样例日志</a>，复制代码到文本框，填写或修改相应内容。</li>
+  <li>添加<a href="http://zh.wikipedia.org/wiki/Markdown">Markdown</a>标记语言。</li>
+  <li>点击“Commit New File”。</li>
+  <li>发现问题可以回到_posts目录点击“Edit”修改。</li>
+</ol>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/13/a-history-of-danmaku-art.html">弹幕艺术简史</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">超元气小包子 / 2013年02月13日</p>
+    
+<h3 id="acfun">acfun第一版播放器</h3>
+
+<p>2008年2月，acfun第一版播放器。</p>
+
+<p>最早一批研究神弹幕的人是用这版的播放器研究的。ac8458是目前可考证最早有人讨论神弹幕的视频（见评论区）。这个时代是所有人的权限都是一样的，只能发送三种弹幕：顶端渐隐、滚动弹幕、底端渐隐。</p>
+
+<p>最开始的时候基本都是底端渐隐最下面一行来做歌词的字幕。自从后来有人发现<kbd>Ctrl</kbd>+<kbd>Enter</kbd>可以进行换行的时候，屏幕定位神弹幕诞生了。</p>
+
+<p>现在我们来说一下在当时环境下神弹幕都是怎么做成的。</p>
+
+
+    
+      <a href="./news/2013/02/13/a-history-of-danmaku-art.html">(继续阅读)…</a>
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/12/bitmap-regression.html">Bitmap库停止工作</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2013年02月12日</p>
+    
+<p><strong>更新</strong>：20130216已修复。默认播放器域名还原至hdslb.com。</p>
+
+<p>无法加载Bitmap库。</p>
+
+<p>重现方法<code>load('libBitmap', function(){trace('ok', Bitmap);});</code></p>
+
+<p>实际结果：</p>
+
+<pre><code>importExtendLibrary : libBitmap
+importExtendLibrary : libBitmap Downloading...
+Execute in 9ms
+importExtendLibrary : libBitmap Initalizing...
+importExtendLibrary : err ReferenceError: Error #1065
+</code></pre>
+
+<p>此库加载代码写死为从<code>http://static.hdslb.com/playerLibrary/libBitmap_2.swf</code>下载。查看网络流量未实际发出下载请求。默认播放器的链接变成了<code>http://static.loli.my/player.swf</code>，可能有跨域安全策略问题。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/07/player-history.html">播放器历史</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">2013年02月07日</p>
+    
+<p>player.swf <strong>20130125</strong> 全局帧率从24改为60。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2013/02/07/hello-world.html">沙发</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2013年02月07日</p>
+    
+<p>世界你好。测试日志模式。</p>
+
+    
+  </div>
+
+  <div style="margin-bottom: 3em;">
+    <h2><a href="./news/2012/12/29/the-first-contest.html">第一届bilibili弹幕大赛观看感想</a></h2>
+    <hr style="margin: 0.5em 0;" />
+    <p class="text-right">nekofs / 2012年12月29日</p>
+    
+<p>（原发表于space.bilibili.tv）</p>
+
+<p>公告：<a href="http://www.bilibili.tv/html/danmubisai.html">http://www.bilibili.tv/html/danmubisai.html</a></p>
+
+<p>投票：<a href="http://www.bilibili.tv/list/vote/1.html">http://www.bilibili.tv/list/vote/1.html</a></p>
+
+<p>这是一个Flash播放器中诞生的demoscene。弹幕从此从视频的次级内容升级成主要内容。</p>
+
+<p>20件脚本弹幕作品，18件mode7定位弹幕作品（其中7件尝试脚本）。</p>
+
+<p>但是脚本弹幕不是万能的，最难的地方还在于怎样创意编排内容和组织特效，这是学技术学不来的。</p>
+
+<p>按制作时间看，脚本弹幕从两周到三月不等，这显然是不可持续的。脚本弹幕还未找到一个工程量与完成度的平衡点，怎样用较少的工程量达到较好的效果还是一个问题。</p>
+
+<p>观众投票结果反映，观众最关注内容认同感和叙事性，对特效有一定关注，对技术实现难度认知不多，对陌生内容接受度偏低。</p>
+
+<p>黑/白屏纯粹弹幕实现视频编排特效最终还是无法与专业工具相比（效率、丰富程度）。我认为脚本弹幕可以做而专业工具不能做的，是用较少的代码过程性地生成一些材质、模式，这是demoscene一般在做的。</p>
+
+<p>细节上影响图形质量的两个主要问题：播放器帧率的refreshRate接口不工作因此被卡死在24fps（更新：播放器已提高到60fps）；无法嵌入优质字体，默认字体是渣（不一致的客户端破坏布局排版）。</p>
+
+<p>评选方式还可改善：排序固定和实时显示结果造成群体极化、未按形式分组造成候选量过大。</p>
+
+
+    
+      <a href="./news/2012/12/29/the-first-contest.html">(继续阅读)…</a>
+    
+  </div>
+
+</div>
+<div class="span4">
+  <h4><a href="./about.html">关于 / About</a></h4>
+  <h4><a href="./tools.html">弹幕制作工具</a></h4>
+    <ul>
+      <li><strong>弹幕塚</strong> - 离线开发环境</li>
+      <li><strong>DanmakuHelper</strong> - 绘画临摹工具</li>
+      <li><strong>SVG2BiliScript</strong> - 导入SVG</li>
+      <li><strong>SVG to Motifs Parser</strong> - 导入SVG</li>
+      <li><strong>BitmapTool</strong> - 导入图像</li>
+    </ul>
+  <h4><a href="./categories.html">日志分类</a></h4>
+  <h4><a href="./archive.html">日志存档</a></h4>
+  <h4><a href="./atom.xml">订阅 Atom 1.0 XML</a></h4>
+  <hr />
+  <h4>播放器更新历史</h4>
+  <ul>
+  
+    
+      <li>
+<p>player.swf <strong>20151029</strong> 。并没有功能更新。观看了第二届弹幕大赛后，我深受启发，查阅了从上个帖子至今近两年58个play.swf更新版本，在此证实确无功能上的更新（好像没什么用）。安全更新包括（2015年8月14日）：禁止了<code>__scope</code>属性的访问；关闭了<code>with</code>语法关键词的解析，现在会产生异常“不能使用 with!”。</p>
+</li>
+    
+  
+    
+      <li>
+<p>player.swf <strong>20140130</strong> 。libBitmap库已内嵌入player.swf，无需再用<code>load()</code>加载造成额外延迟。以前使用<code>load</code>的代码仍然正常工作，可以看出更新时考虑了向以前兼容的问题。</p>
+</li>
+    
+  
+    
+      <li>
+<p>player.swf <strong>20131120</strong> 。Display库中增加了<code>pointTowards projectVector projectVectors</code>函数。曾在9月3日加入，后11月11日改版时未并入新版。今已恢复。projectVectors是若干伪3D效果的基石。以下是两个基于它实现的例子。</p>
+
+</li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+<p>player.swf <strong>20130318</strong> 默认帧率从60改回24。增加<code>$.frameRate</code>接口，样例：<code>$.frameRate = 60; trace($.frameRate);</code>。</p>
+
+<p>之前发现60帧仍然存在弹幕运动不连贯的状况。播放器也许跑不到60帧。</p>
+</li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li>
+<p>player.swf <strong>20130125</strong> 全局帧率从24改为60。</p>
+</li>
+    
+  
+    
+  
+    
+  
+  </ul>
+</div>
+</div>
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="https://github.com/biliscript-syndicate">Biliscript Syndicate</a> 2015
+          使用 <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          和 <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

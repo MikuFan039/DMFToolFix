@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+
+<head>
+
+	<meta charset="UTF-8" />
+	<title>ECMAScript基础 - 嗶哩嗶哩百科</title>
+	<meta name="generator" content="MediaWiki 1.17.0" />
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<link rel="search" type="application/opensearchdescription+xml"
+		href="http://docs.bilibili.tv/opensearch_desc.php" title="嗶哩嗶哩百科 (zh-cn)" />
+	<link rel="EditURI" type="application/rsd+xml" href="http://wikipage.bilibili.tv/api.php?action=rsd" />
+	<link rel="alternate" type="application/atom+xml" title="嗶哩嗶哩百科的Atom订阅"
+		href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+	<link rel="stylesheet"
+		href="../stylesheets/mediawiki.legacy.commonPrint.css" />
+	<meta name="ResourceLoaderDynamicStyles" content="" />
+	<link rel="stylesheet"
+		href="../stylesheets/site.css" />
+
+	<!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]-->
+</head>
+
+<body class="mediawiki ltr ns-0 ns-subject page-ECMAScript基础 skin-vector">
+	<div id="mw-page-base" class="noprint"></div>
+	<div id="mw-head-base" class="noprint"></div>
+	<!-- content -->
+	<div id="content">
+		<a id="top"></a>
+		<div id="mw-js-message" style="display:none;"></div>
+		<!-- firstHeading -->
+		<h1 id="firstHeading" class="firstHeading">ECMAScript基础</h1>
+		<!-- /firstHeading -->
+		<!-- bodyContent -->
+		<div id="bodyContent">
+			<!-- tagline -->
+			<div id="siteSub">出自嗶哩嗶哩百科</div>
+			<!-- /tagline -->
+			<!-- subtitle -->
+			<div id="contentSub"></div>
+			<!-- /subtitle -->
+			<!-- jumpto -->
+			<div id="jump-to-nav">
+				跳转到： <a href="#mw-head">导航</a>,
+				<a href="#p-search">搜索</a>
+			</div>
+			<!-- /jumpto -->
+			<!-- bodytext -->
+			<table id="toc" class="toc">
+				<tr>
+					<td>
+						<div id="toctitle">
+							<h2>目录</h2>
+						</div>
+						<ul>
+							<li class="toclevel-1 tocsection-1"><a href="#.E5.9F.BA.E6.9C.AC.E7.89.B9.E6.80.A7"><span
+										class="tocnumber">1</span> <span class="toctext">基本特性</span></a></li>
+							<li class="toclevel-1 tocsection-2"><a
+									href="#.E5.8E.9F.E5.A7.8B.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B"><span
+										class="tocnumber">2</span> <span class="toctext">原始数据类型</span></a></li>
+							<li class="toclevel-1 tocsection-3"><a href="#.E6.95.B0.E6.8D.AE.E8.BD.AC.E6.8D.A2"><span
+										class="tocnumber">3</span> <span class="toctext">数据转换</span></a></li>
+							<li class="toclevel-1 tocsection-4"><a
+									href="#.E6.93.8D.E4.BD.9C.E7.AC.A6.E5.92.8C.E8.AF.AD.E5.8F.A5"><span
+										class="tocnumber">4</span> <span class="toctext">操作符和语句</span></a>
+								<ul>
+									<li class="toclevel-2 tocsection-5"><a href="#Functions"><span
+												class="tocnumber">4.1</span> <span class="toctext">Functions</span></a>
+									</li>
+									<li class="toclevel-2 tocsection-6"><a
+											href="#.E5.85.B3.E4.BA.8E.E9.87.8D.E8.BD.BD"><span
+												class="tocnumber">4.2</span> <span class="toctext">关于重载</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			<h2> <span class="mw-headline" id=".E5.9F.BA.E6.9C.AC.E7.89.B9.E6.80.A7">基本特性</span></h2>
+			<dl>
+				<dd>ECMAScript的语言特性和Java、C、Perl都有许多相似之处，其中不少特性都是从这些语言借鉴而来，同时它们之间也存在许多差异。下面列举一些ECMAScript的基本特性。
+				</dd>
+			</dl>
+			<ul>
+				<li>和Java一样，ECMAScript区分大小写，注释的格式相同，通过{}确定代码块，原始数据类型存储在堆栈，对象的引用存储在堆中
+				</li>
+				<li>ECMAScript是一种松散的语言，ECMAScript通过var操作符声明变量，并且不限类型，例如var n = 25，那么n就是数字类型，var n = "string"
+					，那么n就是String类型
+				</li>
+				<li>在每一行代码后，可以不写分号，ECMAScript自动认为该行的末尾为该行代码的最后；ECMAScript中的变量可以不用初始化，在幕后系统将自动完成初始化操作
+				</li>
+				<li>同一变量可以赋予不同类型的数据；变量的第一个字符只能是字母、下划线或$ ，其他的字符可以是下划线、$、或任意的字母、数字、字符
+				</li>
+				<li>和其他语言一样，变量最好遵循驼峰书写法，或Pascal表示法、或匈牙利表示法
+				</li>
+				<li>和大多数语言不同的是， ECMAScript 变量在使用之前可以不必声明，系统会自动将该变量声明为全局变量，例如var m = " Good "&#160;; n = m + " Morning
+					"&#160;; alert(n)输出结构是 " Good Morning "
+				</li>
+				<li>在大多数语言里，String是对象，在ECMAScript中却是原始数据类型
+				</li>
+				<li>注释以单斜杠和星号开头（/*），以星号和单斜杠结尾（*/）
+				</li>
+			</ul>
+			<h2> <span class="mw-headline" id=".E5.8E.9F.E5.A7.8B.E6.95.B0.E6.8D.AE.E7.B1.BB.E5.9E.8B">原始数据类型</span>
+			</h2>
+			<dl>
+				<dd>ECMAScript原始数据类型有五种：undefined、Null、Boolean、Number、String。
+				</dd>
+			</dl>
+			<ul>
+				<li>typeof—判断变量和值的数据类型，通常有undefined、boolean、number、string、object五种类型。
+				</li>
+				<li>undefined—当变量被声明但没有初始化，或函数没有明确返回一个值的时候，该变量或函数即为 undefined 类型。
+				</li>
+				<li>null—undefined是null的一种派生，当代表一个对象的值不存在时，该对象返回null。
+				</li>
+				<li>Boolean—包含两个值，true and false ， false不等于0，但0可以转换为false 。
+				</li>
+				<li>Number—可以定义32位整型数据或64位浮点型数据。定义数字类型变量时，在数字前加0即为八进制，加0x为十六进制，它们计算后返回的结果统一为十进制。通过var f =
+					1.0可以定义一个浮点类型变量，有意思的是，当f被用于计算之前，它实际是以
+					String类型存储的。当浮点类型数据很大或很小时（可以前后移动六位），将使用E表示法来表示浮点数据，最大可以存储17位数据。另外，isFinite()方法可以判断一个数值是否有限，isNaN()方法可以判断一个数据是非数字类型。
+				</li>
+				<li>String—String在ECMAScript中是原始数据类型，并且是唯一没有空间大小限制的数据类型。和Java不同的是，var s = " javascript " 和var s =
+					'javascript'均是合法的表示方法。
+				</li>
+			</ul>
+			<h2> <span class="mw-headline" id=".E6.95.B0.E6.8D.AE.E8.BD.AC.E6.8D.A2">数据转换</span></h2>
+			<dl>
+				<dd>在不同数据类型之间转换是任何一门编程语言的一个重要特性，ECMAScript提供了一系列简单的方法来实现数据的转换，大多数数据类型都提供了简单的转换方法，对于复杂的转换则有一些全局方法来完成，不管是哪一种方法，ECMAScript中数据转换都非常简单。
+				</dd>
+			</dl>
+			<p><br />
+			</p>
+			<dl>
+				<dd>Boolean、number和string数据类型是原始数据类型，但它们同时是伪对象，拥有自己的属性和方法，可以通过toString()方法来实现string类型的转换。ECMAScript定义所有的对象，不管是伪对象还是真实的对象，都可以实现toString()方法，string被列为伪对象的行列，自然也拥有toString()方法。将数字类型数据转换为string的时候，可以在
+					toString() 方法中加入2、8、16参数，来实现不同进制的数据输出，例如var n = 10;
+					trace(n.toString(2))输出为1010，trace(n.toString(8))输出为12，n.toString()和n.toString(10)相同。
+				</dd>
+			</dl>
+			<dl>
+				<dd>ECMAScript提供了两种方法来实现string类型转化为数字类型的方法：parseInt()和parseFloat()。其他类型转换将会返回 NaN（Not a Number）。
+				</dd>
+			</dl>
+			<h2> <span class="mw-headline" id=".E6.93.8D.E4.BD.9C.E7.AC.A6.E5.92.8C.E8.AF.AD.E5.8F.A5">操作符和语句</span>
+			</h2>
+			<dl>
+				<dd>ECMAScript 中大多数操作符、语句和 Java 都比较类似，但也有一些其特有的，如 label 语句， with 语句， for-in 语句等等。
+				</dd>
+			</dl>
+			<h3> <span class="mw-headline" id="Functions">Functions</span></h3>
+			<dl>
+				<dd>Functions是ECMAScript的核心，在任何时候任何地方都可以运行的一组代码语句。
+				</dd>
+			</dl>
+			<pre> function functionName(arg0, arg1, …… , argN) { 
+   statements 
+ } 
+</pre>
+			<dl>
+				<dd>当function没有返回值或return语句后没有值的时候，该function实际上会被系统定义为undefined，当function返回值的时候，function可以不必明确指定为某种数据类型。
+				</dd>
+			</dl>
+			<h3> <span class="mw-headline" id=".E5.85.B3.E4.BA.8E.E9.87.8D.E8.BD.BD">关于重载</span></h3>
+			<dl>
+				<dd>重载是面向对象语言的基本特性之一，但 ECMAScript 的 functions
+					并不能重载，在同一范围里可以定义两个完全相同的函数，在调用函数的时候，最后的一个函数发挥作用。这种特性比较麻烦，但可以通过 arguments 对象来实现和重载类似的功能。
+				</dd>
+			</dl>
+			<pre> function func() {
+   if (arguments.length == 1 ) {
+     trace(arguments[ 0 ] + 5 );
+   } else if (arguments.length == 2 ) {
+     trace(arguments[ 0 ] + arguments[ 1 ]);
+   }
+ }
+ func( 5 ); /* 输出10 */
+ func( 10 , 15 ); /* 输出25 */
+</pre>
+			<dl>
+				<dd>前面提到过，在同一范围里可以定义两个完全相同的function，在调用function的时候，最后的一个function发挥作用。
+				</dd>
+			</dl>
+			<pre> function func(i) { 
+   trace(i + 10 ); 
+ } 
+ function func(i) { 
+   trace(i + 20 ); 
+ } 
+ func( 5 ); /* 输出25 */
+</pre>
+			<dl>
+				<dd>可以看出，是调用了最后的一个function使得数据结果为25，如果使用Function类来定义以上两个函数，那为什么会使用最后的一个function可能会更明确一些。
+				</dd>
+			</dl>
+			<pre> var func = new Function(“i”, “alert(i + 10 )”); 
+ var func = new Function(“i”, “alert(i + 20 )”); 
+ func( 5 ); 
+</pre>
+			<dl>
+				<dd>func指向了另外一个引用，从而值发生了改变，func是作为function对象的引用而存在的，并且允许两个变量指向同一个 function。
+				</dd>
+				<dd>和Function类相关的属性、方法有许多，例如length、toString()、valueOf()等等。其中toString()在调试程序中使用较多。
+				</dd>
+			</dl>
+
+			<!-- 
+NewPP limit report
+Preprocessor node count: 22/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+			<!-- Saved in parser cache with key wikidb:pcache:idhash:36-0!*!0!!zh-cn!*!edit=0 and timestamp 20130516063223 -->
+			<div class="printfooter">
+				取自“<a
+					href="http://wikipage.bilibili.tv/wiki/ECMAScript%E5%9F%BA%E7%A1%80">http://wikipage.bilibili.tv/wiki/ECMAScript%E5%9F%BA%E7%A1%80</a>”
+			</div>
+			<!-- /bodytext -->
+			<!-- catlinks -->
+			<div id="catlinks" class="catlinks">
+				<div id="mw-normal-catlinks"><a
+						href="./Category_PageCategory.html"
+						title="特殊:页面分类">2个分类</a>: <span dir="ltr"><a
+							href="./Category_ECMAScript.html"
+							title="分类:ECMAScript">ECMAScript</a></span> | <span dir="ltr"><a
+							href="./Category_Script.html"
+							title="分类:Script">Script</a></span></div>
+			</div> <!-- /catlinks -->
+			<div class="visualClear"></div>
+		</div>
+		<!-- /bodyContent -->
+	</div>
+	<!-- /content -->
+	<!-- header -->
+	<div id="mw-head" class="noprint">
+
+		<!-- 0 -->
+		<div id="p-personal" class="">
+			<h5>个人工具</h5>
+			<ul>
+				<li id="pt-anonuserpage"><a
+						href="http://docs.bilibili.tv/wiki/%E7%94%A8%E6%88%B7:"
+						title="您编辑本站所用IP的对应用户页 [.]" accesskey="." class="new"></a></li>
+				<li id="pt-anontalk"><a
+						href="http://docs.bilibili.tv/wiki/%E7%94%A8%E6%88%B7%E8%AE%A8%E8%AE%BA:"
+						title="对于来自此IP地址的编辑的对话 [n]" accesskey="n" class="new">该IP的讨论页</a></li>
+				<li id="pt-anonlogin"><a
+						href="http://docs.bilibili.tv/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=ECMAScript%E5%9F%BA%E7%A1%80"
+						title="我们鼓励您登录，但这并不是必须的 [o]" accesskey="o">登录</a></li>
+			</ul>
+		</div>
+
+		<!-- /0 -->
+		<div id="left-navigation">
+
+			<!-- 0 -->
+			<div id="p-namespaces" class="vectorTabs">
+				<h5>名字空间</h5>
+				<ul>
+					<li id="ca-nstab-main" class="selected"><span><a
+								href="./ECMAScript_Basic.html"
+								title="查看页面内容 [c]" accesskey="c">页面</a></span></li>
+					<li id="ca-talk" class="new"><span><a
+								href="http://docs.bilibili.tv/index.php?title=%E8%AE%A8%E8%AE%BA:ECMAScript%E5%9F%BA%E7%A1%80&amp;action=edit&amp;redlink=1"
+								title="关于页面正文的讨论 [t]" accesskey="t">讨论</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-variants" class="vectorMenu emptyPortlet">
+				<h5><span>变换</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+		</div>
+		<div id="right-navigation">
+
+			<!-- 0 -->
+			<div id="p-views" class="vectorTabs">
+				<h5>查看</h5>
+				<ul>
+					<li id="ca-view" class="selected"><span><a
+								href="./ECMAScript_Basic.html">阅读</a></span>
+					</li>
+					<li id="ca-viewsource"><span><a
+								href="http://docs.bilibili.tv/index.php?title=ECMAScript%E5%9F%BA%E7%A1%80&amp;action=edit"
+								title="此页面已被保护，你可以查看其源代码。 [e]" accesskey="e">查看源代码</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a
+								href="http://docs.bilibili.tv/index.php?title=ECMAScript%E5%9F%BA%E7%A1%80&amp;action=history"
+								title="此页面的早前修订版本 [h]" accesskey="h">查看历史</a></span></li>
+				</ul>
+			</div>
+
+			<!-- /0 -->
+
+			<!-- 1 -->
+			<div id="p-cactions" class="vectorMenu emptyPortlet">
+				<h5><span>动作</span><a href="#"></a></h5>
+				<div class="menu">
+					<ul>
+					</ul>
+				</div>
+			</div>
+
+			<!-- /1 -->
+
+			<!-- 2 -->
+			<div id="p-search">
+				<h5><label for="searchInput">搜索</label></h5>
+				<form action="http://docs.bilibili.tv/index.php" id="searchform">
+					<input type="hidden" name="title" value="特殊:搜索" />
+					<input id="searchInput" name="search" type="text" title="搜索该网站 [f]" accesskey="f" value="" />
+					<input type="submit" name="go" class="searchButton" id="searchGoButton" value="进入"
+						title="如果相同的标题存在的话便直接前往该页面" />
+					<input type="submit" name="fulltext" class="searchButton" id="mw-searchButton" value="搜索"
+						title="搜索该文字的页面" />
+				</form>
+			</div>
+
+			<!-- /2 -->
+		</div>
+	</div>
+	<!-- /header -->
+	<!-- panel -->
+	<div id="mw-panel" class="noprint">
+		<!-- logo -->
+		<div id="p-logo"><a
+				style="background-image: url(../images/baike.png);"
+				href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页"></a></div>
+		<!-- /logo -->
+
+		<!-- navigation -->
+		<div class="portal" id="p-navigation">
+			<h5>导航</h5>
+			<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a
+							href="http://docs.bilibili.tv/wiki/%E9%A6%96%E9%A1%B5" title="访问首页 [z]"
+							accesskey="z">首页</a></li>
+					<li id="n-.E5.8A.9F.E8.83.BD.E8.AF.B4.E6.98.8E"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">功能说明</a>
+					</li>
+					<li id="n-.E6.9B.B4.E6.96.B0.E6.97.A5.E5.BF.97"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97">更新日志</a>
+					</li>
+					<li id="n-.E9.AB.98.E7.BA.A7.E5.BC.B9.E5.B9.95.E8.AF.AD.E8.A8.80"><a
+							href="./Category_Script.html">高级弹幕语言</a>
+					</li>
+					<li id="n-.E5.BC.80.E6.94.BE.E5.B9.B3.E5.8F.B0"><a
+							href="http://docs.bilibili.tv/wiki/%E5%88%86%E7%B1%BB:API">开放平台</a></li>
+					<li id="n-randompage"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2"
+							title="随机载入一个页面 [x]" accesskey="x">随机页面</a></li>
+					<li id="n-help"><a
+							href="http://docs.bilibili.tv/wiki/%E5%B8%AE%E5%8A%A9:%E7%9B%AE%E5%BD%95"
+							title="寻求帮助">帮助</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /navigation -->
+
+		<!-- 更新 -->
+		<div class="portal" id="p-.E6.9B.B4.E6.96.B0">
+			<h5>更新</h5>
+			<div class="body">
+				<ul>
+					<li id="n-currentevents"><a
+							href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%BD%93%E5%89%8D%E4%BA%8B%E4%BB%B6"
+							title="查找当前事件的背景信息">当前事件</a></li>
+					<li id="n-recentchanges"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9"
+							title="列出该网站的最近修改 [r]" accesskey="r">最近更改</a></li>
+					<li id="n-.E6.9C.80.E6.96.B0.E5.9B.BE.E7.89.87"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6">最新图片</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /更新 -->
+
+		<!-- SEARCH -->
+
+		<!-- /SEARCH -->
+
+		<!-- TOOLBOX -->
+		<div class="portal" id="p-tb">
+			<h5>工具箱</h5>
+			<div class="body">
+				<ul>
+					<li id="t-whatlinkshere"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/ECMAScript%E5%9F%BA%E7%A1%80"
+							title="列出所有与此页相链的页面 [j]" accesskey="j">链入页面</a></li>
+					<li id="t-recentchangeslinked"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/ECMAScript%E5%9F%BA%E7%A1%80"
+							title="从此页链出的所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+					<li id="t-specialpages"><a
+							href="http://docs.bilibili.tv/wiki/%E7%89%B9%E6%AE%8A:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2"
+							title="所有特殊页面列表 [q]" accesskey="q">特殊页面</a></li>
+					<li id="t-print"><a
+							href="http://docs.bilibili.tv/index.php?title=ECMAScript%E5%9F%BA%E7%A1%80&amp;printable=yes"
+							rel="alternate" title="这个页面的可打印版本 [p]" accesskey="p">可打印版</a></li>
+					<li id="t-permalink"><a
+							href="http://docs.bilibili.tv/index.php?title=ECMAScript%E5%9F%BA%E7%A1%80&amp;oldid=106"
+							title="这个页面修订版本的永久链接">永久链接</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- /TOOLBOX -->
+
+		<!-- LANGUAGES -->
+
+		<!-- /LANGUAGES -->
+	</div>
+	<!-- /panel -->
+	<!-- footer -->
+	<div id="footer">
+		<ul id="footer-info">
+			<li id="footer-info-lastmod"> 此页面最后修订于2011年7月26日 (星期二) 00:12。</li>
+		</ul>
+		<ul id="footer-places">
+			<li id="footer-places-privacy"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96"
+					title="嗶哩嗶哩百科:隐私政策">隐私政策</a></li>
+			<li id="footer-places-about"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%B3%E4%BA%8E"
+					title="嗶哩嗶哩百科:关于">关于嗶哩嗶哩百科</a></li>
+			<li id="footer-places-disclaimer"><a
+					href="http://docs.bilibili.tv/wiki/%E5%97%B6%E5%93%A9%E5%97%B6%E5%93%A9%E7%99%BE%E7%A7%91:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E"
+					title="嗶哩嗶哩百科:免责声明">免责声明</a></li>
+		</ul>
+		<ul id="footer-icons" class="noprint">
+			<li id="footer-poweredbyico">
+				<a href="http://www.mediawiki.org/"><img
+						src="../images/poweredby_mediawiki_88x31.png"
+						alt="Powered by MediaWiki" width="88" height="31" /></a>
+			</li>
+		</ul>
+		<div style="clear:both"></div>
+	</div>
+	<!-- /footer -->
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.config.set({
+				"wgCanonicalNamespace": "",
+				"wgCanonicalSpecialPageName": false,
+				"wgNamespaceNumber": 0,
+				"wgPageName": "ECMAScript基础",
+				"wgTitle": "ECMAScript基础",
+				"wgAction": "view",
+				"wgArticleId": 36,
+				"wgIsArticle": true,
+				"wgUserName": null,
+				"wgUserGroups": ["*"],
+				"wgCurRevisionId": 106,
+				"wgCategories": ["ECMAScript", "Script"],
+				"wgBreakFrames": false,
+				"wgRestrictionEdit": [],
+				"wgRestrictionMove": [],
+				"wgFCKEditorDir": "extensions/WYSIWYG/ckeditor/",
+				"wgFCKEditorExtDir": "extensions/WYSIWYG",
+				"wgFCKEditorToolbarSet": "Wiki",
+				"wgFCKEditorHeight": "0",
+				"wgCKeditorMagicWords": {
+					"wikitags": ["nowiki", "includeonly", "onlyinclude", "noinclude", "pre", "gallery"],
+					"magicwords": ["NOTOC", "FORCETOC", "TOC", "NOEDITSECTION", "NEWSECTIONLINK", "NONEWSECTIONLINK",
+						"NOCONTENTCONVERT", "NOCC", "NOTITLECONVERT", "NOTC", "NOGALLERY", "INDEX", "NOINDEX",
+						"STATICREDIRECT", "NOGALLERY", "HIDDENCAT", "START", "END"
+					],
+					"datevars": ["CURRENTYEAR", "CURRENTMONTH", "CURRENTMONTHNAME", "CURRENTMONTHNAMEGEN",
+						"CURRENTMONTHABBREV", "CURRENTDAY", "CURRENTDAY2", "CURRENTDOW", "CURRENTDAYNAME",
+						"CURRENTTIME", "CURRENTHOUR", "CURRENTWEEK", "CURRENTTIMESTAMP"
+					],
+					"wikivars": ["SITENAME", "SERVER", "SERVERNAME", "DIRMARK", "SCRIPTPATH", "CURRENTVERSION",
+						"CONTENTLANG", "REVISIONID", "REVISIONDAY", "REVISIONDAY2", "REVISIONMONTH",
+						"REVISIONYEAR", "REVISIONTIMESTAMP", "REVISIONUSER", "FULLPAGENAME", "PAGENAME",
+						"BASEPAGENAME", "SUBPAGENAME", "SUBJECTPAGENAME", "TALKPAGENAME", "NAMESPACE",
+						"ARTICLESPACE", "TALKSPACE"
+					],
+					"parserhooks": ["lc", "lcfirst", "uc", "ucfirst", "formatnum", "#dateformat", "padleft",
+						"padright", "plural", "grammar", "#language", "int", "#tag", "#int", "#ns", "#nse",
+						"#urlencode", "#lcfirst", "#ucfirst", "#lc", "#uc", "#localurl", "#localurle", "#fullurl",
+						"#fullurle", "#formatnum", "#grammar", "#gender", "#plural", "#numberofpages",
+						"#numberofusers", "#numberofactiveusers", "#numberofarticles", "#numberoffiles",
+						"#numberofadmins", "#numberingroup", "#numberofedits", "#numberofviews", "#padleft",
+						"#padright", "#anchorencode", "#special", "#defaultsort", "#filepath", "#pagesincategory",
+						"#pagesize", "#protectionlevel", "#namespace", "#namespacee", "#talkspace", "#talkspacee",
+						"#subjectspace", "#subjectspacee", "#pagename", "#pagenamee", "#fullpagename",
+						"#fullpagenamee", "#basepagename", "#basepagenamee", "#subpagename", "#subpagenamee",
+						"#talkpagename", "#talkpagenamee", "#subjectpagename", "#subjectpagenamee", "#formatdate",
+						"#displaytitle"
+					]
+				},
+				"wgCKeditorUseBuildin4Extensions": [],
+				"wgAllowExternalImages": true
+			});
+		}
+	</script>
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.loader.load(["mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+			mediaWiki.loader.go();
+		}
+	</script>
+
+	<script>
+		if (window.mediaWiki) {
+			mediaWiki.user.options.set({
+				"ccmeonemails": 0,
+				"cols": 80,
+				"contextchars": 50,
+				"contextlines": 5,
+				"date": "default",
+				"diffonly": 0,
+				"disablemail": 0,
+				"disablesuggest": 0,
+				"editfont": "default",
+				"editondblclick": 0,
+				"editsection": 1,
+				"editsectiononrightclick": 0,
+				"enotifminoredits": 0,
+				"enotifrevealaddr": 0,
+				"enotifusertalkpages": 1,
+				"enotifwatchlistpages": 0,
+				"extendwatchlist": 0,
+				"externaldiff": 0,
+				"externaleditor": 0,
+				"fancysig": 0,
+				"forceeditsummary": 0,
+				"gender": "unknown",
+				"hideminor": 0,
+				"hidepatrolled": 0,
+				"highlightbroken": 1,
+				"imagesize": 2,
+				"justify": 0,
+				"math": 1,
+				"minordefault": 0,
+				"newpageshidepatrolled": 0,
+				"nocache": 0,
+				"noconvertlink": 0,
+				"norollbackdiff": 0,
+				"numberheadings": 0,
+				"previewonfirst": 0,
+				"previewontop": 1,
+				"quickbar": 1,
+				"rcdays": 7,
+				"rclimit": 50,
+				"rememberpassword": 0,
+				"rows": 25,
+				"searchlimit": 20,
+				"showhiddencats": 0,
+				"showjumplinks": 1,
+				"shownumberswatching": 1,
+				"showtoc": 1,
+				"showtoolbar": 1,
+				"skin": "vector",
+				"stubthreshold": 0,
+				"thumbsize": 2,
+				"underline": 2,
+				"uselivepreview": 0,
+				"usenewrc": 0,
+				"watchcreations": 0,
+				"watchdefault": 0,
+				"watchdeletion": 0,
+				"watchlistdays": 3,
+				"watchlisthideanons": 0,
+				"watchlisthidebots": 0,
+				"watchlisthideliu": 0,
+				"watchlisthideminor": 0,
+				"watchlisthideown": 0,
+				"watchlisthidepatrolled": 0,
+				"watchmoves": 0,
+				"wllimit": 250,
+				"riched_use_toggle": 1,
+				"riched_start_disabled": 1,
+				"riched_use_popup": 1,
+				"riched_toggle_remember_state": 1,
+				"usebetatoolbar": 1,
+				"usebetatoolbar-cgd": 1,
+				"wikieditor-preview": 1,
+				"variant": "zh-cn",
+				"language": "zh-cn",
+				"searchNs0": true,
+				"searchNs1": false,
+				"searchNs2": false,
+				"searchNs3": false,
+				"searchNs4": false,
+				"searchNs5": false,
+				"searchNs6": false,
+				"searchNs7": false,
+				"searchNs8": false,
+				"searchNs9": false,
+				"searchNs10": false,
+				"searchNs11": false,
+				"searchNs12": false,
+				"searchNs13": false,
+				"searchNs14": false,
+				"searchNs15": false
+			});;
+			mediaWiki.loader.state({
+				"user.options": "ready"
+			});
+		}
+	</script> <!-- fixalpha -->
+	<script type="text/javascript">
+		if (window.isMSIE55) fixalpha();
+	</script>
+	<!-- /fixalpha -->
+	<!-- Served in 0.077 secs. -->
+</body>
+
+</html>
