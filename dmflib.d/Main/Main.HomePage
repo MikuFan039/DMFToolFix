@@ -1,13 +1,13 @@
 version=pmwiki-2.2.58 ordered=1 urlencoded=1
-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36 Edg/103.0.1264.71
+agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.78
 author=Admin
 cauthor=Admin
 charset=UTF-8
 csum=
 host=127.0.0.1
 name=Main.HomePage
-rev=270
+rev=274
 targets=
-text=----%0a%0a{-很不幸，又双叒叕复活了。-}%0a%0a任何建议和bug汇报请加群 729118890 反馈。%0a%0a----%0a%0a推荐的观看环境：%0a%0a1.浏览器：需支持Flash Player，如IE，[[http://browser.360.cn/ee/|360极速浏览器]]或旧版本的Edge/Chrome/Firefox，可从[[http://danmaku.site:90/downloads/Firefox Setup 10.0.exe|此处下载]]。%0a2.Flash插件：建议使用旧版本Flash Player（普权弹幕作品在较新版本Flash Player下可能会存在定位不准的问题），推荐Adobe Flash Player11，可从[[http://danmaku.site:90/downloads/flashplayer11_7r700_202_win.exe|此处下载]]。%0a3.操作系统：Windows10/11，Windows8/8.1，Windows7（推荐Windows7，小部分视频可能必须WindowsXP，详细要求请见视频旁边的备注）。%0a%0a----%0a%0a本站运行于DMF : {$DMFVersion} {$Version}.%0a%0a弹幕Art研究社认证产品
-time=1659192961
-author:1659192961=Admin
+text=----%0a%0a{-很不幸，又双叒叕复活了。-}%0a%0a任何建议和Bug汇报请在[[https://github.com/MikuFan039/DMFNew/issues|GitHub的Issue]]或[[https://t.bilibili.com/731757870738047041|B站动态]]留言反馈。%0a%0a----%0a%0a推荐的观看环境：%0a%0a1.浏览器：需支持Flash Player，如IE，[[http://browser.360.cn/ee/|360极速浏览器]]或旧版本的Edge/Chrome/Firefox，可在命令菜单中选择 "10" 安装。%0a2.Flash插件：建议使用旧版本Flash Player（普权弹幕作品在较新版本Flash Player下可能会存在定位不准的问题），推荐Adobe Flash Player11，可在命令菜单中选择 "9" 安装。%0a3.操作系统：Windows10/11，Windows8/8.1，Windows7（推荐Windows7，小部分视频可能必须WindowsXP，详细要求请见视频旁边的备注）。%0a%0a----%0a%0a本站运行于DMF : {$DMFVersion} {$Version}.%0a
+time=1675567827
+author:1675567827=Admin
