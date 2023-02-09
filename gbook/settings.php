@@ -12,7 +12,7 @@ $settings['apass'] = '1006093326';
 $settings['website_title'] = "DMF主页";
 
 // Website URL
-$settings['website_url'] = 'http://danmaku.site:90';
+$settings['website_url'] = 'http://localhost/';
 
 // Guestbook title
 $settings['gbook_title'] = "留言板";
@@ -21,7 +21,7 @@ $settings['gbook_title'] = "留言板";
 $settings['admin_email'] = '2016572973@qq.com';
 
 // URL of the gbook.php file.
-$settings['gbook_url'] = 'http://danmaku.site:90/gbook/gbook.php';
+$settings['gbook_url'] = 'http://localhost/gbook/gbook.php';
 
 // If you want to use a logical anti-SPAM question type it here
 $settings['spam_question'] = '0';

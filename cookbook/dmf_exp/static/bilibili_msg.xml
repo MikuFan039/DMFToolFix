@@ -1,6 +1,9 @@
 <msg>
 <item bgcolor="#CCCCCC"><![CDATA[
-<a href="" target="_blank"><font color="#ffffff">如果您对神弹幕感兴趣，欢迎加群弹幕Art研究社[1006093326]</font></a>
+<a href="https://space.bilibili.com/1171230637" target="_blank"><font color="#ffffff">关注当前开发者</font></a>
+]]></item>
+<item bgcolor="#CCCCCC" tooltip=""><![CDATA[
+<a href="https://danmaku.fans" target="_blank"><font color="#ffffff">弹幕Art研究社</font></a>
 ]]></item>
 <item bgcolor="#CCCCCC" tooltip=""><![CDATA[
 <a href="https://www.bilibili.com/topic/153.html" target="_blank"><font color="#ffffff">蓝白弹幕祭</font></a>
@@ -10,11 +13,5 @@
 ]]></item>
 <item bgcolor="#CCCCCC" tooltip=""><![CDATA[
 <a href="https://www.bilibili.com/topic/816.html" target="_blank"><font color="#ffffff">第二届弹幕大赛</font></a>
-]]></item>
-<item bgcolor="#CCCCCC" tooltip=""><![CDATA[
-<a href="https://danmaku.fans" target="_blank"><font color="#ffffff">弹幕Art研究社</font></a>
-]]></item>
-<item bgcolor="#CCCCCC" tooltip=""><![CDATA[
-<a href="https://space.bilibili.com/65413" target="_blank"><font color="#ffffff">弹幕娘</font></a>
 ]]></item>
 </msg>

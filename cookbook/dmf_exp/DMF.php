@@ -173,7 +173,7 @@ if ($LOCALVERSION) {
 	$HandleAuth['dmpost'] = 'admin`';
 }
 
-$HTMLHeaderFmt['javascripts'] = "\n".'<script type="text/javascript" src="/javascripts/jquery-1.6.1.min.js"></script><script type="text/javascript" src="/javascripts/jquery-ui-1.8.14.custom.min.js"></script><script type="text/javascript" src="/javascripts/swfobject.js"></script><script type="text/javascript" src="/javascripts/page.arc.js"></script><script type="text/javascript" src="/javascripts/jq.bilibili.js"></script>'."\n";
+$HTMLHeaderFmt['javascripts'] = "\n".'<script type="text/javascript" src="/javascripts/jquery-1.6.1.min.js"></script><script type="text/javascript" src="/javascripts/jquery-ui-1.8.14.custom.min.js"></script><script type="text/javascript" src="/javascripts/swfobject.js"></script>'."\n";
 
 //处理投稿请求
 if ($_POST["xVerify"]=="fca654cb-60ac-4f9c-b751-16ef296227b2")  {

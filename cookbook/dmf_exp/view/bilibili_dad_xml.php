@@ -6,7 +6,7 @@
 <user>123</user>
 <scores>100</scores>
 <money>100</money>
-<face>/images/face/danmaku_couple.jpg</face>
+<face>/images/face/akari.jpg</face>
 <pwd>12345678</pwd>
 <isadmin>true</isadmin>
 <permission><?php echo $AuthLevelString;?></permission>

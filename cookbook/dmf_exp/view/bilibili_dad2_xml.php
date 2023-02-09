@@ -5,10 +5,10 @@
 <login>true</login>
 <time>1647057135</time>
 <name>弹幕娘</name>
-<user>435221170</user>
-<user_hash>2d7e96a0</user_hash>
+<user>1171230637</user>
+<user_hash>efc5642f</user_hash>
 <money>50.00</money>
-<face>//i1.hdslb.com/bfs/face/f58c8c14a38c8700d37485852a4b267b5b10f106.jpg</face>
+<face>//i1.hdslb.com/bfs/face/22df286efafa52c8b5ea0eece44d0eb983ce3798.jpg</face>
 <isadmin>true</isadmin>
 <permission><?php echo $AuthLevelString;?></permission>
 <level>弹幕抖M <?php echo $AuthLevelString;?></level>
