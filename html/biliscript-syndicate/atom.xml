@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>弹幕艺术联合文档</title>
+ <link href="http://biliscript-syndicate.github.com/atom.xml" rel="self"/>
+ <link href="http://biliscript-syndicate.github.com"/>
+ <updated>2015-10-31T04:01:32+00:00</updated>
+ <id>http://biliscript-syndicate.github.com</id>
+ <author>
+   <name>Biliscript Syndicate</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>播放器安全更新总结</title>
+   <link href="http://biliscript-syndicate.github.com/news/2015/10/30/security-update.html"/>
+   <updated>2015-10-30T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2015/10/30/security-update</id>
+   <content type="html">
+&lt;p&gt;player.swf &lt;strong&gt;20151029&lt;/strong&gt; 。并没有功能更新。观看了第二届弹幕大赛后，我深受启发，查阅了从上个帖子至今近两年58个play.swf更新版本，在此证实确无功能上的更新（好像没什么用）。安全更新包括（2015年8月14日）：禁止了&lt;code&gt;__scope&lt;/code&gt;属性的访问；关闭了&lt;code&gt;with&lt;/code&gt;语法关键词的解析，现在会产生异常“不能使用 with!”。&lt;/p&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>播放器更新：内嵌libBitmap</title>
+   <link href="http://biliscript-syndicate.github.com/news/2014/02/22/libBitmap-embedded.html"/>
+   <updated>2014-02-22T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2014/02/22/libBitmap-embedded</id>
+   <content type="html">
+&lt;p&gt;player.swf &lt;strong&gt;20140130&lt;/strong&gt; 。libBitmap库已内嵌入player.swf，无需再用&lt;code&gt;load()&lt;/code&gt;加载造成额外延迟。以前使用&lt;code&gt;load&lt;/code&gt;的代码仍然正常工作，可以看出更新时考虑了向以前兼容的问题。&lt;/p&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>播放器更新：$.projectVectors</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/11/21/projectVectors.html"/>
+   <updated>2013-11-21T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/11/21/projectVectors</id>
+   <content type="html">
+&lt;p&gt;player.swf &lt;strong&gt;20131120&lt;/strong&gt; 。Display库中增加了&lt;code&gt;pointTowards projectVector projectVectors&lt;/code&gt;函数。曾在9月3日加入，后11月11日改版时未并入新版。今已恢复。projectVectors是若干伪3D效果的基石。以下是两个基于它实现的例子。&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://wonderfl.net/blogparts/oZIz/js&quot;&gt; &lt;/script&gt;
+
+&lt;p class=&quot;ttlBpWonderfl&quot; style=&quot;width: 465px; margin: 0; text-align: right; font-size: 11px;&quot;&gt;&lt;a href=&quot;http://wonderfl.net/c/oZIz&quot; title=&quot;Sphere and stripes&quot;&gt;Sphere and stripes - wonderfl build flash online&lt;/a&gt;&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://wonderfl.net/blogparts/t8Nn/js&quot;&gt; &lt;/script&gt;
+
+&lt;p class=&quot;ttlBpWonderfl&quot; style=&quot;width: 465px; margin: 0; text-align: right; font-size: 11px;&quot;&gt;&lt;a href=&quot;http://wonderfl.net/c/t8Nn&quot; title=&quot;Circle Cluster&quot;&gt;Circle Cluster - wonderfl build flash online&lt;/a&gt;&lt;/p&gt;
+</content>
+   <author><name></name></author>
+ </entry>
+ 
+ <entry>
+   <title>Biliscript Toolkit 1.2</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/09/22/biliscript-toolkit.html"/>
+   <updated>2013-09-22T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/09/22/biliscript-toolkit</id>
+   <content type="html">
+&lt;p&gt;BiliscriptToolkit是专门用于辅助高级弹幕制作的一系列工具的集合，提供了一些针对各种制作过程中或许需要的一些解决方案。&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h2 id=&quot;biliscripttoolkit&quot;&gt;目前BiliscriptToolkit包含的工具有：&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;VectorFont2Biliscript 1.08&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;SVG2Biliscript 1.1&lt;/p&gt;
+
+    &lt;p&gt;由于作者硬盘报废，VectorFont2Biliscript和SVG2Biliscript的源代码已经丢失，这两个工具不会再更新，希望不会出啥严重的漏洞~&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;VectorFont2Biliscript
+——–
+&lt;img src=&quot;/res/biliscript-toolkit/shot1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;VectorFont2Biliscript是一个能够实现在高级弹幕里嵌入任意矢量字体(TrueType)的转换工具，并且能够得到比TextField更好的显示效果和更自由的可定制性。工具的主要功能都能在上图看到，且压缩包里面已经附带样例两只。&lt;/p&gt;
+
+&lt;p&gt;使用过这个工具的高级弹幕作品已经有好几个，以下是一些参考例子：
+- &lt;a href=&quot;http://www.bilibili.com/video/av734560/&quot;&gt;【纯弹幕PV】第三回蓝白弹幕合作祭&lt;/a&gt;
+- &lt;a href=&quot;http://www.bilibili.com/video/av612580/&quot;&gt;【弹幕AVG(伪)】玄天·律师事务所&lt;/a&gt;
+- &lt;a href=&quot;http://www.bilibili.com/video/av605073/&quot;&gt;当一切支离破碎 你将是拯救我灵魂的唯一&lt;/a&gt;
+- &lt;a href=&quot;http://www.bilibili.com/video/av583881/&quot;&gt;【全程高能】 进击的亚瑟王&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;SVG2Biliscript
+——–
+&lt;img src=&quot;/res/biliscript-toolkit/shot2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;SVG2Biliscript是一个矢量图转换工具，能够将SVG转换成一堆Graphics绘图代码。支持渐变填充、线条样式、渐变线条等矢量特性。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;由于源代码丢失，来不及更新，如果需要使用样例里的解码函数的话，工具里的‘压缩数据’功能出来的base64码需要手动将&#39;+&#39;替换成&#39;-&#39;，还有&#39;/&#39;替换成&#39;_&#39;。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;下载地址
+——–&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/res/biliscript-toolkit/BiliscriptToolkit1.2.rar&quot;&gt;BiliscriptToolkit 1.2.rar&lt;/a&gt; (~1.85MB)&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;使用条款&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;制作中有使用到BiliscriptToolkit的高级弹幕作品必须注明使用过本工具并列出本贴的地址。为了能够让更多的人知道&amp;lt;弹幕艺术联合文档&amp;gt;这个站点，并且能够让更多的人来参与到联合文档的讨论和开发。
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+   <author><name>xarple</name></author>
+ </entry>
+ 
+ <entry>
+   <title>【关于弹幕双子形象的确定】</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/05/10/danmu-couple.html"/>
+   <updated>2013-05-10T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/05/10/danmu-couple</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://space.bilibili.com/65413/4380.html&quot;&gt;原地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;弹幕娘这个ID，当初仅仅是作为蓝白弹幕祭投稿的一个官方马甲。渐渐地，蓝白弹幕祭成为弹幕君共同梦想的结晶，弹幕娘也已成为“弹幕君”这个群体的化身ww。&lt;/p&gt;
+
+&lt;p&gt;“弹幕君”这么一个群体，完全依附于弹幕播放器的存在。他们依靠自己的能力传达自己能够传达的正能量。一直以来，都有愿望，希望能够将弹幕娘的形象具现化。但苦于没有人去邀请相关的画师，并且，在形象上也难以统一，这个形象就一直悬而未决。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;弹幕君是一群怎么样的人？&lt;/h3&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;这一定是一个可以变得宽泛的概念。也许他们只会简单的使用定位，也许只会&lt;code&gt;/n&lt;/code&gt;换行，也许只会使用公用的函数套用字幕模板，但是他们一定是热爱弹幕、或者愿意学习弹幕制作方法的一群人。可能不是一直是弹幕君，但也曾作为一名弹幕君。&lt;/p&gt;
+
+&lt;p&gt;过去曾由于高级弹幕的出现，一些人可能在理念上和使用上都存在了分歧。但是不管怎么样，大家都是一起的，对弹幕的热情和喜爱是一样的。所传达的情感也是相通的。&lt;/p&gt;
+
+&lt;p&gt;在对弹幕娘的形象意见比较统一的就是，集中到了“蓝白主色调”上。哔哩的播放器、哔哩主站也是以此色调为基础。
+同时考虑到能更具体地表现各种弹幕模式的包容性和互补性，弹幕娘就确定为了弹幕双子（姐弟）的形象。&lt;/p&gt;
+
+&lt;p&gt;所以在经过一部分字幕君的讨论和建议，最终确定了下面的初始设定。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;姐姐有蓝色的长发，擅长使用Mode7(特殊弹幕)，抖S，阳光并且乐于助人。即使使用简单的工具（七巧板），也能创造出十分美丽的弹幕！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;弟弟有白色的短发，擅长使用Mode8(代码弹幕)，抖M，幼小，一脸受样。会用奇怪的代码，会使用较为厉害的工具，能创造出很多令人震惊意想不到的弹幕！&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;下面是由邀请的画师@毛毛的毛非常毛 确定的弹幕双子的初稿：（真的是辛苦了 鞠躬~）&lt;/p&gt;
+
+&lt;h4 id=&quot;section-1&quot;&gt;姐姐的形象：&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/res/danmu-couple/sister.jpg&quot; alt=&quot;sister&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;弟弟的形象：&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/res/danmu-couple/brother.jpg&quot; alt=&quot;brother&quot; /&gt;&lt;/p&gt;
+</content>
+   <author><name>面汤</name></author>
+ </entry>
+ 
+ <entry>
+   <title>【蓝白弹幕祭简介】</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/05/10/blue-white.html"/>
+   <updated>2013-05-10T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/05/10/blue-white</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/video/av734560/&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://i0.hdslb.com/u_f/867a743e12047d9a68b312090ccda0ba.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;写在前面的话：&lt;/h3&gt;
+
+&lt;p&gt;弹幕艺术【&lt;a href=&quot;http://www.bilibili.com/sp/%E5%BC%B9%E5%B9%95%E8%89%BA%E6%9C%AF&quot;&gt;点击详情&lt;/a&gt;】，作为一种存在于弹幕播放器上的独特艺术。]&lt;/p&gt;
+
+&lt;p&gt;对播放器的改变有着十分明显的依赖性。可以说播放器的发展史，就是弹幕艺术的发展史。&lt;/p&gt;
+
+&lt;p&gt;同时，不同的站点拥有不一样的播放器，其弹幕文化也有着或多或少的差异。当然，即使是有着不一样的弹幕方式，但在内容表达上，所有弹幕站点的弹幕文化都会是一致的。弹幕艺术应该是能够传达弹幕的美和弹幕所修饰的物事（比如歌曲）的美，同时也是传达某种弹幕君所要表达的感情。当然，我的理解也许显得片面，可能会因为时间的推移，这个概念也会得到扩展。&lt;/p&gt;
+
+&lt;p&gt;随着Bilibili的高速发展，弹幕现状同样是风云变幻，弹幕模式的进步与淘汰在所难免。新的弹幕模式越来越多姿多彩，弹幕能做到的也越来越多，弹幕艺术的定义也得以变得更加丰富饱满。&lt;/p&gt;
+
+&lt;p&gt;过去的蓝白弹幕祭曾作为弹幕职人最高的弹幕礼赞，聚集了一批又一批的热爱“弹幕艺术”的弹幕君。大家都用自己的热情和爱来诠释这种独特的艺术！
+虽然有很多人因为各种各样的原因隐退，但是这份对弹幕的热情却依然在传承。&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;蓝白弹幕祭：&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.bilibili.com/topic/153.html&quot; target=&quot;_blank&quot;&gt;B站话题&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这个活动最初的名称源自日本传统迎新歌会——红白歌合战，称为“蓝白”是由于活动是基于bilibili的弹幕系统，bilibili播放器的代表色调就是蓝和白。&lt;/p&gt;
+
+&lt;p&gt;合战采用的是报名+邀请制， 参战者被主办方分为蓝、白两组，所有参战者都提交各自作品后，每个比赛日蓝组和白组都各自拿出一个作品对决，对决方式就是由观众投票（投票遗址），二选一。所有比赛日结束后统计蓝组和白组所有作品的总得票数，票数多者为胜出组。&lt;/p&gt;
+
+&lt;p&gt;不过，弹幕作品本身制作周期都有一至两月不等，在实际操作上并没有那么明显的阵营分化，已确定的参战者的制作过程都是集体地交流进度，胜负根本不会被他们在乎。所以，这两届名为弹幕祭，实为弹幕基。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这是第一回蓝白弹幕合战的战场：&lt;/strong&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av52096/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av52094/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;以及宣传CM和完结ED：&lt;/strong&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av50520/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av55168/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i0.hdslb.com/userup/2648/12951R325-9339.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av48682/&quot; target=&quot;_blank&quot;&gt;周刊29期15m35s处&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;当然，还有应援：&lt;/strong&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av51969/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/userup/43861/1295I1Z9-24D.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av54600/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i0.hdslb.com/userup/12477/1296433295-9354.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这也是蓝白弹幕祭的一大特色性话题。&lt;/p&gt;
+
+&lt;p&gt;当时的特殊弹幕模式（Mode7）仅有坐标定位，并不能坐标移动。（此届蓝白刚结束，播放器便更新了新的方式）&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这是第二回蓝白弹幕合战的战场：&lt;/strong&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av122646/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i0.hdslb.com/userup/65413/129AD028-2C6.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av122647/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/userup/65413/129AD252-5I0.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;以及宣传CM和完结ED：&lt;/strong&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av115906/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av129197/&quot; target=&quot;_blank&quot;&gt;&lt;img width=&quot;98&quot; height=&quot;128&quot; src=&quot;http://i1.hdslb.com/user/167/16765/13107639566914c29b299c84b7.jpg&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.bilibili.com/video/av113916/&quot; target=&quot;_blank&quot;&gt;周刊55期16m12s处&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;此时的特殊弹幕模式（Mode7）可以坐标移动，任意字号。（此届蓝白刚结束，播放器便上线了代码弹幕模式（Mode8））&lt;/p&gt;
+
+&lt;p&gt;这里就不得不提到官方的弹幕大赛。虽然纯观众评分定高低和各种模式类型作品的混杂的方式，在公平性显得失之偏颇，在规则和运作上有一些不足，但是，这回弹幕大赛，使弹幕艺术的水平提升到了一个新的高度。并且，随之后来而对全站会员而开放权限（需要使用积分购买），也使得所有人都有机会进入到这个领域来。&lt;/p&gt;
+
+&lt;p&gt;现如今，也许只是up主给自己的视频做一份高级弹幕歌词，也许只是热心的观众想给自己喜欢的视频制作一份漂亮的字幕，也许只是给自己喜欢的视频画上一副弹幕画……
+可能不是所有人都是专职作为弹幕君，但是人人都可以做出自己的“神弹幕”。
+这也是一直以来，大家都秉承的理念：只要有爱，人人都是弹幕君。&lt;/p&gt;
+
+&lt;p&gt;第三回蓝白弹幕祭这次启动，是众多热爱弹幕艺术的人共同期待的产物。
+弹幕君希望能以这种独特的方式，传递自己的正能量，为弹幕站观众需要的提供弹幕支持，为弹幕站的弹幕文化添姿加彩！&lt;/p&gt;
+</content>
+   <author><name>面汤</name></author>
+ </entry>
+ 
+ <entry>
+   <title>播放器更新：$.frameRate</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/03/18/player-update.html"/>
+   <updated>2013-03-18T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/03/18/player-update</id>
+   <content type="html">
+&lt;p&gt;player.swf &lt;strong&gt;20130318&lt;/strong&gt; 默认帧率从60改回24。增加&lt;code&gt;$.frameRate&lt;/code&gt;接口，样例：&lt;code&gt;$.frameRate = 60; trace($.frameRate);&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;之前发现60帧仍然存在弹幕运动不连贯的状况。播放器也许跑不到60帧。&lt;/p&gt;
+</content>
+   <author><name></name></author>
+ </entry>
+ 
+ <entry>
+   <title>弹幕涂鸦系统</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/26/scratchpad-project-timeline.html"/>
+   <updated>2013-02-26T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/26/scratchpad-project-timeline</id>
+   <content type="html">
+&lt;p&gt;我比较好奇，一个合作代码弹幕项目，会按怎样的过程进行下来，会经历多少情况。偶然一句话，产生了两周的工作，&lt;a href=&quot;http://www.bilibili.com/video/av488629/&quot;&gt;《弹幕涂鸦系统》&lt;/a&gt;。以下是&lt;a href=&quot;http://space.bilibili.com/140964&quot;&gt;Xarple&lt;/a&gt;与我的合作项目制作日志。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/scratchpad-project-timeline/screenshot.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;（标记：(x): Xarple；(n): nekofs）&lt;/p&gt;
+
+&lt;h5 id=&quot;section&quot;&gt;2013-02-14 21:02:17&lt;/h5&gt;
+
+&lt;p&gt;如果在播放器上搞个涂鸦发送的话，类似百度贴吧的涂鸦，能够直接画图并发送，那样的话倒是个不错的方法。&lt;/p&gt;
+
+&lt;h5 id=&quot;section-1&quot;&gt;2013-02-15 可行性调研，产品分析，项目计划&lt;/h5&gt;
+
+&lt;p&gt;一大堆涂鸦在那里飘过好像不是特别有趣味，找一个趣味点，这个有点难。看有没有视频内容吧，没有的话就搞个类似标签云那样的涂鸦云，一大堆涂鸦，不明觉厉。&lt;/p&gt;
+
+&lt;p&gt;这个价值在于观众突然有了一种新工具，会好玩一阵子。&lt;/p&gt;
+
+&lt;p&gt;难度在于怎么管理调度，一片乱糟糟全部盖上了，或者是缩小到看不清是啥。把图储存到队列里，延迟发送，每一定时间规定最多只能有N副飘过，控制厚度，遮挡检测？&lt;/p&gt;
+
+&lt;h5 id=&quot;n2x&quot;&gt;2013-02-16 实现原型1：传输编解码1(n)，实现原型2：笔触矢量化算法，三次贝塞尔拟合算法，界面，图形数据结构(x)，规范内部接口&lt;/h5&gt;
+
+&lt;h5 id=&quot;nxx&quot;&gt;2013-02-17 完成传输编解码1(n)，修订图形数据结构(x)，实现界面(x)&lt;/h5&gt;
+
+&lt;p&gt;因为调度制度的问题导致视频放完还有一大部分涂鸦没放完怎么办：就现在普通弹幕的处理方式也可以，不太多就调整之避免遮挡，如果太多也管不过来。&lt;/p&gt;
+
+&lt;h5 id=&quot;nxx-1&quot;&gt;2013-02-18 性能分析(n)，优化(x)，完成界面(x)&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; 优化：不再重复拟合已经确定的曲线段&lt;/li&gt;
+  &lt;li&gt; 优化：不再重复计算弧长积分&lt;/li&gt;
+  &lt;li&gt; 优化：使用Array.slice()避免循环&lt;/li&gt;
+  &lt;li&gt; （未实施）优化：主要渲染和计算放到enterFrame还是mouseMove？&lt;br /&gt;
+  结果：放在enterFrame图形会跳变不连续；性能压力下两者无实际区别。主要性能问题是Linux下鼠标事件过频繁。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;x&quot;&gt;2013-02-19 优化(x)&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; 优化：不再重绘已经确定的图形。&lt;/li&gt;
+  &lt;li&gt; （未实施）优化：不计算因节点数过短而结果可预测的弧段&lt;br /&gt;
+  结果：因为Linux与Windows下事件处理模式相反，Windows下丢失事件保证延迟（因此必须计算短节点数弧段），Linux下保证事件增加延迟。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;nnn&quot;&gt;2013-02-20 重写：传输编解码2(n)，自测(n)，协议实验(n)&lt;/h5&gt;
+
+&lt;h5 id=&quot;x-1&quot;&gt;2013-02-21 完成弹幕调度算法(x)&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; 最终用什么视频？没有想法。曲包/作业用BGM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;qanuiuxxbugx&quot;&gt;2013-02-22 QA(n)，UI/UX(x)，修bug(x)&lt;/h5&gt;
+
+&lt;h5 id=&quot;qanbugx&quot;&gt;2013-02-23 QA(n)，修bug(x)&lt;/h5&gt;
+
+&lt;h5 id=&quot;xqanbugx&quot;&gt;2013-02-24 开场制作(x)，QA(n)，修bug(x)&lt;/h5&gt;
+
+&lt;h5 id=&quot;xx&quot;&gt;2013-02-25 特效渲染(x)，压制(x)&lt;/h5&gt;
+
+&lt;h5 id=&quot;xnxqan&quot;&gt;2013-02-26 上传(x)，发布测试(n,x)，QA通过(n)&lt;/h5&gt;
+
+&lt;h5 id=&quot;x-2&quot;&gt;2013-02-27 发布(x)&lt;/h5&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section-2&quot;&gt;已完成任务&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;BUG: []问题&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: Linux Flash鼠标事件太频繁劣化性能。重现：随便打开一个视频不播放，在上面晃动鼠标，cpu即满载。&lt;br /&gt;
+  无法修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 0x01-0x19间的码字会被转换成空格&lt;br /&gt;
+  修复：重写传输组件。原因：XML标准规定NT-Char := #x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] | [#x10000-#x10FFFF]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BUG: 无法同时显示多条弧线&lt;br /&gt;
+  修复。原因：整个Stage只能同时拥有24个有scrollRect的Bitmap &lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;ScriptManager.clearEl();
+
+load(&quot;libBitmap&quot;, function() {
+  shape = $.createShape({});
+  $.root.removeChild(shape);
+
+  canvas = $.createCanvas({});
+  for (var i = 0; i &amp;lt; 30; ++i) {
+    var bmp = Bitmap.createBitmap({parent:canvas, bitmapData:Bitmap.createBitmapData(500, 500, true, 0)});
+    bmp.scrollRect = Bitmap.createRectangle(i, 0, 400, 400);
+    shape.graphics.clear();
+    shape.graphics.beginFill(0xffffff);
+    shape.graphics.drawRect((i%10) * 35, ((i/10) ^ 0) * 35, 30, 30);
+    shape.graphics.endFill();
+    bmp.bitmapData.draw(shape);
+  }
+});
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BUG: 操作一段时间后界面阴影filter自动消失&lt;br /&gt;
+  修复。原因：scrollRect把显示列表撑破了，所以不渲染filter了。&lt;/li&gt;
+  &lt;li&gt;BUG：进度条变化导致操作还原&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG：无法通过点击播放器中间控制视频播放/暂停&lt;br /&gt;
+  修复：.mouseEnabled = false。&lt;/li&gt;
+  &lt;li&gt;BUG: TextField跨平台baselineShift不一致。&lt;br /&gt;
+  无法修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 复制按钮缺少颜色研所表示控制状态，用户无法有效使用&lt;br /&gt;
+  修复：不能复制的时候显示暗色、不显示鼠标动画。&lt;/li&gt;
+  &lt;li&gt;BUG: 进度条变化导致控制点辅助信息残留&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;FEAT: UI/UX调整&lt;br /&gt;
+  完成。&lt;/li&gt;
+  &lt;li&gt;FEAT: ByteArray压缩&lt;br /&gt;
+  不实现。测试发现无实际效果。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;BUG: load()语法？  &lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;load(&#39;libBitmap&#39;, function() {
+  [].forEach(function(){return;});
+});
+=====================================
+importExtendLibrary : libBitmap
+importExtendLibrary : libBitmap Downloading...
+Execute in 18ms
+importExtendLibrary : libBitmap Initalizing...
+importExtendLibrary : libBitmap create object...0
+importExtendLibrary : libBitmap done
+importExtendLibrary : null
+importExtendLibrary : null Downloading...
+extendLibraryLoadingError:[IOErrorEvent type=&quot;ioError&quot; bubbles=false cancelable=false eventPhase=2 text=&quot;Error #2036&quot;]
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BUG: 关闭所有trace调试信息&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 说明中应具有版本信息&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 无法处理多于3个涂鸦同时出现在同一纵行的情况，3个涂鸦被等距分布，其他涂鸦全部叠在一处&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;FEAT: 阻止用户复制涂鸦数据重复发送&lt;br /&gt;
+  不修复。测试未发现性能可行性问题。&lt;/li&gt;
+  &lt;li&gt;FEAT: 可用空间为负的时候应该给复制按钮显示成灰色表示禁止复制&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;FEAT: 调度器不解析mode，用户无法通过选择模式来控制涂鸦运动方式（mode4底部固定；mode5顶部固定）&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;FEAT: 显示涂鸦信息以便up主管理&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 启动时未处理已经在$.root列表里的弹幕&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: importExtendLibrary : err TypeError: Error #1009&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: mode4/5初始化时没有处理&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;BUG: 进度条变化后界面混乱/进度条变化导致闪过混乱界面&lt;br /&gt;
+  讨论seek判定条件，重现：在0秒处不断拉回0秒&lt;br /&gt;
+  NOTOURBUG: 播放器本身具有此问题&lt;br /&gt;
+  解决方法：ScriptManager.popEl()&lt;br /&gt;
+  修复。&lt;/li&gt;
+  &lt;li&gt;FEAT: 界面把mode4弹幕挡住了。所有mode4弹幕在显示界面时.y -= 10。&lt;br /&gt;
+  不修复。用户自己可以用“防止挡字幕”。&lt;/li&gt;
+  &lt;li&gt;FEAT: 用户友好地处理libBitmap加载失败的状况。&lt;br /&gt;
+  完成。&lt;/li&gt;
+  &lt;li&gt;FEAT: libBitmap超时后再加载成功拒绝继续执行&lt;br /&gt;
+  完成。&lt;/li&gt;
+  &lt;li&gt;FEAT: loading画面至少保持1秒&lt;br /&gt;
+  完成。&lt;/li&gt;
+  &lt;li&gt;FEAT: 开场弹幕隐藏（.alpha=0.1;）&lt;br /&gt;
+  完成&lt;/li&gt;
+  &lt;li&gt;FEAT: 首次启动时应该显示启动画面附带使用说明&lt;br /&gt;
+  完成。改成制作开场。&lt;/li&gt;
+  &lt;li&gt;TODO: 测试视频结束后再开始是否工作正常&lt;br /&gt;
+  完成。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section-3&quot;&gt;当前任务&lt;/h5&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;section-4&quot;&gt;计划任务&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;TODO: 列举出[]问题的多种重现方法。（使用assert()检查？）&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TODO: 关键方法有安全性问题。看影响程度与站方开发协商扩展API：点击输入框填入自动建议内容。&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt;Player.commentTrigger(onComment:Function, timeout_msec:Number = 1000, suggest:Boolean = false)
+    if (suggest) {
+        var getSuggestion = onComment;
+        //commentTriggerManager...?
+        normalCommentInput.textInput.addEventListener(&#39;click&#39;, function(e) {
+            if (normalCommentInput.textInput.text === &#39;&#39;) {
+                normalCommentInput.textInput.text = getSuggestion();
+                normalCommentInput.textInput.text.selectAll();//用户可以直接忽略建议，开始输入
+            }
+        });
+    }
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;FEAT: 数据分片重组传输克服字数限制，需要UI合理设计&lt;br /&gt;
+  下一版实现。&lt;/li&gt;
+  &lt;li&gt;FEAT: 减少$.root依赖&lt;/li&gt;
+  &lt;li&gt;FEAT: 重构，使用.cacheAsBitmap = true&lt;/li&gt;
+  &lt;li&gt;FEAT: 重构，使用MotionManager进行调度&lt;/li&gt;
+  &lt;li&gt;BUG: 初始化后未显示已经处理的涂鸦弹幕&lt;br /&gt;
+  细节，以后修复。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>高级弹幕绘图助手：DanmakuHelper Ver1.15 0325更新</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/23/Danmaku-Helper.html"/>
+   <updated>2013-02-23T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/23/Danmaku-Helper</id>
+   <content type="html">
+&lt;p&gt;一款高级弹幕(Mode8)的绘图辅助工具&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/DanmakuHelper/1_1.png&quot; alt=&quot;img01&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/DanmakuHelper/1_2.png&quot; alt=&quot;img02&quot; /&gt;
+&lt;!-- break --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/DanmakuHelper/screenshot20130301202046.png&quot; alt=&quot;img03&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;以下引用 &lt;a href=&quot;http://space.bilibili.com/92776&quot;&gt;面汤拌菜菌&lt;/a&gt; 在&lt;a href=&quot;http://tieba.baidu.com/p/2178184922&quot;&gt;bilibili吧&lt;/a&gt;发布的内容（底部为下载链接）：&lt;/p&gt;
+
+&lt;p&gt;去年拜年祭的时候自己也有过类似的工具，但是功能比较局限。同时&lt;a href=&quot;http://space.bilibili.com/16425&quot;&gt;音叉(Encode.X)&lt;/a&gt;也开发了类似的工具。去年的弹幕大赛的举办也开启了全会员的高级弹幕权限。所以在去年就想过能够把两个工具合体了。于是这是完成品。&lt;/p&gt;
+
+&lt;p&gt;能实现的功能：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt; 可添加背景临摹图片，图片可调整放缩透明度。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 支持分图层绘图，图层可删除，可排序。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 绘图按flash代码习惯分直线和曲线（二次贝塞尔）工具。可填充，可线描。理论上可无限次撤销重做。每层不相互影响。（曲线工具按操作习惯分两种，一种是类似PS的钢笔，一种类似windows画图的钢笔）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 画布可拖曳放缩，不影响坐标。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 可对图片取色。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 代码的输出按层顺序，有两种格式选择。同时可以选择输出为文本文件。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 代码支持导入。可选择追加与覆盖两种模式。同时可以选择导入为文本文件。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt; 常用按键全分配了键盘快捷键。可查看帮助信息。鼠标悬停也有提示信息。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;由于是音叉与我两人原来工具的合体版本，同时添加了许多新功能。框架是Flex，（UI和基础功能都是音叉设计的，跪&lt;em&gt;(:з」∠)&lt;/em&gt;）现学现写。&lt;/p&gt;
+
+&lt;p&gt;肯定存在部分bug未有发现。欢迎提交。有部分功能由于一些因素暂时未添加。后续版本会跟进。&lt;/p&gt;
+
+&lt;p&gt;自弹幕艺术刚开始发展的时候，就已经有一些辅助的工具。随着播放器的进步与改变，从前的工具也很多失去兼容。弹幕君也一直在努力开发新的工具。让设计更简单与方便，这也是开发工具一直以来的初衷。&lt;/p&gt;
+
+&lt;p&gt;但是无论如何，工具永远只是工具，永远只是程式化的东西，只能是辅助作用。不能替代设计的过程。更重要的是弹幕作品的内容。还希望使用者能够健康的使用工具，能为Bilibili的弹幕艺术添姿加彩。&lt;/p&gt;
+
+&lt;p&gt;音叉要说的话：&lt;/p&gt;
+
+&lt;p&gt;这个工具终于能以一个比较全面的姿态发布出来了，自己打心眼里高兴。面瘫真的很厉害呀，解决了很多我一个人无法处理的问题。当然这个工具只是作为制作高级弹幕的一个辅助来使用的，而且还有不少我们想继续加入的功能，以个人角度来讲这个东西依旧不友好，今后会加以修正。作为高三学生假期里抽空弄这个东西也不能太浪费时间也请理解…有bug的话希望踊跃地提交。&lt;/p&gt;
+
+&lt;p&gt;另外帮助文档的帮助是不完全的，请自己暂时再试探着发现一些用法。&lt;/p&gt;
+
+&lt;p&gt;有关bug提交:可以访问 &lt;a href=&quot;http://tieba.baidu.com/f?tp=0&amp;amp;kw=%C3%E6%CC%B1%B0%EB%D5%AC%BE%FD&quot;&gt;面瘫半宅君&lt;/a&gt; 吧 和 &lt;a href=&quot;http://tieba.baidu.com/f?tp=0&amp;amp;kw=encode_x&quot;&gt;Encode_X&lt;/a&gt; 吧 或 私信两人的微博：&lt;a href=&quot;http://weibo.com/mt233&quot;&gt;@面汤拌菜菌&lt;/a&gt; &lt;a href=&quot;http://weibo.com/encodex&quot;&gt;@饮茶子&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;或者跟帖即可。&lt;/p&gt;
+
+&lt;p&gt;下载文件： &lt;a href=&quot;http://pan.baidu.com/share/link?shareid=374245&amp;amp;uk=1745881826&quot;&gt;DanmakuHelperVer1.15.zip&lt;/a&gt; (3.2MB,百度网盘)&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;以下为更新文档：&lt;/h2&gt;
+
+&lt;p&gt;Ver1.15 2013-03-25&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;1.重构构架。&lt;/p&gt;
+
+&lt;p&gt;2.增加Svg导入转Mode8功能，支持初步的误差处理。&lt;/p&gt;
+
+&lt;p&gt;3.修复部分bug。&lt;/p&gt;
+
+&lt;p&gt;4.双 曲线工具位置及快捷键对换（C/V）。&lt;/p&gt;
+
+&lt;p&gt;Ver1.1 2013-03-01&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;1.修复导入文本、移动层的一些bug。&lt;/p&gt;
+
+&lt;p&gt;2.重写界面UI。&lt;/p&gt;
+
+&lt;p&gt;3.增加moveTo(不可见直线)操作工具。&lt;/p&gt;
+
+&lt;p&gt;4.修改一些冲突的快捷键，将常用工具键放到了易触及的地方。&lt;/p&gt;
+
+&lt;p&gt;5.增加代码区“复制到剪切板”、“清除”两个按钮。&lt;/p&gt;
+
+&lt;p&gt;6.增加取色功能。&lt;/p&gt;
+
+</content>
+   <author><name>Encode.X</name></author>
+ </entry>
+ 
+ <entry>
+   <title>《Round and Round》后记</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/15/rnr-making-of.html"/>
+   <updated>2013-02-15T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/15/rnr-making-of</id>
+   <content type="html">
+&lt;p&gt;……都要统一性的写成XXX后记这样的标题的吗？&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;大家好，我是&lt;a href=&quot;http://space.bilibili.com/3166&quot;&gt;EPM&lt;/a&gt;，&lt;a href=&quot;http://www.bilibili.com/video/av410205/&quot;&gt;Round and Round&lt;/a&gt;的弹幕作者。虽然早几天受到了邀请说写制作过程什么的不过由于种种原因开始的有些晚呢，并不怎么善于写这样的文，大概需要什么内容也不清楚……大体是参照&lt;a href=&quot;http://biliscript-syndicate.github.com/news/2013/02/14/kokoro-making-of.html&quot;&gt;前一篇&lt;/a&gt;来的，经验不足质量问题还是请多包涵啦……&lt;/p&gt;
+
+&lt;p&gt;我自己应该算是UP主中比较不值得提及的一类，虽然待的时间不算太短不过并没有什么存在感。参加大赛的原因之前在9ch也有提到，与大家比来实在不堪，在此就不再提及了。&lt;/p&gt;
+
+&lt;p&gt;从传统的意义上讲的弹幕艺术作品，其内容需要依托于乐曲才能展开，因此所选的曲目很大程度上会决定作品的走向。从这个的反向来讲，如果不论性能限制，就是说&lt;strong&gt;选曲要适应自己的能力特点&lt;/strong&gt;，而非一味追求热门或喜欢的曲目的事情。&lt;/p&gt;
+
+&lt;p&gt;以这次自己的选曲来讲的话，就像是这样的吧：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; 出自熟悉的音乐游戏，对于自己来说是比较喜欢的曲目；可以保持足够的动力做完&lt;/li&gt;
+  &lt;li&gt; 歌曲速度较快，同时节奏分明，对于出自音MAD背景的自己来说可能是可以利用的优势&lt;/li&gt;
+  &lt;li&gt; 曲风与知名歌曲Bad Apple!!极似，又是同一编曲者所作，可以在借鉴（抄袭）已有元素的同时一定程度上提高认知度&lt;/li&gt;
+  &lt;li&gt; 在上一条的基础上，可以掩饰自己色感不足、绘图能力差的缺陷（如果去像ココロ或者干杯那样描是会出人命的）&lt;/li&gt;
+  &lt;li&gt; 不是大众热门曲，可以免于撞车、被压的风险&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作品的制作主要是在没有排课的空余时间进行的，因此虽然使用了两周+的时间，实际工作时间不是特别长。其中一周多的时间是在写辅助框架&lt;a href=&quot;https://github.com/akaza-akari/Akari.biliScript&quot;&gt;现名Akari.biliScript&lt;/a&gt;，之后的时间也在随着制作的需要进行扩展。框架主要起到时间调度和提供我比较熟悉的场景描述方式的作用，由于并非重点，此处不再多作说明；更多信息请参照上述repo和&lt;a href=&quot;http://9ch.co/t54006,1-1.html&quot;&gt;9ch主题&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;开始之后首先解决的是分镜问题，这里比较自然地会想到参照游戏的BGA。很遗憾的是BGA只是泛用动画+Layer的形式，并没有专门的动画；由于之前选曲时限定的风格所致，描画Layer也是不可行的（何况Layer只有两三张图而已）；最终只得自行编排。由于过于简单，并未留下什么记录，情形将在下文提到。&lt;/p&gt;
+
+&lt;p&gt;接下来是视觉元素的选择。由于简单的配色限制并不允许过多复杂的图形，决定使用大字体的文字为主要视觉元素。大部分时间黑白的情况下，反转合成也可以成为视觉效果的一大变数；而在边缘不规则的情况下，反转合成后的画面可能比较难以辨认。因此以较为规则可预测的形状作为图形效果或装饰。受曲名的影响，最终选定以圆及其另外两个变体（空心、断开，齿轮）为效果元素。&lt;/p&gt;
+
+&lt;p&gt;关于节奏的同步问题。我是用平时调音的时候常用的DAW进行定位读数，可以说比较过当，不过保证定位的准确这一点在我眼中是很重要的。&lt;/p&gt;
+
+&lt;p&gt;在设定好DAW之后，将曲子分成了几段并依照特点处理。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Intro ~13s&lt;/p&gt;
+
+    &lt;p&gt;这一段的特点是渐进的加速军鼓、扫频，产生不安定的效果，随后以一个短暂低潮解决。想法是以视觉元素的积压与黑白的快速切换产生视觉上的压力，以与听觉感受形成同步。此处和副歌部分可以看到引用自原BGA Layer的装饰性文字。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Scratch ~27s&lt;/p&gt;
+
+    &lt;p&gt;皿（&lt;a href=&quot;http://www.nicovideo.jp/watch/sm15759010&quot;&gt;皿是什么？&lt;/a&gt;），连接释放与接下来的歌词部分。这部分首次用到了强制运动模糊，目的在于（尤其是）低帧率下展现出更加自然的高速运动。做法是将原本的层分离成数个，据快门速度和相位得出各自的状态，按照均分的透明度值加法叠加后，再用原本的合成方式显示。就效果上而言是不错的，但在采样增多的情况下会成为主要的性能问题，因此实际上在Round and Round中使用的采样数比预计少很多。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/res/rnr-making-of/s_p1.jpg&quot; alt=&quot;s_p1&quot; /&gt; &lt;img src=&quot;/res/rnr-making-of/s_p2.jpg&quot; alt=&quot;s_p2&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;使用强制运动模糊的场景截图，由于是在60fps更改后的截图，效果上和投稿时有一定差异。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Verse ~53s&lt;/p&gt;
+
+    &lt;p&gt;根据歌词节律选定了字号大小与排列方式对比的效果。这个部分的大字体表现上遇到了严重的问题。使用TextField的原本的实现受到Flash运行时的限制，即便经过放大也无法显示超过200px的文字（除非使用位图缓存，那样会产生极度模糊无法阅读的文字）。同时，TextField还有字体和锯齿的问题，这使得我决定不再使用TextField，实现自己的文字排列并将静态文字作为图形嵌入。字体的嵌入使代码量膨胀，无法再容纳在一条里；此后的文字排列工作更多的转移到Illustrator侧。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/res/rnr-making-of/s_p3a.jpg&quot; alt=&quot;s_p3a&quot; /&gt; &lt;img src=&quot;/res/rnr-making-of/s_p3b.jpg&quot; alt=&quot;s_p3b&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;更改前后的效果对比。左侧（历史截图，TextField）使用为宋体，采用位图缓存方案，即使小窗也可以看到明显的瑕疵，宽屏或全屏堪称惨不忍睹。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Breakdown ~81s&lt;/p&gt;
+
+    &lt;p&gt;歌曲的低潮部分，为和接下来的副歌部分产生对比，主要选择了低速运动，并应用了一定的视觉上的钝化效果。反色和随机使用最为广泛的一段。由于风格选择，这里不宜使用模糊滤镜，因此选择了奇数个反色层加上随机运动的方式来实现类似失焦的效果。背景部分是多个随机的反色圆形，没有什么值得提及的。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Chorus ~108s &amp;amp; Outro ~126s&lt;/p&gt;
+
+    &lt;p&gt;副歌部分，主要使用了高速运动和3D化的背景与其他部分产生对比；除了引き裂く处的分裂使用了一个嵌套合成和色彩变换，空间的收束采用了歌词最后的の字作为蒙版，没有什么另外值得提及的。最后回归了类似于Intro的场景，说来做完后有人觉得最后的齿轮如果放完后还一直转下去就好了，这个创意实在是没想到……&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/res/rnr-making-of/s_p5.jpg&quot; alt=&quot;s_p5&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;嘛，制作过程中的想法大概就是这样。剩余的编码只是苦力活了，行数大概是我的换行太多了的缘故……虽然本来想过像UHI先辈那样在别的软件里做好再转过来，不过直接写也没有遇到什么障碍，到可视化麻烦点而已，可能因为场景总体上都比较简单吧。写的代码和普遍的做法不大一样，就自己的感想的话这种手写工程文件似的感觉还是挺微妙的……&lt;/p&gt;
+
+&lt;p&gt;在制作中有使用Miller Medeiros的&lt;a href=&quot;http://blog.millermedeiros.com/converting-svg-to-five3d-flash-vector-graphics-and-html5-canvas/&quot;&gt;SVG to Motifs Parser&lt;/a&gt;作为SVG到Graphics绘图指令的转换工具。其对SVG的遮罩、动画、样式表、文字、位图、渐变填充是缺乏支持的，作者使用的是Illustrator生成SVG。如果输入有不支持的东西会在”Warnings Panel”中显示。使用方式是将SVG源码填入”Input”框然后点击”Convert to AS3 Graphics”。&lt;/p&gt;
+
+&lt;p&gt;制作方面其余的感想的话，大体之前也在9ch有说过，这里也就不怎么多说了。针对奖品的话……&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; 阿卡林真可爱&lt;/li&gt;
+  &lt;li&gt; 果然发放的字幕君权限利用率不高呢&lt;/li&gt;
+  &lt;li&gt; 用来特别推荐的都没有几个人诶……&lt;/li&gt;
+  &lt;li&gt; 我还在整天推荐淫梦/曲奇不过没人看的样子&lt;/li&gt;
+  &lt;li&gt; &lt;strike&gt;真夏の夜の淫夢是一个略带H的百合GAL（棒读）&lt;/strike&gt;&lt;/li&gt;
+  &lt;li&gt; 阿卡林真可爱，很重要所以要再说一遍&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;strike&gt;では諸君っ！サラダバー！！&lt;/strike&gt;
+
+</content>
+   <author><name>akaza-akari</name></author>
+ </entry>
+ 
+ <entry>
+   <title>《一首研究镜音的胸部里是什么的歌》后记</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/14/kokoro-making-of.html"/>
+   <updated>2013-02-14T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/14/kokoro-making-of</id>
+   <content type="html">
+&lt;p&gt;这篇文章就是一大篇废话，在文章的最后有工具的下载，你可以直接跳到最后。&lt;/p&gt;
+
+&lt;p&gt;大家好，我是bilibili第一届弹幕比赛中&lt;a href=&quot;http://www.bilibili.com/video/av411036/&quot;&gt;一首研究镜音的胸部里是什么的歌&lt;/a&gt;的作者，在这里我给大家简单说下这个从头抄到尾的作品的由来～&lt;/p&gt;
+
+&lt;p&gt;先说一下我自己吧，我是一个还在学校里挣扎的小伙子，在之前我并不常上B站，帐号应该是2010（2011??）年注册的，当时我还不知道有高级弹幕这东西，反正当时注册的动机只是发现这个网站居然开注册了的感脚。&lt;/p&gt;
+
+&lt;p&gt;然后在比赛消息公布之前我无意中发现了B站原来还有高级弹幕这东西，能够使用代码来展现各种东西，接着就产生了极大的性趣。很快我就发布了第一个高级弹幕的作品并得到了意料之中的反响，于是我便开始筹划下一个作品的计划什么的，这时上B站已经成为了我的日常，所以我很快就得知了比赛的信息并满腔热血，在那瞬间我便立下了我要参加的念头。距离比赛投稿截止日期还有一个多月的时间，对于我来说时间并不是很充足，我空余的时间只有放学回家后的四个多小时。&lt;/p&gt;
+
+&lt;p&gt;在求问几个有些许美术能力的朋友的帮助并得到了一致的拒绝后，有着小许编程经验的我便展开了迈向自闭佬的旅程。作品的策划由于在之前已经有了个大概，所以整个作品的分镜什么的在几个念头之间就决定了。嗯..就是把原曲的PV从头抄到尾！&lt;/p&gt;
+
+&lt;p&gt;整个作品的制作时间差不多有一个月，其中差不多一个星期的时间我用了来写一个工具，一个能够将矢量图格式SVG文件直接转换成bilibili代码的形式，因为就目前公开的几个绘画工具比较鸡肋，效率比较低，很难满足要求～工具的编写过程是很枯燥的，完全是一个自闭佬的表现时间orz&lt;/p&gt;
+
+&lt;p&gt;接着才是填坑的开始，先把大概的分镜都截了个图，基本上所有都是从原PV里抽出来的～&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img0.jpg&quot; alt=&quot;img0&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后就是依然枯燥的描绘过程。。这里简单说下一个分镜的抄袭过程。首先照着图片描，先把图片导入绘画工具，这里我用的是Flash：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img1.jpg&quot; alt=&quot;img1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后跟着各种图片线条，山寨出各种矢量线条：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img2.jpg&quot; alt=&quot;img2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;接着加一层渐变，增强一下效果什么的，再把歌词大概的效果也加上：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img3.jpg&quot; alt=&quot;img3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后就是逐层转换，再加点过场效果，一个分镜就成了～&lt;/p&gt;
+
+&lt;p&gt;有三个分镜是要特别说明一下的。。这三个分镜得来算是不易，是我硬是把一经常把课本当作美术画本的童鞋拉过来帮我临摹的。。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img4.jpg&quot; alt=&quot;img4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;简单的用手机直接拍照就开始搞起来orz&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img5.jpg&quot; alt=&quot;img5&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img6.jpg&quot; alt=&quot;img6&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作品里使用到的歌曲其实是由两首歌合并而来的，一首是原曲，一首是翻唱版，我将翻唱版最开始和结尾的旁白与原曲”合并”了，没啥技术含量，只是简单的音量过渡（难道我会告诉你我只会音量过渡这方法吗!!）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img7.jpg&quot; alt=&quot;img7&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;最后就是代码的填写，这是最耗时间的过程，这个作品一共有152条弹幕，就连整理也是一件麻烦事orz&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img8.jpg&quot; alt=&quot;img8&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作品中所用到的几乎所有特效都是抄袭自wonderfl，比如这个，看过作品的是不是对这个很熟悉？&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wonderfl.net/c/4Wy6&quot;&gt;&lt;img src=&quot;/res/kororo-making-of/img9.jpg&quot; alt=&quot;img9&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这两个是不是也很熟悉？&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wonderfl.net/c/4gvL&quot;&gt;&lt;img src=&quot;/res/kororo-making-of/img10.jpg&quot; alt=&quot;img10&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wonderfl.net/c/7prR&quot;&gt;&lt;img src=&quot;/res/kororo-making-of/img11.jpg&quot; alt=&quot;img11&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;以上三个特效点击图片可以进入观看并查看代码。&lt;/p&gt;
+
+&lt;p&gt;最后的一个分镜使用的背景图片：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/res/kororo-making-of/img12.jpg&quot; alt=&quot;img12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其实是由这张图片修改而来的orz&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://penguinfrontier.deviantart.com/art/Kokoro-285343699&quot;&gt;&lt;img src=&quot;/res/kororo-making-of/img13.jpg&quot; alt=&quot;img13&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;羞耻play就到此结束了～&lt;/p&gt;
+
+&lt;p&gt;最后附上制作这个作品中使用到的转换工具，能够支持SVG部分常用的特性，凑合用足够了～&lt;/p&gt;
+
+&lt;p&gt;&lt;del&gt;下载SVG2BiliScript.rar (165KB)&lt;/del&gt;
+##### 工具已经合并到&lt;a href=&quot;http://biliscript-syndicate.github.io/news/2013/09/22/biliscript-toolkit.html&quot;&gt;BiliscriptToolkit&lt;/a&gt; 里面。&lt;/p&gt;
+
+</content>
+   <author><name>xarple</name></author>
+ </entry>
+ 
+ <entry>
+   <title>日志发表测试</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/13/submission-test.html"/>
+   <updated>2013-02-13T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/13/submission-test</id>
+   <content type="html">
+&lt;p&gt;弹幕艺术联合文档希望能把弹幕艺术相关的信息收集聚合在一起，便于信息的查阅和更多开发。&lt;/p&gt;
+
+&lt;p&gt;把文章发布到此处的步骤简单，列如下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;打开&lt;a href=&quot;https://github.com/&quot;&gt;github&lt;/a&gt;，填写用户名、邮箱、密码，点击“Sign up for free”。&lt;/li&gt;
+  &lt;li&gt;联系&lt;a href=&quot;https://github.com/biliscript-syndicate?tab=members&quot;&gt;一个成员&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;该成员将你&lt;a href=&quot;https://github.com/organizations/biliscript-syndicate/teams&quot;&gt;加入&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;打开&lt;a href=&quot;https://github.com/biliscript-syndicate/tree/master/_posts&quot;&gt;_posts目录&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;点击&lt;code&gt;[+]&lt;/code&gt;图标“Create a new file here”。&lt;/li&gt;
+  &lt;li&gt;填写文件名，必须为&lt;code&gt;yyyy-mm-dd-ascii-string.md&lt;/code&gt;格式，标明日志发表时间和URL。&lt;/li&gt;
+  &lt;li&gt;打开&lt;a href=&quot;https://raw.github.com/biliscript-syndicate/master/_posts/2013-02-07-hello-world.md&quot;&gt;样例日志&lt;/a&gt;，复制代码到文本框，填写或修改相应内容。&lt;/li&gt;
+  &lt;li&gt;添加&lt;a href=&quot;http://zh.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;标记语言。&lt;/li&gt;
+  &lt;li&gt;点击“Commit New File”。&lt;/li&gt;
+  &lt;li&gt;发现问题可以回到_posts目录点击“Edit”修改。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>弹幕艺术简史</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/13/a-history-of-danmaku-art.html"/>
+   <updated>2013-02-13T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/13/a-history-of-danmaku-art</id>
+   <content type="html">
+&lt;h3 id=&quot;acfun&quot;&gt;acfun第一版播放器&lt;/h3&gt;
+
+&lt;p&gt;2008年2月，acfun第一版播放器。&lt;/p&gt;
+
+&lt;p&gt;最早一批研究神弹幕的人是用这版的播放器研究的。ac8458是目前可考证最早有人讨论神弹幕的视频（见评论区）。这个时代是所有人的权限都是一样的，只能发送三种弹幕：顶端渐隐、滚动弹幕、底端渐隐。&lt;/p&gt;
+
+&lt;p&gt;最开始的时候基本都是底端渐隐最下面一行来做歌词的字幕。自从后来有人发现&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt;可以进行换行的时候，屏幕定位神弹幕诞生了。&lt;/p&gt;
+
+&lt;p&gt;现在我们来说一下在当时环境下神弹幕都是怎么做成的。&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;p&gt;首先你需要一个笔记本来编辑你所发的弹幕。里面需要记载所需换的行数和空格数。然后当你把所有弹幕都编辑好了以后就是需要发送了。由于当时没有任何弹幕管理的功能，所以只要发出去了是不能删除的。这就造成了必须一次成功，而且在弹幕窗口里面用&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Enter&lt;/kbd&gt;是看不到前面几行的。所以你也不知道到底有多少行。综上所述，每一个弹幕君发送弹幕需要小心翼翼的按回车以及暂停无数次。&lt;/p&gt;
+
+&lt;p&gt;当你以为把弹幕都发送上去就结束了的时候，新的问题又来了。在当时一个视频的弹幕池的上限只有500条，而且没有特殊的弹幕池。所以你发的神字幕很有可能第二天就被刷没了。于是当时弹幕君们会重发一次甚至多次神弹幕。其中的艰辛相信大家也都能明白（由于当时ac播放器可以说极其不安全，所以有技术宅写过弹幕发送的工具，算是让弹幕发送变的简单了一点）。&lt;/p&gt;
+
+&lt;h3 id=&quot;acfun-1&quot;&gt;acfun第二版播放器&lt;/h3&gt;
+
+&lt;p&gt;大概于2008年8月左右acfun出现了第二版播放器，采用了两种播放器共存的形式。也就是老的视频用的老播放器，新的视频用的新播放器。当时的神弹幕文化逐渐火热了起来。出现了很多作品，以及后来震惊全站的《绯色月下》（作者 不详） 和《弹幕合作Bad apple》（参与人员 消失、天野、河童老大、光叔、雾里、八云、S君、“我君”）。&lt;/p&gt;
+
+&lt;h3 id=&quot;bili&quot;&gt;bili弹幕发展简史&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2010-08-15 【职人弹幕入门篇】人人都是字幕君&lt;/li&gt;
+  &lt;li&gt;2010-10-10 乌贼娘第一话神弹幕&lt;/li&gt;
+  &lt;li&gt;2010-11-02 特殊弹幕mode7出现以及首次运用到乌贼娘中（详见bili公告19以及av34286&lt;/li&gt;
+  &lt;li&gt;2010-11-08 绿光&lt;/li&gt;
+  &lt;li&gt;2010-12-06 阿姨说&lt;/li&gt;
+  &lt;li&gt;2011-01-22 第一回蓝白弹幕合战&lt;/li&gt;
+  &lt;li&gt;2011-02-08 hero&lt;/li&gt;
+  &lt;li&gt;2011-07-26 高级代码模式开放测试&lt;/li&gt;
+  &lt;li&gt;2011-08-01 第二回蓝白弹幕合战&lt;/li&gt;
+  &lt;li&gt;2011-08-07 高级弹幕全面测试开放 普通会员：消耗2硬币开启本账号视频中的代码弹幕&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;高级弹幕&lt;/h3&gt;
+
+&lt;p&gt;我来说说高级弹幕吧。&lt;/p&gt;
+
+&lt;p&gt;当我第一次知道高级弹幕的时候就是来自bishi发的高级弹幕的测试视频了……当时我深深的被按钮以及动画效果所震撼了。&lt;/p&gt;
+
+&lt;p&gt;在最初看到这组视频的我想都没有想过自己会去写高级弹幕。在我之前其实还有很多人的去研究过高级弹幕。其实当时也有不少的高级弹幕的，每次看到高级弹幕的时候真的被震撼到说不出话来。但是有一次好奇心所使去把高级弹幕复制了下来，然后看了看 http://docs.bilibili.com/?title=%E5%88%86%E7%B1%BB%3AScript 这个的教程。发现了高级弹幕要做简单的效果其实并没有我想想中的复杂。&lt;/p&gt;
+
+&lt;p&gt;（待续）&lt;/p&gt;
+</content>
+   <author><name>超元气小包子</name></author>
+ </entry>
+ 
+ <entry>
+   <title>Bitmap库停止工作</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/12/bitmap-regression.html"/>
+   <updated>2013-02-12T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/12/bitmap-regression</id>
+   <content type="html">
+&lt;p&gt;&lt;strong&gt;更新&lt;/strong&gt;：20130216已修复。默认播放器域名还原至hdslb.com。&lt;/p&gt;
+
+&lt;p&gt;无法加载Bitmap库。&lt;/p&gt;
+
+&lt;p&gt;重现方法&lt;code&gt;load(&#39;libBitmap&#39;, function(){trace(&#39;ok&#39;, Bitmap);});&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;实际结果：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;importExtendLibrary : libBitmap
+importExtendLibrary : libBitmap Downloading...
+Execute in 9ms
+importExtendLibrary : libBitmap Initalizing...
+importExtendLibrary : err ReferenceError: Error #1065
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;此库加载代码写死为从&lt;code&gt;http://static.hdslb.com/playerLibrary/libBitmap_2.swf&lt;/code&gt;下载。查看网络流量未实际发出下载请求。默认播放器的链接变成了&lt;code&gt;http://static.loli.my/player.swf&lt;/code&gt;，可能有跨域安全策略问题。&lt;/p&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>播放器历史</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/07/player-history.html"/>
+   <updated>2013-02-07T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/07/player-history</id>
+   <content type="html">
+&lt;p&gt;player.swf &lt;strong&gt;20130125&lt;/strong&gt; 全局帧率从24改为60。&lt;/p&gt;
+</content>
+   <author><name></name></author>
+ </entry>
+ 
+ <entry>
+   <title>沙发</title>
+   <link href="http://biliscript-syndicate.github.com/news/2013/02/07/hello-world.html"/>
+   <updated>2013-02-07T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2013/02/07/hello-world</id>
+   <content type="html">
+&lt;p&gt;世界你好。测试日志模式。&lt;/p&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ <entry>
+   <title>第一届bilibili弹幕大赛观看感想</title>
+   <link href="http://biliscript-syndicate.github.com/news/2012/12/29/the-first-contest.html"/>
+   <updated>2012-12-29T00:00:00+00:00</updated>
+   <id>http://biliscript-syndicate.github.com/news/2012/12/29/the-first-contest</id>
+   <content type="html">
+&lt;p&gt;（原发表于space.bilibili.tv）&lt;/p&gt;
+
+&lt;p&gt;公告：&lt;a href=&quot;http://www.bilibili.com/html/danmubisai.html&quot;&gt;http://www.bilibili.com/html/danmubisai.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;投票：&lt;a href=&quot;http://www.bilibili.com/list/vote/1.html&quot;&gt;http://www.bilibili.com/list/vote/1.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这是一个Flash播放器中诞生的demoscene。弹幕从此从视频的次级内容升级成主要内容。&lt;/p&gt;
+
+&lt;p&gt;20件脚本弹幕作品，18件mode7定位弹幕作品（其中7件尝试脚本）。&lt;/p&gt;
+
+&lt;p&gt;但是脚本弹幕不是万能的，最难的地方还在于怎样创意编排内容和组织特效，这是学技术学不来的。&lt;/p&gt;
+
+&lt;p&gt;按制作时间看，脚本弹幕从两周到三月不等，这显然是不可持续的。脚本弹幕还未找到一个工程量与完成度的平衡点，怎样用较少的工程量达到较好的效果还是一个问题。&lt;/p&gt;
+
+&lt;p&gt;观众投票结果反映，观众最关注内容认同感和叙事性，对特效有一定关注，对技术实现难度认知不多，对陌生内容接受度偏低。&lt;/p&gt;
+
+&lt;p&gt;黑/白屏纯粹弹幕实现视频编排特效最终还是无法与专业工具相比（效率、丰富程度）。我认为脚本弹幕可以做而专业工具不能做的，是用较少的代码过程性地生成一些材质、模式，这是demoscene一般在做的。&lt;/p&gt;
+
+&lt;p&gt;细节上影响图形质量的两个主要问题：播放器帧率的refreshRate接口不工作因此被卡死在24fps（更新：播放器已提高到60fps）；无法嵌入优质字体，默认字体是渣（不一致的客户端破坏布局排版）。&lt;/p&gt;
+
+&lt;p&gt;评选方式还可改善：排序固定和实时显示结果造成群体极化、未按形式分组造成候选量过大。&lt;/p&gt;
+
+&lt;!-- break --&gt;
+
+&lt;h3 id=&quot;mad&quot;&gt;音MAD（原创）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av410205/&quot;&gt;Round and Round&lt;/a&gt; 得分:+13760  (2周+)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av379138/&quot;&gt;Rolling Girl&lt;/a&gt; 得分:+7618  (3月)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av392859/&quot;&gt;Crazy ∞ nighT&lt;/a&gt; 得分:+3469  (3周)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av394678/&quot;&gt;六等星之夜（NO.6 ED)&lt;/a&gt; 得分:+2485 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av409098/&quot;&gt;THE WORLD’S END UMBRELLA&lt;/a&gt; 得分:+768 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5件。以音乐为背景完全用脚本生成控制图形图像。
+制作难点：图形处理、动画编导、特效实现、素材导入。
+特点：高观赏性、多特效、高动态。&lt;/p&gt;
+
+&lt;h3 id=&quot;mvpv&quot;&gt;MV/PV（原创）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av411036/&quot;&gt;一首研究镜音的胸部里是什么的歌&lt;/a&gt; 得分:+34540 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;1件。图画叙事。
+制作难点：内容创作/组织、特效实现、素材导入。
+特点：高故事性、观赏性、静态。&lt;/p&gt;
+
+&lt;h3 id=&quot;madpv&quot;&gt;音MAD/PV（重制）&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av411358/&quot;&gt;乾杯 - ( ゜- ゜)つロ&lt;/a&gt; 得分:+32357  (3月+)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av409835/&quot;&gt;魔法少女小圆OP-完整版&lt;/a&gt; 得分:+9531 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av383598/&quot;&gt;弹幕字符画BadApple&lt;/a&gt; 得分:+9284 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av397395/&quot;&gt;我们的报复政策&lt;/a&gt; 得分:+798 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av399127/&quot;&gt;Q&amp;amp;A リサイタル! ~TV ver~&lt;/a&gt; 得分:+792 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5件。仿制已有视频。
+制作难点：特效实现、素材导入。
+特点：故事性、一定观赏性、静态。&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;弹幕射击游戏&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av393926/&quot;&gt;东方永夜抄 Stage III.Rebuilt&lt;/a&gt; 得分:+19260 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av410448/&quot;&gt;小电视君的小黑屋大作战&lt;/a&gt; 得分:+6472 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av397565/&quot;&gt;一起来玩弹幕游戏吧&lt;/a&gt; 得分:+4161 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av412604/&quot;&gt;大小姐的飞行 鬼畜星空版&lt;/a&gt; 得分:+1667 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av409229/&quot;&gt;【糕蛋】红白游戏&lt;/a&gt; 得分:+773 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;5件。
+制作难点：交互控制、物理模拟、渲染性能、素材导入。
+特点：高互动性、一定特效、趣味。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;其他游戏&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av412614/&quot;&gt;Hexagon弹幕移植版&lt;/a&gt; 得分:+2050 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;（同上）&lt;/p&gt;
+
+&lt;h3 id=&quot;mode7&quot;&gt;mode7定位弹幕&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av392083/&quot;&gt;射杀恋人之日&lt;/a&gt; 得分:+5452  (半月)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av393948/&quot;&gt;TSUBASA（海猫鸣泣之时）&lt;/a&gt; 得分:+4120 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av398861/&quot;&gt;敬启，这封书信给十五岁的你&lt;/a&gt; 得分:+3233 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av379446/&quot;&gt;伪物语OP「二言目」&lt;/a&gt; 得分:+2836  (4日)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av397716/&quot;&gt;反正你们就是喜欢那种歌，对吧&lt;/a&gt; 得分:+1902 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av396694/&quot;&gt;脱团没那么简单&lt;/a&gt; 得分:+1386 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av393132/&quot;&gt;Yellow 【MMD】&lt;/a&gt; 得分:+1357 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av402034/&quot;&gt;Psy Phone short ver&lt;/a&gt; 得分:+1231 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av411230/&quot;&gt;梦与叶樱&lt;/a&gt; 得分:+1194 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av406862/&quot;&gt;快乐合成器&lt;/a&gt; 得分:+938 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av395440/&quot;&gt;脱团曲 girlfriend&lt;/a&gt; 得分:+915 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av411335/&quot;&gt;少年T_愛言葉-piano_ver-_&lt;/a&gt; 得分:+909 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av403774/&quot;&gt;想见到你&lt;/a&gt; 得分:+790 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av395714/&quot;&gt;Ur-Style&lt;/a&gt; 得分:+781 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av393047/&quot;&gt;孤雏市&lt;/a&gt; 得分:+781 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av395452/&quot;&gt;Re:make&lt;/a&gt; 得分:+778 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av410019/&quot;&gt;アルタイル&lt;/a&gt; 得分:+773 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av386221/&quot;&gt;【樱歌】「Love symmetry」&lt;/a&gt; 得分:+761 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;18件。其中7件尝试使用脚本作为辅助。
+未制作过，不便评论。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;实验/相声&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av395113/&quot;&gt;【洛天依】你们为什么要嘲笑矮杉只１７０呢&lt;/a&gt; 得分:+884 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;新内容形式？弹幕相声？&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;点缀&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av408152/&quot;&gt;Only my railgun&lt;/a&gt; 得分:+6274 &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bilibili.com/video/av391780/&quot;&gt;天使立华奏获得2012世萌萌王纪&lt;/a&gt; 得分:+3504 &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+   <author><name>nekofs</name></author>
+ </entry>
+ 
+ 
+</feed>

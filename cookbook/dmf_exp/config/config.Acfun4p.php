@@ -66,6 +66,7 @@ class Acfun4pGroupConfig extends GroupConfig
 	            $playerParams->addVar('vid', $source->DanmakuId);
 	            $playerParams->addVar('system', "Artemis" );
 	            $playerParams->addVar('type', "url" );
+	            $playerParams->addVar('oldcs', "1" );
 	        break;
 
 			default:
